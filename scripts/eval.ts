@@ -16,6 +16,7 @@ const EXPECTED: Record<string, ToolOutcome[]> = {
   'Not accepted: Kaiser': ['NOT_IN_NETWORK'],
   'Not accepted: Ambetter': ['NOT_IN_NETWORK'],
   'Not accepted: coverage inactive': ['COVERAGE_INACTIVE'],
+  'Not accepted: plan network': ['NOT_IN_NETWORK'],
   'Error 42': ['PAYER_UNAVAILABLE'],
   'Error 43': ['CLINIC_SETUP_ISSUE'],
   'Error 72': ['PLEASE_VERIFY_DETAILS'],

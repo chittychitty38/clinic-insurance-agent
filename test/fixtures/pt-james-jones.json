@@ -1,0 +1,929 @@
+{
+  "meta": {
+    "traceId": "01M6FN49VG9F7N470VXACGB02R",
+    "outboundTraceId": "01M6FN49VG9F7N470VXACGB02R"
+  },
+  "payerId": "62308",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*889153362*0*T*`~GS*HB*STEDI*117151744*20261103*025204*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN49VG9F7N470VXACGB02R*20260325*0901~HL*1**20*1~NM1*PR*2*CHLIC*****FI*591056496~PER*IC**TE*8664942111*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Provider Name*****XX*1999999984~HL*3*2*22*0~NM1*IL*1*Jones*James****MI*23456789100~REF*6P*00123874~REF*6P*00123874*ACME, Inc.~N3*123 HOMEDALE CT~N4*MIAMI*FL*331792424~DMG*D8*19910202*M~DTP*346*D8*20240101~DTP*347*D8*20241231~DTP*356*D8*20230101~EB*1**5^BL^71^52^62^84^12^BN^4^BQ^BK^2^82^98^6^86^BD^51^69^3^75^81^17^80^76^BG^18^78^79^48^A3^56^13^A1^BR^73^8^7^A0^97^50^BF^19^AD^BH^AF^53^AE^UC^AG^33^AB^99^64^65^1^96^47^A9~EB*1**88**Advantage Pharmacy~EB*1**MH~EB*1**30**Open Access Plus~MSG*Complete Care Management~EB*C*IND*30***23*7500*****N~EB*G*IND*30***23*15000*****N~MSG*Copay does apply to member's out-of-pocket maximum~MSG*Deductible does apply to member's out-of-pocket maximum~MSG*Coinsurance does apply to member's out-of-pocket maximum~EB*C*FAM*30***23*15000*****N~EB*G*FAM*30***23*30000*****N~MSG*Coinsurance does apply to member's out-of-pocket maximum~MSG*Deductible does apply to member's out-of-pocket maximum~MSG*Copay does apply to member's out-of-pocket maximum~EB*G*FAM*30***23*6000*****Y~MSG*Includes services provided by Client Specific Network~MSG*Coinsurance does apply to member's out-of-pocket maximum~MSG*Copay does apply to member's out-of-pocket maximum~MSG*Deductible does apply to member's out-of-pocket maximum~EB*C*FAM*30***23*500*****Y~MSG*Includes services provided by Client Specific Network~EB*G*IND*30***23*3000*****Y~MSG*Includes services provided by Client Specific Network~MSG*Copay does apply to member's out-of-pocket maximum~MSG*Coinsurance does apply to member's out-of-pocket maximum~MSG*Deductible does apply to member's out-of-pocket maximum~EB*C*IND*30***23*250*****Y~MSG*Includes services provided by Client Specific Network~EB*A*IND*30*****.1****Y~EB*A*IND*30*****.5****N~EB*1**89^92^91^90^9^70*********Y~EB*B*IND*89^91****35****N*Y~HSD*****7*34~MSG*Women's Contraceptive Preferred 30 Day~MSG*Preferred 30 Day~MSG*Mail Order is required for Specialty Drugs~SE*55*0001~GE*1*1~IEA*1*889153362~",
+  "payer": {
+    "name": {
+      "organization": "CHLIC"
+    },
+    "type": "PAYER",
+    "contacts": [
+      {
+        "phoneNumbers": [
+          "8664942111"
+        ],
+        "urls": [
+          "cignaforhcp.cigna.com"
+        ]
+      }
+    ],
+    "tin": "591056496"
+  },
+  "provider": {
+    "name": {
+      "organization": "Provider Name"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "123 HOMEDALE CT",
+      "city": "MIAMI",
+      "state": "FL",
+      "postalCode": "331792424"
+    },
+    "dates": {
+      "plan": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "eligibility": {
+        "start": "2023-01-01"
+      }
+    },
+    "dateOfBirth": "1991-02-02",
+    "gender": "MALE",
+    "name": {
+      "person": {
+        "firstName": "James",
+        "lastName": "Jones"
+      }
+    },
+    "additionalInformation": {
+      "group": {
+        "number": "00123874",
+        "name": "ACME, Inc."
+      }
+    },
+    "memberId": "23456789100"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "71",
+              "definition": "Audiology Exam",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "84",
+              "definition": "Abortion",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "12",
+              "definition": "Durable Medical Equipment Purchase",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BN",
+              "definition": "Gastrointestinal",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BQ",
+              "definition": "Neurology",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BK",
+              "definition": "Orthopedic",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "6",
+              "definition": "Radiation Therapy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BD",
+              "definition": "Cognitive Therapy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "75",
+              "definition": "Prosthetic Device",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "17",
+              "definition": "Pre-Admission Testing",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "80",
+              "definition": "Immunizations",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BG",
+              "definition": "Cardiac Rehabilitation",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "18",
+              "definition": "Durable Medical Equipment Rental",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "78",
+              "definition": "Chemotherapy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "79",
+              "definition": "Allergy Testing",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "A3",
+              "definition": "Professional (Physician) Visit - Home",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "56",
+              "definition": "Medically Related Transportation",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "13",
+              "definition": "Ambulatory Service Center Facility",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "A1",
+              "definition": "Professional (Physician) Visit - Nursing Home",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "8",
+              "definition": "Surgical Assistance",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "7",
+              "definition": "Anesthesia",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "A0",
+              "definition": "Professional (Physician) Visit - Outpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "97",
+              "definition": "Anesthesiologist",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BF",
+              "definition": "Pulmonary Rehabilitation",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "19",
+              "definition": "Pneumonia Vaccine",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "BH",
+              "definition": "Pediatric",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "AF",
+              "definition": "Speech Therapy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "53",
+              "definition": "Hospital - Ambulatory Surgical",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "AG",
+              "definition": "Skilled Nursing Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "AB",
+              "definition": "Rehabilitation - Inpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "99",
+              "definition": "Professional (Physician) Visit - Inpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "65",
+              "definition": "Newborn Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "96",
+              "definition": "Professional (Physician)",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "A9",
+              "definition": "Rehabilitation",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Advantage Pharmacy",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Complete Care Management"
+            ],
+            "planCoverageDescription": "Open Access Plus",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "89",
+              "definition": "Free Standing Prescription Drug",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "92",
+              "definition": "Generic Prescription Drug",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "91",
+              "definition": "Brand Name Prescription Drug",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "90",
+              "definition": "Mail Order Prescription Drug",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "9",
+              "definition": "Other Medical",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "70",
+              "definition": "Transplants",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "percent": "0.5"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "89",
+              "definition": "Free Standing Prescription Drug",
+              "system": "STC"
+            },
+            "messages": [
+              "Women's Contraceptive Preferred 30 Day",
+              "Preferred 30 Day",
+              "Mail Order is required for Specialty Drugs"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "period": {
+                    "value": 34,
+                    "qualifier": "DAY"
+                  }
+                }
+              }
+            ],
+            "amount": "35"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "91",
+              "definition": "Brand Name Prescription Drug",
+              "system": "STC"
+            },
+            "messages": [
+              "Women's Contraceptive Preferred 30 Day",
+              "Preferred 30 Day",
+              "Mail Order is required for Specialty Drugs"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "period": {
+                    "value": 34,
+                    "qualifier": "DAY"
+                  }
+                }
+              }
+            ],
+            "amount": "35"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "7500"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "15000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "500"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "250"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Copay does apply to member's out-of-pocket maximum",
+              "Deductible does apply to member's out-of-pocket maximum",
+              "Coinsurance does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "15000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Coinsurance does apply to member's out-of-pocket maximum",
+              "Deductible does apply to member's out-of-pocket maximum",
+              "Copay does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "30000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Coinsurance does apply to member's out-of-pocket maximum",
+              "Copay does apply to member's out-of-pocket maximum",
+              "Deductible does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "6000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Copay does apply to member's out-of-pocket maximum",
+              "Coinsurance does apply to member's out-of-pocket maximum",
+              "Deductible does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "3000"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-276e-747c-9713-4730d891a5ce",
+  "eligibilitySearchId": "01a19f52-276f-72c9-8d84-a099c8caa168"
+}

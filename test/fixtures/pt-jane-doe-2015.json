@@ -1,0 +1,1639 @@
+{
+  "meta": {
+    "traceId": "01M6FN46R6EYR0G3GMDFCY31ZC",
+    "outboundTraceId": "01M6FN46R6EYR0G3GMDFCY31ZC"
+  },
+  "payerId": "84980",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*299771723*0*T*`~GS*HB*STEDI*117151744*20261103*025200*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN46R6EYR0G3GMDFCY31ZC*20260325*0901~HL*1**20*1~NM1*PR*2*G84980*****PI*G84980~HL*2*1*21*1~NM1*1P*1*DOUGH*JOHN****XX*1999999984~N3*202 Main St~N4*AUSTIN*TX*733010001~HL*3*2*22*1~NM1*IL*1*DOE*JOHN*D***MI*A2CBCBSTX123~REF*6P*999888*GROUP ISD~DTP*346*D8*20230101~HL*4*3*23*0~NM1*03*1*DOE*JANE~REF*6P*999888*GROUP ISD~N3*101 Main St~N4*AUSTIN*TX*733010001~DMG*D8*20100101*F~INS*N*19~EB*1**30*PR*PREFERRED PROVIDER OPTION MEDICAL*******W~LS*2120~NM1*VER*2*Blue Cross and Blue Shield of Illinois*****PI*G00621~NM1*VER*2*Blue Cross and Blue Shield of Illinois*****PI*G00621~LE*2120~EB*1**1^88^MH^AL*********W~EB*D**30*********W~MSG*PHYSICIAN BENEFIT~EB*A*IND*51***27**.2***N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*22~EB*C*IND*51***23*4000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*22~EB*C*FAM*51***23*12000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*22~EB*G*FAM*30***23*16000****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -~MSG*PROFESSIONAL~EB*G*IND*30***23*7500****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -~MSG*PROFESSIONAL~EB*A*IND*51***27**.2***N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*23~EB*C*IND*51***23*4000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*23~EB*C*FAM*51***23*12000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*23~EB*A*IND*51***27**0***N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~MSG*EMERGENCY SERVICES PAID AT 100%~III*ZZ*11~EB*A*IND*51***27**0***N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~MSG*SPECIALIST - 100% COVERAGE OF THE ALLOWED AMOUNT.~III*ZZ*11~EB*B*IND*51***7*25****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*11~EB*A*IND*UC***27**0***N*Y~MSG*EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL~MSG*EMERGENCY SERVICES PAID AT 100%~III*ZZ*11~EB*A*IND*UC***27**0***N*Y~MSG*EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL~MSG*SPECIALIST - 100% COVERAGE OF THE ALLOWED AMOUNT.~III*ZZ*11~EB*B*IND*UC***7*25****N*Y~MSG*EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL~III*ZZ*11~EB*A*IND*52***27**.2***N*Y~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*22~EB*C*IND*52***23*4000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*22~EB*C*FAM*52***23*12000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*22~EB*A*IND*52***27**.2***N*Y~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*23~EB*C*IND*52***23*4000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*23~EB*C*FAM*52***23*12000****N*Y~DTP*348*D8*20240101~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*23~EB*A*IND*33***27**.2***N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*22~EB*C*IND*33***23*4000****N*Y~DTP*348*D8*20240101~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*22~EB*C*FAM*33***23*12000****N*Y~DTP*348*D8*20240101~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*22~EB*F*IND*33***23***DY*100*N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*22~EB*A*IND*33***27**.2***N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*11~EB*C*IND*33***23*4000****N*Y~DTP*348*D8*20240101~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*11~EB*C*FAM*33***23*12000****N*Y~DTP*348*D8*20240101~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*11~EB*F*IND*33***23***DY*100*N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*11~EB*A*IND*98***27**0***N*Y~MSG*OFFICE VISIT - PROFESSIONAL~III*ZZ*10~EB*B*IND*98***7*25****N*Y~MSG*OFFICE VISIT - PROFESSIONAL~III*ZZ*10~EB*A*IND*98***27**0***N*Y~MSG*OFFICE VISIT - PROFESSIONAL~III*ZZ*11~EB*B*IND*98***7*25****N*Y~MSG*OFFICE VISIT - PROFESSIONAL~III*ZZ*11~EB*A*IND*98***27**0***N*Y~MSG*OFFICE VISIT - PROFESSIONAL~III*ZZ*02~EB*B*IND*98***7*25****N*Y~MSG*OFFICE VISIT - PROFESSIONAL~III*ZZ*02~EB*A*IND*BZ***27**0***N*Y~MSG*PHYSICAL HISTORY - PROFESSIONAL~III*ZZ*10~EB*A*IND*BZ***27**0***N*Y~MSG*PHYSICAL HISTORY - PROFESSIONAL~III*ZZ*11~EB*A*IND*BZ***27**0***N*Y~MSG*PHYSICAL HISTORY - PROFESSIONAL~III*ZZ*02~EB*A*IND*AL***27**0***N*Y~MSG*ROUTINE VISION EXAM - PROFESSIONAL~III*ZZ*10~EB*B*IND*AL***7*25****N*Y~MSG*ROUTINE VISION EXAM - PROFESSIONAL~III*ZZ*10~EB*A*IND*AL***27**0***N*Y~MSG*ROUTINE VISION EXAM - PROFESSIONAL~III*ZZ*22~EB*A*IND*AL***27**0***N*Y~MSG*ROUTINE VISION EXAM - PROFESSIONAL~III*ZZ*11~EB*B*IND*AL***7*25****N*Y~MSG*ROUTINE VISION EXAM - PROFESSIONAL~III*ZZ*11~EB*A*IND*AL***27**0***N*Y~MSG*ROUTINE VISION EXAM - PROFESSIONAL~III*ZZ*02~EB*B*IND*AL***7*25****N*Y~MSG*ROUTINE VISION EXAM - PROFESSIONAL~III*ZZ*02~EB*C*IND*51***29*4000****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*22~EB*C*FAM*51***29*12000****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*22~EB*G*FAM*30***29*10000****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -~MSG*PROFESSIONAL~EB*G*IND*30***29*5000****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -~MSG*PROFESSIONAL~EB*C*IND*51***29*4000****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*23~EB*C*FAM*51***29*12000****N*Y~MSG*EMERGENCY ACCIDENT CARE - PROFESSIONAL~III*ZZ*23~EB*C*IND*52***29*4000****N*Y~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*22~EB*C*FAM*52***29*12000****N*Y~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*22~EB*C*IND*52***29*4000****N*Y~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*23~EB*C*FAM*52***29*12000****N*Y~MSG*EMERGENCY MEDICAL CARE - PROFESSIONAL~III*ZZ*23~EB*C*IND*33***29*4000****N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*22~EB*C*FAM*33***29*12000****N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*22~EB*F*IND*33***29***DY*100*N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*22~EB*C*IND*33***29*4000****N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*11~EB*C*FAM*33***29*12000****N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*11~EB*F*IND*33***29***DY*100*N*Y~MSG*MUSCLE MANIPULATION - PROFESSIONAL~III*ZZ*11~EB*P***********W~MSG*UNLESS OTHERWISE REQUIRED BY LAW, THIS NOTICE IS NOT A GUARANTEE OF PAYMENT. BENEFITS ARE SUBJECT TO ALL CONTRACT LIMITS AND THE MEMBER'S STATUS ON THE DATE OF SERVICE. ACCUMULATED AMOUNTS SUCH AS DEDUCTIBLE MAY CHANGE AS ADDITIONAL CLAIMS ARE PROCESSED.~SE*226*0001~GE*1*1~IEA*1*299771723~",
+  "payer": {
+    "name": {
+      "organization": "G84980"
+    },
+    "type": "PAYER",
+    "identification": "G84980"
+  },
+  "provider": {
+    "name": {
+      "person": {
+        "firstName": "JOHN",
+        "lastName": "DOUGH"
+      }
+    },
+    "type": "PROVIDER",
+    "address": {
+      "addressLine1": "202 Main St",
+      "city": "AUSTIN",
+      "state": "TX",
+      "postalCode": "733010001"
+    },
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "dates": {
+      "plan": {
+        "start": "2023-01-01"
+      }
+    },
+    "name": {
+      "person": {
+        "firstName": "JOHN",
+        "lastName": "DOE",
+        "middleName": "D"
+      }
+    },
+    "additionalInformation": {
+      "group": {
+        "number": "999888",
+        "name": "GROUP ISD"
+      }
+    },
+    "memberId": "A2CBCBSTX123"
+  },
+  "dependent": {
+    "address": {
+      "addressLine1": "101 Main St",
+      "city": "AUSTIN",
+      "state": "TX",
+      "postalCode": "733010001"
+    },
+    "dateOfBirth": "2010-01-01",
+    "gender": "FEMALE",
+    "maintenance": {
+      "indicator": "NONE"
+    },
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE"
+      }
+    },
+    "relationToSubscriber": "CHILD",
+    "additionalInformation": {
+      "group": {
+        "number": "999888",
+        "name": "GROUP ISD"
+      }
+    }
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "Blue Cross and Blue Shield of Illinois"
+                },
+                "type": "PARTY_PERFORMING_VERIFICATION",
+                "payerId": "G00621"
+              },
+              {
+                "name": {
+                  "organization": "Blue Cross and Blue Shield of Illinois"
+                },
+                "type": "PARTY_PERFORMING_VERIFICATION",
+                "payerId": "G00621"
+              }
+            ],
+            "planCoverageDescription": "PREFERRED PROVIDER OPTION MEDICAL",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL",
+              "EMERGENCY SERVICES PAID AT 100%"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL",
+              "SPECIALIST - 100% COVERAGE OF THE ALLOWED AMOUNT."
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL",
+              "EMERGENCY SERVICES PAID AT 100%"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL",
+              "SPECIALIST - 100% COVERAGE OF THE ALLOWED AMOUNT."
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "OFFICE VISIT - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "OFFICE VISIT - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "OFFICE VISIT - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "02",
+                "name": "Telehealth Provided Other than in Patient's Home"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICAL HISTORY - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICAL HISTORY - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICAL HISTORY - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "02",
+                "name": "Telehealth Provided Other than in Patient's Home"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "02",
+                "name": "Telehealth Provided Other than in Patient's Home"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "percent": "0"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "OFFICE VISIT - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "OFFICE VISIT - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "OFFICE VISIT - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "02",
+                "name": "Telehealth Provided Other than in Patient's Home"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "02",
+                "name": "Telehealth Provided Other than in Patient's Home"
+              }
+            ],
+            "timePeriod": "DAY",
+            "amount": "25"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY MEDICAL CARE - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "12000"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -",
+              "PROFESSIONAL"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "16000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -",
+              "PROFESSIONAL"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "7500"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -",
+              "PROFESSIONAL"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "10000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY ACCIDENT CARE - PROFESSIONAL;EMERGENCY ACCIDENT OFFICE VISIT - PROFESSIONAL;EMERGENCY MEDICAL CARE - PROFESSIONAL;EMERGENCY MEDICAL OFFICE VISIT - PROFESSIONAL;MUSCLE MANIPULATION - PROFESSIONAL;OFFICE VISIT - PROFESSIONAL;ROUTINE VISION EXAM -",
+              "PROFESSIONAL"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "5000"
+          }
+        ],
+        "limitations": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "quantity": {
+              "value": "100",
+              "qualifier": "DAYS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "quantity": {
+              "value": "100",
+              "qualifier": "DAYS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "quantity": {
+              "value": "100",
+              "qualifier": "DAYS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MUSCLE MANIPULATION - PROFESSIONAL"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "REMAINING",
+            "quantity": {
+              "value": "100",
+              "qualifier": "DAYS"
+            }
+          }
+        ],
+        "benefitDescription": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN BENEFIT"
+            ]
+          }
+        ],
+        "benefitDisclaimer": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "messages": [
+              "UNLESS OTHERWISE REQUIRED BY LAW, THIS NOTICE IS NOT A GUARANTEE OF PAYMENT. BENEFITS ARE SUBJECT TO ALL CONTRACT LIMITS AND THE MEMBER'S STATUS ON THE DATE OF SERVICE. ACCUMULATED AMOUNTS SUCH AS DEDUCTIBLE MAY CHANGE AS ADDITIONAL CLAIMS ARE PROCESSED."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-1b04-75ab-b574-16e1ad6c22ac",
+  "eligibilitySearchId": "01a19f52-1b06-773d-a160-22b226721ce1"
+}

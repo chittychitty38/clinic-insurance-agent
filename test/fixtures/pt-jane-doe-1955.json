@@ -1,0 +1,1384 @@
+{
+  "meta": {
+    "traceId": "01M6FN4G15CENFS0V1JNCKAKH1",
+    "outboundTraceId": "01M6FN4G15CENFS0V1JNCKAKH1"
+  },
+  "payerId": "CMS",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*887156328*0*T*`~GS*HB*STEDI*117151744*20261103*025210*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN4G15CENFS0V1JNCKAKH1*20260325*0901~HL*1**20*1~NM1*PR*2*CMS*****PI*CMS~HL*2*1*21*1~NM1*1P*2*MEDICAL PROVIDER*****XX*1999999984~HL*3*2*22*0~NM1*IL*1*DOE*JANE****MI*1AA2CC3DD45~N3*101 MAIN ST~N4*SACRAMENTO*CA*942030200~DMG*D8*19550505*F~DTP*307*D8*20241025~EB*I**41^54*********W~EB*1**88*********W~EB*R***QM*CA QMB Plan*******W~DTP*290*D8*20230101~EB*1**30^42^45^48^49^69^76^83^A5^A7^AG^BT^BU^BV*MA********W~DTP*291*D8*20190101~MSG*0-Beneficiary insured due to age OASI~EB*C**30*QM*Medicare Part A*26*0*****W~DTP*291*RD8*20240101-20241231~EB*1**30^2^23^24^25^26^27^28^3^33^36^37^38^39^40^42^50^51^52^53^67^69^73^76^83^86^98^A4^A6^A8^AI^AJ^AK^AL^BT^BU^BV^DM^UC*MB********W~DTP*291*D8*20190101~MSG*0-Beneficiary insured due to age OASI~EB*C**30*QM*Medicare Part B*23*0*****W~DTP*291*RD8*20240101-20241231~EB*A**30*QM*Medicare Part B*27**0****W~DTP*291*RD8*20240101-20241231~EB*R**88*OT********W~REF*18*A0505~REF*N6*555~DTP*292*D8*20230101~LS*2120~NM1*PR*2*UHC OF CALIFORNIA~N3*202 Main St~N4*Sacramento*CA*94203~PER*IC**TE*8006446644*UR*UHC.com/Medicare~LE*2120~EB*U**30*HN********W~REF*18*A0505~REF*N6*555~DTP*290*D8*20230101~MSG*MA Bill Option Code - A~LS*2120~NM1*PRP*2*UHC OF CALIFORNIA~N3*202 Main St~N4*Sacramento*CA*94203~PER*IC**TE*8006446644*UR*UHC.com/Medicare~LE*2120~SE*50*0001~GE*1*1~IEA*1*887156328~",
+  "payer": {
+    "name": {
+      "organization": "CMS"
+    },
+    "type": "PAYER",
+    "identification": "CMS"
+  },
+  "provider": {
+    "name": {
+      "organization": "MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "101 MAIN ST",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "postalCode": "942030200"
+    },
+    "dates": {
+      "eligibility": {
+        "start": "2024-10-25"
+      }
+    },
+    "dateOfBirth": "1955-05-05",
+    "gender": "FEMALE",
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE"
+      }
+    },
+    "memberId": "1AA2CC3DD45"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "42",
+              "definition": "Home Health Care",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "45",
+              "definition": "Hospice",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "49",
+              "definition": "Hospital - Room and Board",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "83",
+              "definition": "Infertility",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A5",
+              "definition": "Psychiatric - Room and Board",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A7",
+              "definition": "Psychiatric - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AG",
+              "definition": "Skilled Nursing Care",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BT",
+              "definition": "Gynecological",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BU",
+              "definition": "Obstetrical",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_A",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BV",
+              "definition": "Obstetrical/Gynecological",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "23",
+              "definition": "Diagnostic Dental",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "24",
+              "definition": "Periodontics",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "25",
+              "definition": "Restorative",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "26",
+              "definition": "Endodontics",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "27",
+              "definition": "Maxillofacial Prosthetics",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "28",
+              "definition": "Adjunctive Dental Services",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "36",
+              "definition": "Dental Crowns",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "37",
+              "definition": "Dental Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "38",
+              "definition": "Orthodontics",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "39",
+              "definition": "Prosthodontics",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "40",
+              "definition": "Oral Surgery",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "42",
+              "definition": "Home Health Care",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "53",
+              "definition": "Hospital - Ambulatory Surgical",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "67",
+              "definition": "Smoking Cessation",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "83",
+              "definition": "Infertility",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A4",
+              "definition": "Psychiatric",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A8",
+              "definition": "Psychiatric - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AI",
+              "definition": "Substance Abuse",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AJ",
+              "definition": "Alcoholism",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AK",
+              "definition": "Drug Addiction",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BT",
+              "definition": "Gynecological",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BU",
+              "definition": "Obstetrical",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BV",
+              "definition": "Obstetrical/Gynecological",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "DM",
+              "definition": "Durable Medical Equipment",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "MEDICARE_PART_B",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "0-Beneficiary insured due to age OASI"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2019-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "QUALIFIED_MEDICARE_BENEFICIARY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "Medicare Part B",
+            "timePeriod": "VISIT",
+            "percent": "0"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "QUALIFIED_MEDICARE_BENEFICIARY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "Medicare Part A",
+            "timePeriod": "EPISODE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "QUALIFIED_MEDICARE_BENEFICIARY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "Medicare Part B",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          }
+        ],
+        "nonCovered": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "41",
+              "definition": "Routine (Preventive) Dental",
+              "system": "STC"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "54",
+              "definition": "Long Term Care",
+              "system": "STC"
+            }
+          }
+        ],
+        "otherOrAdditionalPayer": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "QUALIFIED_MEDICARE_BENEFICIARY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "dates": {
+              "coordinationOfBenefits": {
+                "start": "2023-01-01"
+              }
+            },
+            "planCoverageDescription": "CA QMB Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "OTHER",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK",
+              "id": "555"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2023-01-01"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "UHC OF CALIFORNIA"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 Main St",
+                  "city": "Sacramento",
+                  "state": "CA",
+                  "postalCode": "94203"
+                },
+                "contacts": [
+                  {
+                    "phoneNumbers": [
+                      "8006446644"
+                    ],
+                    "urls": [
+                      "UHC.com/Medicare"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "A0505"
+              }
+            }
+          }
+        ],
+        "contactFollowingEntityForInformation": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "HEALTH_MAINTENANCE_ORGANIZATION_HMO_MEDICARE_RISK",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK",
+              "id": "555"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MA Bill Option Code - A"
+            ],
+            "dates": {
+              "coordinationOfBenefits": {
+                "start": "2023-01-01"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "UHC OF CALIFORNIA"
+                },
+                "type": "PRIMARY_PAYER",
+                "address": {
+                  "addressLine1": "202 Main St",
+                  "city": "Sacramento",
+                  "state": "CA",
+                  "postalCode": "94203"
+                },
+                "contacts": [
+                  {
+                    "phoneNumbers": [
+                      "8006446644"
+                    ],
+                    "urls": [
+                      "UHC.com/Medicare"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "A0505"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-4023-770b-9df8-6772debe7840",
+  "eligibilitySearchId": "01a19f52-4024-760f-b608-3872f89b5524"
+}

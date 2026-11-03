@@ -1,7 +1,7 @@
 import { clinic } from '../clinic.js';
 import { spokenDate, spokenDollars, spokenPercent } from '../normalize.js';
 import type { Payer } from '../payers.js';
-import type { CoverageFacts, EligibilityFacts, PayerErrorFacts, VisitType } from './interpret.js';
+import type { CopayBasis, CoverageFacts, EligibilityFacts, PayerErrorFacts, VisitType } from './interpret.js';
 
 /**
  * Turns interpreted facts into the words the caller hears. The voice model is told to
@@ -14,6 +14,7 @@ export type Outcome =
   | 'ACCEPTED_COPAY_UNCONFIRMED'
   | 'NOT_IN_NETWORK'
   | 'COVERAGE_INACTIVE'
+  | 'COVERAGE_UNCONFIRMED'
   | 'DENTAL_PLAN'
   | 'PLEASE_VERIFY_DETAILS'
   | 'PAYER_UNAVAILABLE'
@@ -35,10 +36,25 @@ export function buildAnswer(
 ): AgentAnswer {
   if (facts.kind === 'payer_error') return errorAnswer(facts, ctx);
   if (facts.dentalOnly) return dentalAnswer(ctx.payer);
+  if (facts.datesConflict) {
+    return {
+      ...escalate(`${ctx.payer.displayName} says your plan is active, but the coverage dates they sent don't match today, and I don't want to guess.`, coverageFacts(facts, ctx.payer)),
+      outcome: 'COVERAGE_UNCONFIRMED',
+    };
+  }
   if (!facts.active) return inactiveAnswer(facts, ctx.payer);
-  if (!ctx.payer.inNetwork) return outOfNetworkAnswer(facts, ctx.payer);
+  if (!ctx.payer.inNetwork) return outOfNetworkAnswer(facts, ctx.payer, 'clinic');
+  // We contract with the payer, but this member's specific plan uses a network we're not in.
+  if (facts.payerSaysOutOfNetwork) return outOfNetworkAnswer(facts, ctx.payer, 'plan');
   return acceptedAnswer(facts, ctx);
 }
+
+const COPAY_SENTENCE: Record<CopayBasis, (amount: string) => string> = {
+  specialist: (a) => `For a specialist visit with our eye doctor, your copay should be ${a}.`,
+  office: (a) => `For an office visit with our eye doctor, your copay should be ${a}.`,
+  plan: (a) => `Your plan lists a copay of ${a} for office visits.`,
+  vision: (a) => `For a routine eye exam, your plan's vision benefit shows a copay of ${a}.`,
+};
 
 function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string; visitType: VisitType }): AgentAnswer {
   const { payer, firstName, visitType } = ctx;
@@ -47,24 +63,31 @@ function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string
   let next = 'Ask if there is anything else you can help with.';
 
   if (f.isMedicare) {
-    parts.push(`Good news, ${firstName}. We accept Medicare, and your coverage is active.`);
-    const coins = f.visitCoinsurance ?? 0.2;
-    parts.push(
-      `Medicare doesn't have a set copay for an office visit. Instead, once your yearly Part B deductible is met, you'd pay ${spokenPercent(coins)} of the Medicare-approved amount for the visit.`,
-    );
-    if (f.deductible.remaining !== undefined) {
-      parts.push(f.deductible.remaining === 0
-        ? `Your Part B deductible is already met for this year.`
-        : `You have ${spokenDollars(f.deductible.remaining)} left on your Part B deductible this year.`);
+    parts.push(`Good news, ${firstName}. We accept Medicare, and your Part B coverage for office visits is active.`);
+    if (f.isQmb) {
+      parts.push(
+        `Your record also shows you're in the Qualified Medicare Beneficiary program, so Medicaid covers your Medicare cost-sharing. You shouldn't owe a copay or coinsurance for a covered visit.`,
+      );
+    } else {
+      // Part B's 20% coinsurance is set by statute; we use the payer's figure when it sends one.
+      const coins = f.visitCoinsurance ?? 0.2;
+      parts.push(
+        `Medicare doesn't have a set copay for an office visit. Once your yearly Part B deductible is met, you'd pay ${spokenPercent(coins)} of the Medicare-approved amount.`,
+      );
+      if (f.deductible.remaining !== undefined) {
+        parts.push(f.deductible.remaining === 0
+          ? `Your Part B deductible is already met for this year.`
+          : `You have ${spokenDollars(f.deductible.remaining)} left on your Part B deductible this year.`);
+      }
+      parts.push(`If you have a Medicare supplement plan, it may cover some or all of that.`);
     }
-    parts.push(`If you have a Medicare supplement plan, it may cover some or all of that.`);
   } else {
     parts.push(`Good news, ${firstName}. We're in network with ${payer.displayName}, and your coverage is active.`);
     const copay = f.visitCopay;
     if (copay.status === 'single') {
       parts.push(copay.amount === 0
-        ? `Your plan shows no copay for a visit with our eye doctor.`
-        : `For a visit with our eye doctor, your copay should be ${spokenDollars(copay.amount)}.`);
+        ? `Your plan shows no copay for an office visit with our eye doctor.`
+        : COPAY_SENTENCE[copay.basis](spokenDollars(copay.amount)));
     } else if (copay.status === 'multiple') {
       outcome = 'ACCEPTED_COPAY_UNCONFIRMED';
       const amounts = copay.options.map((o) => spokenDollars(o.amount));
@@ -74,7 +97,7 @@ function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string
       next = `Tell them our billing team can confirm the exact copay. ${OFFER_CALLBACK}`;
     } else if (f.visitCoinsurance !== undefined && f.visitCoinsurance > 0) {
       parts.push(
-        `Your plan doesn't use a flat copay for specialist visits. Instead, you'd pay ${spokenPercent(f.visitCoinsurance)} of the visit cost after your deductible.`,
+        `Your plan doesn't use a flat copay for office visits. Instead, you'd pay ${spokenPercent(f.visitCoinsurance)} of the visit cost after your deductible.`,
       );
       if (f.deductible.remaining !== undefined) {
         parts.push(f.deductible.remaining === 0
@@ -82,7 +105,10 @@ function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string
           : `You have ${spokenDollars(f.deductible.remaining)} left on your deductible this year.`);
       }
     } else if (f.visitCoinsurance === 0) {
-      parts.push(`Your plan shows no copay and no coinsurance for a visit with our eye doctor.`);
+      parts.push(`Your plan shows no copay and no coinsurance for an office visit with our eye doctor.`);
+      if (f.deductible.remaining) {
+        parts.push(`Your plan does have a deductible, with ${spokenDollars(f.deductible.remaining)} left this year, which can apply depending on the services you receive.`);
+      }
     } else {
       outcome = 'ACCEPTED_COPAY_UNCONFIRMED';
       parts.push(`Your insurance didn't report a copay amount for specialist visits, and I don't want to guess.`);
@@ -90,33 +116,33 @@ function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string
     }
   }
 
-  if (f.isHmo) {
+  if (f.referralRequired) {
+    parts.push(`Your plan requires a referral from your primary care doctor before seeing a specialist, so please ask them to send one to us before your visit.`);
+  } else if (f.isHmo) {
     parts.push(`Since your plan is an HMO, you may need a referral from your primary care doctor before the visit.`);
   }
   if (f.priorAuthRequired) {
     parts.push(`Your plan also notes that office visits need prior authorization, which our team will handle before your appointment.`);
   }
-  if (visitType === 'routine' && !f.isMedicare) {
-    parts.push(
-      `One heads-up: medical insurance usually doesn't cover the refraction, which is the glasses-prescription part of a routine exam. That's a separate ${spokenDollars(clinic.refractionFee)} fee.`,
-    );
-  } else if (visitType === 'routine' && f.isMedicare) {
-    parts.push(
-      `One heads-up: Medicare doesn't cover routine exams for glasses, including the refraction, which is a separate ${spokenDollars(clinic.refractionFee)} fee.`,
-    );
+  if (visitType === 'routine') {
+    parts.push(f.isMedicare
+      ? `One heads-up: Medicare doesn't cover routine exams for glasses, including the refraction, which is a separate ${spokenDollars(clinic.refractionFee)} fee.`
+      : `One heads-up: medical insurance usually doesn't cover the refraction, which is the glasses-prescription part of a routine exam. That's a separate ${spokenDollars(clinic.refractionFee)} fee.`);
   }
 
   return { outcome, say: parts.join(' '), next_step: next, facts: coverageFacts(f, payer) };
 }
 
-function outOfNetworkAnswer(f: CoverageFacts, payer: Payer): AgentAnswer {
+function outOfNetworkAnswer(f: CoverageFacts, payer: Payer, why: 'clinic' | 'plan'): AgentAnswer {
   const parts = [
-    `I checked, and your ${payer.displayName} coverage is active, but unfortunately we're not in network with ${payer.displayName}.`,
+    why === 'clinic'
+      ? `I checked, and your ${payer.displayName} coverage is active, but unfortunately we're not in network with ${payer.displayName}.`
+      : `I checked, and your ${payer.displayName} coverage is active, but ${payer.displayName} says your specific plan lists our office as out of network.`,
   ];
-  if (payer.outOfNetworkNote) parts.push(payer.outOfNetworkNote);
-  else if (f.outOfNetwork.coinsurance !== undefined) {
+  if (why === 'clinic' && payer.outOfNetworkNote) parts.push(payer.outOfNetworkNote);
+  else if (f.outOfNetwork.coinsurance !== undefined && f.outOfNetwork.coinsurance > 0) {
     parts.push(
-      `Your plan does show some out-of-network benefits. You'd typically pay ${spokenPercent(f.outOfNetwork.coinsurance)} of the cost${f.outOfNetwork.deductible !== undefined ? ` after a ${spokenDollars(f.outOfNetwork.deductible)} out-of-network deductible` : ''}.`,
+      `Your plan does show some out-of-network benefits. You'd typically pay ${spokenPercent(f.outOfNetwork.coinsurance)} of the cost${f.outOfNetwork.deductible ? ` after a ${spokenDollars(f.outOfNetwork.deductible)} out-of-network deductible` : ''}.`,
     );
   }
   parts.push(
@@ -125,7 +151,7 @@ function outOfNetworkAnswer(f: CoverageFacts, payer: Payer): AgentAnswer {
   return {
     outcome: 'NOT_IN_NETWORK',
     say: parts.join(' '),
-    next_step: `Ask whether they'd like to book as self-pay or have the front desk call them back to talk through options. ${OFFER_CALLBACK}`,
+    next_step: `Ask whether they'd like to book as self-pay or have the front desk call them back to talk through options${why === 'plan' ? ' and double-check the plan\'s network' : ''}. ${OFFER_CALLBACK}`,
     facts: coverageFacts(f, payer),
   };
 }
@@ -214,7 +240,6 @@ function coverageFacts(f: CoverageFacts, payer: Payer): AgentAnswer['facts'] {
     payer: payer.displayName,
     clinic_in_network: payer.inNetwork,
     coverage_active: f.active,
-    plan_name: f.planName ?? null,
     plan_type: f.insuranceType ?? null,
     coverage_end_date: f.coverageEnd ?? null,
     office_visit_copay: f.visitCopay.status === 'single' ? f.visitCopay.amount : null,

@@ -14,7 +14,7 @@ describe('picking the office-visit copay', () => {
       { amount: '50', service: stc('98'), network: inNet, messages: ['SPECIALIST'] },
       { amount: '250', service: stc('86'), network: inNet, messages: ['EMERGENCY ROOM'] },
     ];
-    expect(pickVisitCopay(copays, 'medical')).toEqual({ status: 'single', amount: 50, basis: 'specialist office visit' });
+    expect(pickVisitCopay(copays, 'medical')).toEqual({ status: 'single', amount: 50, basis: 'specialist' });
   });
 
   it('never uses a PCP-only copay for an eye-doctor visit', () => {
@@ -28,7 +28,7 @@ describe('picking the office-visit copay', () => {
       { amount: '90', service: stc('98'), network: { indicator: 'OUT_OF_NETWORK' }, messages: ['SPECIALIST'] },
       { amount: '40', service: stc('98'), network: inNet },
     ];
-    expect(pickVisitCopay(copays, 'medical')).toEqual({ status: 'single', amount: 40, basis: 'office visit' });
+    expect(pickVisitCopay(copays, 'medical')).toEqual({ status: 'single', amount: 40, basis: 'office' });
   });
 
   it('reports every amount instead of guessing when the plan lists several', () => {
@@ -65,26 +65,26 @@ describe('coverage status', () => {
   });
 
   it('active plan, in network: says the copay', () => {
-    const facts = interpretEligibility(base('ACTIVE_COVERAGE'), { today: '2026-11-02' });
+    const facts = interpretEligibility(base('ACTIVE_COVERAGE'), { asOf: '2026-11-02' });
     const a = buildAnswer(facts, { payer: payerByKey('aetna')!, firstName: 'Jordan', visitType: 'medical', priorFailures: 0 });
     expect(a.outcome).toBe('ACCEPTED');
     expect(a.say).toContain('35 dollars');
   });
 
   it('inactive plan is never reported as accepted', () => {
-    const facts = interpretEligibility(base('INACTIVE'), { today: '2026-11-02' });
+    const facts = interpretEligibility(base('INACTIVE'), { asOf: '2026-11-02' });
     const a = buildAnswer(facts, { payer: payerByKey('uhc')!, firstName: 'Jane', visitType: 'medical', priorFailures: 0 });
     expect(a.outcome).toBe('COVERAGE_INACTIVE');
     expect(a.say).not.toMatch(/dollars/);
   });
 
   it('a plan that ended before today is inactive even if the payer says active', () => {
-    const facts = interpretEligibility(base('ACTIVE_COVERAGE', { subscriber: { dates: { plan: { start: '2024-01-01', end: '2025-12-31' } } } }), { today: '2026-11-02' });
+    const facts = interpretEligibility(base('ACTIVE_COVERAGE', { subscriber: { dates: { plan: { start: '2024-01-01', end: '2025-12-31' } } } }), { asOf: '2026-11-02' });
     expect(facts.kind === 'coverage' && facts.active).toBe(false);
   });
 
   it('active coverage with an out-of-network payer is not "accepted"', () => {
-    const facts = interpretEligibility(base('ACTIVE_COVERAGE'), { today: '2026-11-02' });
+    const facts = interpretEligibility(base('ACTIVE_COVERAGE'), { asOf: '2026-11-02' });
     const a = buildAnswer(facts, { payer: payerByKey('kaiser')!, firstName: 'Jane', visitType: 'medical', priorFailures: 0 });
     expect(a.outcome).toBe('NOT_IN_NETWORK');
     expect(a.say).toContain('self-pay');
@@ -99,7 +99,7 @@ describe('coverage status', () => {
   });
 
   it('adds the refraction heads-up for routine exams', () => {
-    const facts = interpretEligibility(base('ACTIVE_COVERAGE'), { today: '2026-11-02', visitType: 'routine' });
+    const facts = interpretEligibility(base('ACTIVE_COVERAGE'), { asOf: '2026-11-02', visitType: 'routine' });
     const a = buildAnswer(facts, { payer: payerByKey('aetna')!, firstName: 'Jordan', visitType: 'routine', priorFailures: 0 });
     expect(a.say).toMatch(/refraction/);
   });

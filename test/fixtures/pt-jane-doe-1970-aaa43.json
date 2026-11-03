@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "traceId": "01M6FN4P5W7PBYXKE834CECYDK",
+    "outboundTraceId": "01M6FN4P5W7PBYXKE834CECYDK"
+  },
+  "payerId": "87726",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*228617202*0*T*`~GS*HB*STEDI*117151744*20261103*025216*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN4P5W7PBYXKE834CECYDK*20260325*0901~HL*1**20*1~NM1*PR*2*UNITEDHEALTHCARE*****PI*87726~HL*2*1*21*1~NM1*1P*2*MEDICAL PROVIDER*****XX*1999999984~AAA*N**43*C~HL*3*2*22*0~NM1*IL*1*DOE*JANE****MI*UHCAAA43~DMG*D8*19700101~SE*11*0001~GE*1*1~IEA*1*228617202~",
+  "payer": {
+    "name": {
+      "organization": "UNITEDHEALTHCARE"
+    },
+    "type": "PAYER",
+    "identification": "87726"
+  },
+  "provider": {
+    "name": {
+      "organization": "MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "dateOfBirth": "1970-01-01",
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE"
+      }
+    },
+    "memberId": "UHCAAA43"
+  },
+  "id": "ec_01a19f52-58ae-757b-aa02-4f34c07f1f10",
+  "errors": [
+    {
+      "code": "43",
+      "description": "Invalid/Missing Provider Identification",
+      "followupAction": "Please Correct and Resubmit",
+      "location": "PROVIDER",
+      "possibleResolutions": "The problem is either:\n• The `provider.npi` isn't registered correctly with the payer.\n• The payer requires an agreement to begin processing eligibility checks for this provider.\n\nCheck the [Payer Network](https://www.stedi.com/healthcare/network) to determine whether this payer requires transaction enrollment for eligibility checks.\n• If yes, you must submit a [transaction enrollment request](https://www.stedi.com/docs/healthcare/transaction-enrollment) for the provider.\n• If not, the payer may still require other [credentialing or enrollment processes](https://www.stedi.com/docs/healthcare/credentialing-and-enrollment)."
+    }
+  ],
+  "eligibilitySearchId": "01a19f52-58af-7745-8c9b-466ad9f3fe02"
+}

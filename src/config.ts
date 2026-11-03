@@ -38,6 +38,9 @@ if (!parsed.success) {
 
 export const env = parsed.data;
 
+/** Stedi test keys only reach the sandbox, whose mock 271s are frozen with 2024 plan dates. */
+export const isStediSandbox = env.STEDI_API_KEY?.startsWith('test_') ?? false;
+
 export function publicBaseUrl(): string | undefined {
   return (env.PUBLIC_BASE_URL ?? env.RENDER_EXTERNAL_URL)?.replace(/\/$/, '');
 }

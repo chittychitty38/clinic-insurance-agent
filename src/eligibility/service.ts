@@ -1,5 +1,5 @@
 import { clinic } from '../clinic.js';
-import { env } from '../config.js';
+import { env, isStediSandbox } from '../config.js';
 import type { Patient } from '../data/patients.js';
 import { memberIdFromSpeech, parseDateOfBirth, splitFullName } from '../normalize.js';
 import { lookupPatient, pickByCoverage } from '../patients.js';
@@ -154,7 +154,11 @@ export async function verifyInsurance(input: VerifyInput, callId: string): Promi
     return { answer, audit: { patientId: patient?.id, payerKey: payer.key, request, httpStatus: result.httpStatus, transportError: result.error, attempts: result.attempts, ms: result.ms } };
   }
 
-  const facts = interpretEligibility(result.body, { visitType: input.visit_type });
+  const facts = interpretEligibility(result.body, {
+    visitType: input.visit_type,
+    enforcePlanDates: !isStediSandbox,
+    clinicNetworks: payer.clinicNetworks,
+  });
   const answer = buildAnswer(facts, ctx);
   return {
     answer,

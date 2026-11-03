@@ -1,0 +1,3124 @@
+{
+  "meta": {
+    "traceId": "01M6FN4DKT42JMYBVDDQ8WS12M",
+    "outboundTraceId": "01M6FN4DKT42JMYBVDDQ8WS12M"
+  },
+  "payerId": "62308",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*446629394*0*T*`~GS*HB*STEDI*117151744*20261103*025207*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN4DKT42JMYBVDDQ8WS12M*20260325*0901~HL*1**20*1~NM1*PR*2*CHLIC*****FI*591056496~PER*IC**TE*8664942111*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Provider Name*****XX*1999999984~HL*3*2*22*0~NM1*IL*1*Fossum*Casey****MI*5641296~REF*6P*00123874~REF*6P*00123874*ACME, Inc.~N3*123 HOMEDALE CT~N4*MIAMI*FL*331792424~DMG*D8*19760506*M~DTP*346*D8*20240101~DTP*347*D8*20241231~DTP*356*D8*20230101~EB*1**30**Humana Gold Plan~EB*1**1^54^33^98^88^UC^47^50^AL^MH^35^86^48~EB*1**1~EB*1**MH~EB*1**47~EB*A*IND*5*****0***N*Y~MSG*Gestational Diabetes~III*ZZ*21~EB*A*IND*5*****0***N*Y~MSG*Adult Routine~MSG*General~MSG*Benefit also applies to convenience care~III*ZZ*22~EB*A*IND*5*****.1***N*N~MSG*General~III*ZZ*23~EB*A*IND*BL*****0***N*Y~MSG*Other Services PCP~MSG*Other Services Specialist~MSG*Specialist~MSG*PCP~MSG*Cardiac Surgery~MSG*Other Services PCP - Virtual Care Included For Specific Services~III*ZZ*11~EB*C*IND*BL^71^BN^BQ^BK^98^3^A3^BR^AD^AE****0****N*Y~MSG*Includes services provided by Client Specific Network~III*ZZ*99~EB*A*IND*BL^71^BN^BQ^BK^98^3^A3^BR^AD^AE*****0***N*Y~MSG*Services rendered thru Client Specific Network~III*ZZ*99~EB*B*IND*BL^71^BN^BQ^BK^82^98^3^A3^BR***27*10****N*Y~MSG*Services rendered thru Client Specific Network~III*ZZ*11~EB*B*IND*BL^71^BN^BQ^BK^82^98^3^A3^BR***27*10****N*Y~MSG*Services rendered thru Client Specific Network~III*ZZ*99~EB*A*IND*BL*****0***Y*Y~MSG*Specialist Therapy~MSG*Requires prior authorization after 36 visit(s)~MSG*PCP Therapy~MSG*Diagnostic Specialist~MSG*Diagnostic PCP~III*ZZ*11~EB*A*IND*BL^BG*****0***Y*Y~MSG*Services rendered thru Client Specific Network~MSG*Requires prior authorization after 36 visit(s)~III*ZZ*11~EB*B*IND*BL^71^BN^BQ^BK^98^3^A3^BR***27*20****N*Y~MSG*Specialist~III*ZZ*99~EB*C*IND*82^81****0****N*Y~MSG*Includes services provided by Client Specific Network~MSG*Benefit also applies to convenience care~III*ZZ*22~EB*C*IND*82^81****0****N*Y~MSG*Includes services provided by Client Specific Network~MSG*Benefit also applies to convenience care~III*ZZ*99~EB*C*IND*82^81****0****N*Y~MSG*Includes services provided by Client Specific Network~MSG*Benefit also applies to convenience care~III*ZZ*49~EB*B*IND*82***27*20****N*Y~MSG*Services rendered thru Client Specific Network~MSG*Benefit also applies to convenience care~III*ZZ*11~EB*B*IND*82***27*20****N*Y~MSG*Services rendered thru Client Specific Network~MSG*Benefit also applies to convenience care~III*ZZ*99~EB*A*IND*82*****0***N*Y~MSG*Including Women's Contraceptive Surgery~MSG*Contraceptive Management PCP~III*ZZ*22~EB*A*IND*82*****0***N*Y~MSG*Including Women's Contraceptive Surgery~MSG*Contraceptive Management PCP~MSG*Contraceptive Management Specialist~III*ZZ*11~EB*B*IND*82***27*10****N*Y~MSG*Contraceptive Management PCP~III*ZZ*11~EB*B*IND*82***27*10****N*Y~MSG*Contraceptive Management PCP~III*ZZ*99~EB*B*IND*82***27*10****N*Y~MSG*Contraceptive Management PCP~III*ZZ*22~EB*A*IND*82*****0***N*Y~MSG*Contraceptive Management PCP~MSG*Contraceptive Management Specialist~III*ZZ*99~EB*B*IND*82***27*10****N*Y~MSG*Contraceptive Management~III*ZZ*49~EB*A*IND*82*****0***N*Y~MSG*Contraceptive Management~III*ZZ*49~EB*A*IND*82*****0***Y*Y~MSG*Tubal Ligation~MSG*General~III*ZZ*11~EB*A*IND*82*****0***Y*Y~MSG*Tubal Ligation~MSG*Including Women's Contraceptive Surgery~III*ZZ*21~EB*B*IND*82***27*10****N*Y~MSG*Services rendered thru Client Specific Network~III*ZZ*22~EB*B*IND*82***27*20****Y*Y~MSG*General~MSG*Benefit also applies to convenience care~III*ZZ*11~EB*B*IND*82***27*20****N*Y~MSG*Contraceptive Management Specialist~III*ZZ*99~EB*B*IND*82***27*20****N*Y~MSG*Contraceptive Management Specialist~III*ZZ*11~EB*A*IND*98*****0***N*Y~MSG*Telehealth through contracted vendor~III*ZZ*99~EB*B*IND*98***27*10****N*Y~MSG*Telehealth through contracted vendor~III*ZZ*99~EB*C*IND*98****0****N*Y~MSG*Includes services provided by Client Specific Network~III*ZZ*99~EB*A*IND*98*****0***N*Y~MSG*Services rendered thru Client Specific Network~III*ZZ*99~EB*B*IND*98***27*10****N*Y~MSG*Services rendered thru Client Specific Network~III*ZZ*99~EB*A*IND*98*****0***N*Y~MSG*Other Services Specialist~MSG*Routine~MSG*Specialist~MSG*PCP~MSG*Other Services PCP - Virtual Care Included For Specific Services~III*ZZ*11~EB*A*IND*98*****0***N*Y~MSG*Routine~III*ZZ*22~EB*A*IND*98*****0***N*Y~MSG*Routine - Included For Specific Services~MSG*Specialist~MSG*PCP~III*ZZ*99~EB*A*IND*86*****.1***N*N~MSG*X-Ray~MSG*General~MSG*Professional Services~MSG*Lab~III*ZZ*23~EB*B*IND*86***27*100****N*Y~MSG*Services rendered thru Client Specific Network~III*ZZ*23~EB*B*IND*86***27*100****N*W~MSG*General~III*ZZ*23~EB*A*IND*69*****0***N*Y~MSG*Ultrasound~III*ZZ*22~EB*A*IND*69*****0***N*Y~MSG*Ultrasound Specialist~MSG*Lab Specialist~MSG*Ultrasound PCP~MSG*Gestational Diabetes Screening~MSG*Lab PCP~III*ZZ*11~EB*A*IND*69*****0***N*Y~MSG*Gestational Diabetes Screening~III*ZZ*21~EB*A*IND*75*****.1***N*Y~MSG*Including Mastectomy Bra~EB*A*IND*75*****.5***N*N~MSG*Including Mastectomy Bra~EB*A*IND*81^AD^AE*****0***N*Y~III*ZZ*22~EB*A*IND*81^AD^AE^64*****0***N*Y~III*ZZ*11~EB*A*IND*81^AD^AE*****0***N*Y~MSG*Included For Specific Services~III*ZZ*99~EB*A*IND*81*****0***N*Y~MSG*Pap Smear~MSG*PSA and Prostate Exam~EB*A*IND*17*****0***N*Y~MSG*Lab PCP~MSG*X-Ray PCP~MSG*Lab Specialist~MSG*X-Ray Specialist~III*ZZ*11~EB*A*IND*80*****0***N*Y~MSG*HPV~MSG*General~EB*A*IND*80^76^19^BH^UC*****0***N*Y~MSG*Services rendered thru Client Specific Network~EB*C*IND*80^76^19^BH^UC****0****N*Y~MSG*Includes services provided by Client Specific Network~EB*A*IND*76*****0***N*Y~MSG*PCP - Included For Specific Services~MSG*PCP~MSG*Specialist - Included For Specific Services~MSG*Specialist~EB*A*IND*BG*****0***Y*Y~MSG*Specialist~MSG*Requires prior authorization after 36 visit(s)~MSG*PCP~III*ZZ*11~EB*F*IND*A1***23***VS*100*Y*Y~MSG*Includes services provided by Client Specific Network~MSG*Combined Home Health Care and Professional (Physician) Visit (Nursing Home)~MSG*Amounts apply to both in-network and out-of-network~EB*CB**A1^AG********Y*W~EB*F*IND*A1***23***VS*100*Y*N~MSG*Amounts apply to both in-network and out-of-network~MSG*Combined Home Health Care and Professional (Physician) Visit (Nursing Home)~EB*A*IND*BR*****0***Y*Y~MSG*Cataract Surgery~III*ZZ*11~EB*B*IND*BR***27*20****Y*Y~MSG*Cataract Surgery~III*ZZ*11~EB*A*IND*BR*****0***N*Y~MSG*Glaucoma Screening Specialist~MSG*Specialist~MSG*PCP~MSG*Glaucoma Screening PCP~III*ZZ*11~EB*A*IND*73*****0***N*Y~MSG*PCP~MSG*Pulmonary PCP~MSG*Specialist~MSG*Pulmonary Specialist~III*ZZ*11~EB*F*IND*33***29***VS*25**Y~MSG*Includes services provided by Client Specific Network~MSG*Amounts apply to both in-network and out-of-network~EB*F*IND*33***29***VS*25**N~MSG*Virtual Care Included For Specific Services~MSG*Amounts apply to both in-network and out-of-network~EB*F*IND*64***29***VS*20**N~MSG*Amounts apply to both in-network and out-of-network~EB*F*IND*64***29***VS*20**Y~MSG*Includes services provided by Client Specific Network~MSG*Amounts apply to both in-network and out-of-network~SE*266*0001~GE*1*1~IEA*1*446629394~",
+  "payer": {
+    "name": {
+      "organization": "CHLIC"
+    },
+    "type": "PAYER",
+    "contacts": [
+      {
+        "phoneNumbers": [
+          "8664942111"
+        ],
+        "urls": [
+          "cignaforhcp.cigna.com"
+        ]
+      }
+    ],
+    "tin": "591056496"
+  },
+  "provider": {
+    "name": {
+      "organization": "Provider Name"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "123 HOMEDALE CT",
+      "city": "MIAMI",
+      "state": "FL",
+      "postalCode": "331792424"
+    },
+    "dates": {
+      "plan": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "eligibility": {
+        "start": "2023-01-01"
+      }
+    },
+    "dateOfBirth": "1976-05-06",
+    "gender": "MALE",
+    "name": {
+      "person": {
+        "firstName": "Casey",
+        "lastName": "Fossum"
+      }
+    },
+    "additionalInformation": {
+      "group": {
+        "number": "00123874",
+        "name": "ACME, Inc."
+      }
+    },
+    "memberId": "5641296"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Humana Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "54",
+              "definition": "Long Term Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "35",
+              "definition": "Dental Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "Gestational Diabetes"
+            ],
+            "placesOfService": [
+              {
+                "code": "21",
+                "name": "Inpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "Adult Routine",
+              "General",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "General"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Other Services PCP",
+              "Other Services Specialist",
+              "Specialist",
+              "PCP",
+              "Cardiac Surgery",
+              "Other Services PCP - Virtual Care Included For Specific Services"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "71",
+              "definition": "Audiology Exam",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BN",
+              "definition": "Gastrointestinal",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BQ",
+              "definition": "Neurology",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BK",
+              "definition": "Orthopedic",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A3",
+              "definition": "Professional (Physician) Visit - Home",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist Therapy",
+              "Requires prior authorization after 36 visit(s)",
+              "PCP Therapy",
+              "Diagnostic Specialist",
+              "Diagnostic PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network",
+              "Requires prior authorization after 36 visit(s)"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "BG",
+              "definition": "Cardiac Rehabilitation",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network",
+              "Requires prior authorization after 36 visit(s)"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Including Women's Contraceptive Surgery",
+              "Contraceptive Management PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Including Women's Contraceptive Surgery",
+              "Contraceptive Management PCP",
+              "Contraceptive Management Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management PCP",
+              "Contraceptive Management Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management"
+            ],
+            "placesOfService": [
+              {
+                "code": "49",
+                "name": "Independent Clinic"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Tubal Ligation",
+              "General"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Tubal Ligation",
+              "Including Women's Contraceptive Surgery"
+            ],
+            "placesOfService": [
+              {
+                "code": "21",
+                "name": "Inpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Telehealth through contracted vendor"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Other Services Specialist",
+              "Routine",
+              "Specialist",
+              "PCP",
+              "Other Services PCP - Virtual Care Included For Specific Services"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Routine"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Routine - Included For Specific Services",
+              "Specialist",
+              "PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "X-Ray",
+              "General",
+              "Professional Services",
+              "Lab"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "messages": [
+              "Ultrasound"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "messages": [
+              "Ultrasound Specialist",
+              "Lab Specialist",
+              "Ultrasound PCP",
+              "Gestational Diabetes Screening",
+              "Lab PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "messages": [
+              "Gestational Diabetes Screening"
+            ],
+            "placesOfService": [
+              {
+                "code": "21",
+                "name": "Inpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "75",
+              "definition": "Prosthetic Device",
+              "system": "STC"
+            },
+            "messages": [
+              "Including Mastectomy Bra"
+            ],
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "75",
+              "definition": "Prosthetic Device",
+              "system": "STC"
+            },
+            "messages": [
+              "Including Mastectomy Bra"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "messages": [
+              "Included For Specific Services"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "Included For Specific Services"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "messages": [
+              "Included For Specific Services"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "messages": [
+              "Pap Smear",
+              "PSA and Prostate Exam"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "17",
+              "definition": "Pre-Admission Testing",
+              "system": "STC"
+            },
+            "messages": [
+              "Lab PCP",
+              "X-Ray PCP",
+              "Lab Specialist",
+              "X-Ray Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "80",
+              "definition": "Immunizations",
+              "system": "STC"
+            },
+            "messages": [
+              "HPV",
+              "General"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "80",
+              "definition": "Immunizations",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "19",
+              "definition": "Pneumonia Vaccine",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BH",
+              "definition": "Pediatric",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "PCP - Included For Specific Services",
+              "PCP",
+              "Specialist - Included For Specific Services",
+              "Specialist"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "BG",
+              "definition": "Cardiac Rehabilitation",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist",
+              "Requires prior authorization after 36 visit(s)",
+              "PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Cataract Surgery"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Glaucoma Screening Specialist",
+              "Specialist",
+              "PCP",
+              "Glaucoma Screening PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "PCP",
+              "Pulmonary PCP",
+              "Specialist",
+              "Pulmonary Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "71",
+              "definition": "Audiology Exam",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BN",
+              "definition": "Gastrointestinal",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BQ",
+              "definition": "Neurology",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BK",
+              "definition": "Orthopedic",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A3",
+              "definition": "Professional (Physician) Visit - Home",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "71",
+              "definition": "Audiology Exam",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BN",
+              "definition": "Gastrointestinal",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BQ",
+              "definition": "Neurology",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BK",
+              "definition": "Orthopedic",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A3",
+              "definition": "Professional (Physician) Visit - Home",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "71",
+              "definition": "Audiology Exam",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BN",
+              "definition": "Gastrointestinal",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BQ",
+              "definition": "Neurology",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BK",
+              "definition": "Orthopedic",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A3",
+              "definition": "Professional (Physician) Visit - Home",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management"
+            ],
+            "placesOfService": [
+              {
+                "code": "49",
+                "name": "Independent Clinic"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "General",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Contraceptive Management Specialist"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Telehealth through contracted vendor"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Services rendered thru Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "General"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Cataract Surgery"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BL",
+              "definition": "Cardiac",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "71",
+              "definition": "Audiology Exam",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BN",
+              "definition": "Gastrointestinal",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BQ",
+              "definition": "Neurology",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BK",
+              "definition": "Orthopedic",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A3",
+              "definition": "Professional (Physician) Visit - Home",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BR",
+              "definition": "Eye",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "82",
+              "definition": "Family Planning",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "49",
+                "name": "Independent Clinic"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "81",
+              "definition": "Routine Physical",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Benefit also applies to convenience care"
+            ],
+            "placesOfService": [
+              {
+                "code": "49",
+                "name": "Independent Clinic"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "placesOfService": [
+              {
+                "code": "99",
+                "name": "Other Place of Service"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "80",
+              "definition": "Immunizations",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "19",
+              "definition": "Pneumonia Vaccine",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "BH",
+              "definition": "Pediatric",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network"
+            ],
+            "amount": "0"
+          }
+        ],
+        "limitations": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A1",
+              "definition": "Professional (Physician) Visit - Nursing Home",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Combined Home Health Care and Professional (Physician) Visit (Nursing Home)",
+              "Amounts apply to both in-network and out-of-network"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "quantity": {
+              "value": "100",
+              "qualifier": "VISITS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A1",
+              "definition": "Professional (Physician) Visit - Nursing Home",
+              "system": "STC"
+            },
+            "messages": [
+              "Amounts apply to both in-network and out-of-network",
+              "Combined Home Health Care and Professional (Physician) Visit (Nursing Home)"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "quantity": {
+              "value": "100",
+              "qualifier": "VISITS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Amounts apply to both in-network and out-of-network"
+            ],
+            "timePeriod": "REMAINING",
+            "quantity": {
+              "value": "25",
+              "qualifier": "VISITS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Virtual Care Included For Specific Services",
+              "Amounts apply to both in-network and out-of-network"
+            ],
+            "timePeriod": "REMAINING",
+            "quantity": {
+              "value": "25",
+              "qualifier": "VISITS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Amounts apply to both in-network and out-of-network"
+            ],
+            "timePeriod": "REMAINING",
+            "quantity": {
+              "value": "20",
+              "qualifier": "VISITS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Includes services provided by Client Specific Network",
+              "Amounts apply to both in-network and out-of-network"
+            ],
+            "timePeriod": "REMAINING",
+            "quantity": {
+              "value": "20",
+              "qualifier": "VISITS"
+            }
+          }
+        ],
+        "coverageBasis": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A1",
+              "definition": "Professional (Physician) Visit - Nursing Home",
+              "system": "STC"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "AG",
+              "definition": "Skilled Nursing Care",
+              "system": "STC"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-3678-73c5-a2b8-6dd9356f47f1",
+  "eligibilitySearchId": "01a19f52-3679-7302-bf79-c01fe260a986"
+}

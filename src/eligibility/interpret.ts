@@ -1,26 +1,37 @@
-import type { BenefitEntry, EligibilityResponse, PayerError, Plan } from '../stedi/types.js';
+import type { BenefitEntry, EligibilityResponse, PayerError, Plan, StatusEntry } from '../stedi/types.js';
 
 /**
  * Deterministic reading of a 271 eligibility response for an eye-doctor office visit.
  * No LLM touches this: the voice model only ever reads out what this produces, so every
- * dollar figure the caller hears can be traced back to a field in the payer's response.
+ * dollar figure the caller hears traces back to a field in the payer's response.
+ *
+ * Every rule below was calibrated against real Stedi sandbox responses (test/fixtures/).
  */
 
 export type VisitType = 'medical' | 'routine';
 
 export type CopayFinding =
-  | { status: 'single'; amount: number; basis: string }
-  | { status: 'multiple'; options: { amount: number; basis: string }[] }
+  | { status: 'single'; amount: number; basis: CopayBasis }
+  | { status: 'multiple'; options: { amount: number; label: string }[] }
   | { status: 'none' };
+
+export type CopayBasis = 'specialist' | 'office' | 'plan' | 'vision';
 
 export interface CoverageFacts {
   kind: 'coverage';
   active: boolean;
   status: string;
+  /** Payer status says active but the plan dates say it ended (or hasn't started). */
+  datesConflict: boolean;
+  /** The payer itself told us the requesting provider is out of network for this member. */
+  payerSaysOutOfNetwork: boolean;
   planName?: string;
   insuranceType?: string;
   isHmo: boolean;
+  referralRequired: boolean;
   isMedicare: boolean;
+  /** Qualified Medicare Beneficiary: Medicaid pays the Medicare cost-sharing; patient owes nothing. */
+  isQmb: boolean;
   dentalOnly: boolean;
   coverageStart?: string;
   coverageEnd?: string;
@@ -31,7 +42,6 @@ export interface CoverageFacts {
   outOfPocket: { total?: number; remaining?: number };
   outOfNetwork: { coinsurance?: number; deductible?: number };
   priorAuthRequired: boolean;
-  payerMessages: string[];
 }
 
 export type ErrorCategory =
@@ -52,22 +62,47 @@ export interface PayerErrorFacts {
 
 export type EligibilityFacts = CoverageFacts | PayerErrorFacts;
 
+export interface InterpretOptions {
+  visitType?: VisitType;
+  /** YYYY-MM-DD the coverage must be valid on. Defaults to today. */
+  asOf?: string;
+  /**
+   * Treat "payer says active, but plan dates ended" as a conflict to escalate.
+   * Off in the Stedi sandbox, whose mock responses are frozen with 2024 plan dates.
+   */
+  enforcePlanDates?: boolean;
+  /** Network names the clinic participates in for this payer, e.g. ["PAR"]. */
+  clinicNetworks?: string[];
+}
+
 const DENTAL_STCS = new Set(['35', '23', '24', '25', '26', '27', '28', '36', '37', '38', '39', '40', '41']);
-const OFFICE_VISIT = '98';
+/** STCs a dental plan also reports that don't make it a medical plan. */
+const NEUTRAL_STCS = new Set(['30', '4', '7']);
 const PLAN_LEVEL = '30';
 const VISION = 'AL';
+/** 98 = Professional (Physician) Visit - Office; BY = Physician Visit - Office: Sick. */
+const OFFICE_VISIT_STCS = new Set(['98', 'BY']);
 
-// Copays for these settings are not what an eye-clinic office visit costs.
+// The label vocabulary below comes from every message on office-visit benefits across the
+// sandbox payers (Aetna, Anthem, BCBS TX, Cigna, Humana, Kaiser, Oscar, UHC, CMS).
+
+// A label naming one of these settings/services is not what an eye-clinic office visit costs.
 const NOT_AN_OFFICE_VISIT =
-  /TELE|VIRTUAL|E-?VISIT|VIDEO|URGENT|EMERGENCY|\bER\b|LAB|X-?RAY|IMAGING|RADIOLOG|CHIRO|MENTAL|BEHAV|PSYCH|SUBSTANCE|THERAP|HOSPITAL|INPATIENT|SURG|AMBULANCE|PHARM|\bRX\b|DRUG|PREVENT|WELL|ROUTINE PHYSICAL|MATERNITY|PRENATAL|ALLERG/i;
-const PRIMARY_CARE = /PRIMARY|\bPCP\b|FAMILY PRACT|GENERAL PRACT|INTERNAL MED|PEDIATRIC/i;
-const SPECIALIST = /SPECIALIST|SPECIALTY|\bSPC\b|\bSPEC\b|SPCLST/i;
+  /TELE|VIRTUAL|TELADOC|E-?VISIT|VIDEO|URGENT|WALK.?IN|RETAIL|CONVENIENCE|EMERGENCY|\bER\b|LAB\b|X-?RAY|IMAGING|RADIOLOG|\bRAD\b|CHIRO|MENTAL|BEHAV|PSYCH|SUBSTANCE|COGNITIVE|THERAP|REHAB|HOSPITAL|INPATIENT|SURG|PROCEDURE|AMBULANCE|PHARM|\bRX\b|DRUG|PREVENT|WELL|PERIODIC HEALTH|PHYSICAL HISTORY|MATERNITY|PRENATAL|ALLERG|GYN|ABORTION|FAMILY PLANNING|TRANSGENDER|DIALYSIS|CONTACTS|FRAMES|LENS|SPECIFIC NETWORK|CONTRACTED VENDOR/;
+// Labels that describe the benefit's bookkeeping, not the service: ignored when classifying.
+const BOILERPLATE =
+  /^(IN NETWORK|MOOP|PER VISIT|ROUTINE|ALL OTHER IN-NETWORK PROVIDERS|OUTPATIENT SERVICES)$|^ADJ LEVEL|INCLUDED IN OOP|OUT-OF-POCKET MAXIMUM|INCLUDED FOR SPECIFIC SERVICES$/;
+const PRIMARY_CARE = /PRIMARY|\bPCP\b|FAMILY PRACT|GENERAL PRACT|GENERAL MEDICINE|INTERNAL MED|PEDIATRIC/;
+const SPECIALIST = /SPECIALIST|SPECIALTY/;
+const NETWORK_LABEL = /^([A-Z]+) NETWORK$/;
+const PAYER_SAYS_OON = /PROVIDER IS OUT[- ]?(OF[- ])?NETWORK|NON[- ]?AFFILIATED PROVIDER|OUT[- ]OF[- ]NETWORK FOR (THE )?MEMBER/;
+const REFERRAL_REQUIRED = /REFERRAL (IS )?REQUIRED|SUBMIT A SPECIALIST REFERRAL|REFERRAL NEEDED|REQUIRES? (A )?REFERRAL/;
 
 const AAA_CATEGORIES: Record<string, ErrorCategory> = {
   '42': 'payer_unavailable',
   '80': 'payer_unavailable',
-  '43': 'clinic_setup',
   '41': 'clinic_setup',
+  '43': 'clinic_setup',
   '44': 'clinic_setup',
   '45': 'clinic_setup',
   '50': 'clinic_setup',
@@ -75,95 +110,94 @@ const AAA_CATEGORIES: Record<string, ErrorCategory> = {
   '79': 'clinic_setup',
   '72': 'member_id_rejected',
   '73': 'name_rejected',
+  '58': 'birthdate_rejected',
+  '71': 'birthdate_rejected',
+  '67': 'member_not_found',
   '75': 'member_not_found',
   '76': 'member_not_found',
-  '67': 'member_not_found',
-  '71': 'birthdate_rejected',
-  '58': 'birthdate_rejected',
-  '62': 'other',
 };
 
-export function interpretEligibility(
-  res: EligibilityResponse,
-  opts: { visitType?: VisitType; today?: string } = {},
-): EligibilityFacts {
-  const errors = res.errors ?? [];
-  if (errors.length) return toErrorFacts(errors);
+export function interpretEligibility(res: EligibilityResponse, opts: InterpretOptions = {}): EligibilityFacts {
+  if (res.errors?.length) return toErrorFacts(res.errors);
 
   const plans = res.plans ?? [];
-  const today = opts.today ?? new Date().toISOString().slice(0, 10);
-  const all = <K extends keyof Plan['benefits']>(key: K) => plans.flatMap((p) => (p.benefits[key] ?? []) as BenefitEntry[]);
+  const asOf = opts.asOf ?? new Date().toISOString().slice(0, 10);
+  const all = (key: keyof Plan['benefits']) => plans.flatMap((p) => (p.benefits[key] ?? []) as BenefitEntry[]);
+  const statuses = plans.flatMap((p) => p.benefits.statuses ?? []) as StatusEntry[];
 
-  const statuses = plans.flatMap((p) => p.benefits.statuses ?? []);
-  const medicalStatuses = statuses.filter((s) => !isDental(s));
-  const dentalStatuses = statuses.filter(isDental);
-  const anyMedicalBenefit = Object.entries(plans[0]?.benefits ?? {}).some(
-    ([k, v]) => k !== 'statuses' && (v ?? []).some((b) => !isDental(b)),
-  );
-  const dentalOnly = medicalStatuses.length === 0 && dentalStatuses.length > 0 && !anyMedicalBenefit;
+  const isMedicare = res.payerId === 'CMS' || statuses.some((s) => /MEDICARE_PART/.test(s.insuranceType ?? ''));
+  const primary = primaryStatus(statuses, isMedicare);
+  const statusActive = primary
+    ? primary.status.startsWith('ACTIVE')
+    : plans.some((p) => Object.values(p.benefits).some((v) => (v ?? []).length > 0)); // benefits imply coverage
 
-  const primaryStatus =
-    medicalStatuses.find((s) => s.service?.value === PLAN_LEVEL) ?? medicalStatuses[0] ?? dentalStatuses[0];
-  const statusActive = primaryStatus
-    ? primaryStatus.status.startsWith('ACTIVE')
-    : plans.some((p) => Object.values(p.benefits).some((v) => (v ?? []).length > 0));
+  const dates = res.dependent?.dates ?? res.subscriber?.dates;
+  const coverageStart = dates?.plan?.start ?? dates?.eligibility?.start;
+  const coverageEnd = dates?.plan?.end ?? dates?.eligibility?.end;
+  const datesOutOfRange = (coverageEnd !== undefined && coverageEnd < asOf) || (coverageStart !== undefined && coverageStart > asOf);
+  // The payer's status is authoritative for the date it evaluated. If its own plan dates
+  // contradict an ACTIVE status, that's not something to guess about: escalate.
+  const datesConflict = statusActive && datesOutOfRange && (opts.enforcePlanDates ?? true);
 
-  const patientDates = res.dependent?.dates ?? res.subscriber?.dates;
-  const coverageStart = patientDates?.plan?.start ?? patientDates?.eligibility?.start;
-  const coverageEnd = patientDates?.plan?.end ?? patientDates?.eligibility?.end ?? patientDates?.policy?.end;
-  const endedBeforeToday = coverageEnd !== undefined && coverageEnd < today;
-  const notStartedYet = coverageStart !== undefined && coverageStart > today;
+  const planName = plans.find((p) => p.name)?.name ?? primary?.planCoverageDescription;
+  const insuranceType = primary?.insuranceType ?? statuses.find((s) => s.insuranceType)?.insuranceType;
+  const everyMessage = [...statuses, ...all('coPayment'), ...all('coInsurance')].flatMap((b) => b.messages ?? []).join(' | ').toUpperCase();
 
-  const insuranceType = primaryStatus?.insuranceType ?? statuses.find((s) => s.insuranceType)?.insuranceType;
-  const planName =
-    plans.find((p) => p.name)?.name ?? primaryStatus?.planCoverageDescription ?? statuses.find((s) => s.planCoverageDescription)?.planCoverageDescription;
+  const medicalStcs = statuses.map(stc).filter((c): c is string => !!c && !DENTAL_STCS.has(c) && !NEUTRAL_STCS.has(c));
+  const dentalOnly = /DENTAL/i.test(planName ?? '') || (statuses.some(isDental) && medicalStcs.length === 0);
 
   const copays = all('coPayment');
   const coins = all('coInsurance');
+  const qmbCoins = coins.find((b) => /QUALIFIED_MEDICARE_BENEFICIARY/.test(b.insuranceType ?? ''));
 
   return {
     kind: 'coverage',
-    active: statusActive && !endedBeforeToday && !notStartedYet,
-    status: endedBeforeToday ? 'ENDED' : notStartedYet ? 'NOT_STARTED' : (primaryStatus?.status ?? (statusActive ? 'ACTIVE_COVERAGE' : 'UNKNOWN')),
+    active: statusActive && !datesConflict,
+    status: datesConflict ? 'DATES_CONFLICT' : (primary?.status ?? (statusActive ? 'ACTIVE_COVERAGE' : 'UNKNOWN')),
+    datesConflict,
+    payerSaysOutOfNetwork: PAYER_SAYS_OON.test(everyMessage),
     planName,
     insuranceType,
-    isHmo: /HMO|HEALTH_MAINTENANCE/i.test(insuranceType ?? '') || /\bHMO\b/i.test(planName ?? ''),
-    isMedicare: /MEDICARE/i.test(insuranceType ?? '') || res.payerId === 'CMS',
+    isHmo: /HMO|HEALTH_MAINTENANCE/i.test(insuranceType ?? '') || /\bHMO\b/i.test(`${planName ?? ''} ${primary?.messages?.join(' ') ?? ''}`),
+    referralRequired: REFERRAL_REQUIRED.test(everyMessage),
+    isMedicare,
+    isQmb: !!qmbCoins,
     dentalOnly,
     coverageStart,
     coverageEnd,
-    visitCopay: pickVisitCopay(copays, opts.visitType ?? 'medical'),
-    visitCoinsurance: pickVisitPercent(coins),
+    visitCopay: pickVisitCopay(copays, opts.visitType ?? 'medical', opts.clinicNetworks),
+    visitCoinsurance: isMedicare && qmbCoins ? money(qmbCoins.percent) : pickVisitPercent(coins, opts.clinicNetworks),
     deductible: pickAccumulator(all('deductible'), 'in'),
     outOfPocket: pickAccumulator(all('outOfPocket'), 'in'),
     outOfNetwork: {
-      coinsurance: pickVisitPercent(coins, 'out'),
+      coinsurance: pickVisitPercent(coins.filter((b) => network(b) === 'out')),
       deductible: pickAccumulator(all('deductible'), 'out').total,
     },
-    priorAuthRequired: [...copays, ...coins].some(
-      (b) => isOfficeVisitService(b) && b.priorAuthIndicator === 'REQUIRED',
-    ),
-    payerMessages: [...new Set(statuses.flatMap((s) => s.messages ?? []))].slice(0, 6),
+    priorAuthRequired: [...copays, ...coins].some((b) => OFFICE_VISIT_STCS.has(stc(b) ?? '') && b.priorAuthIndicator === 'REQUIRED'),
   };
 }
 
+/** For Medicare, office visits are Part B. Otherwise prefer an ACTIVE plan-level (STC 30) status. */
+function primaryStatus(statuses: StatusEntry[], isMedicare: boolean): StatusEntry | undefined {
+  const pool = isMedicare ? statuses.filter((s) => s.insuranceType === 'MEDICARE_PART_B') : statuses.filter((s) => !isDental(s));
+  const planLevel = pool.filter((s) => stc(s) === PLAN_LEVEL);
+  return planLevel.find((s) => s.status.startsWith('ACTIVE')) ?? planLevel[0] ?? pool[0] ?? statuses[0];
+}
+
 function toErrorFacts(errors: PayerError[]): PayerErrorFacts {
-  // When several AAA errors come back, the most actionable one wins.
-  const ranked = [...errors].sort((a, b) => rank(category(a)) - rank(category(b)));
-  const top = ranked[0]!;
-  return { kind: 'payer_error', code: top.code, description: top.description, category: category(top) };
+  // Several AAA errors can come back; the one the caller can fix comes first.
+  const order: ErrorCategory[] = ['member_id_rejected', 'name_rejected', 'birthdate_rejected', 'member_not_found', 'payer_unavailable', 'clinic_setup', 'other'];
+  const cat = (e: PayerError) => AAA_CATEGORIES[e.code] ?? 'other';
+  const top = [...errors].sort((a, b) => order.indexOf(cat(a)) - order.indexOf(cat(b)))[0]!;
+  return { kind: 'payer_error', code: top.code, description: top.description, category: cat(top) };
 }
 
-function category(e: PayerError): ErrorCategory {
-  return AAA_CATEGORIES[e.code] ?? 'other';
-}
-
-function rank(c: ErrorCategory): number {
-  return ['member_id_rejected', 'name_rejected', 'birthdate_rejected', 'member_not_found', 'payer_unavailable', 'clinic_setup', 'other'].indexOf(c);
+function stc(b: BenefitEntry): string | undefined {
+  return !b.service?.system || b.service.system === 'STC' ? b.service?.value : undefined;
 }
 
 function isDental(b: BenefitEntry): boolean {
-  return b.service?.system !== 'CPT' && b.service?.value !== undefined && DENTAL_STCS.has(b.service.value) || b.service?.system === 'CDT';
+  return b.service?.system === 'CDT' || DENTAL_STCS.has(stc(b) ?? '');
 }
 
 function network(b: BenefitEntry): 'in' | 'out' | 'both' | 'unknown' {
@@ -179,27 +213,7 @@ function network(b: BenefitEntry): 'in' | 'out' | 'both' | 'unknown' {
   }
 }
 
-function appliesTo(b: BenefitEntry, side: 'in' | 'out'): boolean {
-  const n = network(b);
-  return n === side || n === 'both' || (side === 'in' && n === 'unknown');
-}
-
-function text(b: BenefitEntry): string {
-  return [...(b.messages ?? []), b.planCoverageDescription ?? ''].join(' ').toUpperCase();
-}
-
-function stc(b: BenefitEntry): string | undefined {
-  return !b.service?.system || b.service.system === 'STC' ? b.service?.value : undefined;
-}
-
-function isPersonLevel(b: BenefitEntry): boolean {
-  return !b.coverageLevel || !/FAMILY/.test(b.coverageLevel);
-}
-
-function isOfficeVisitService(b: BenefitEntry): boolean {
-  const code = stc(b);
-  return code === OFFICE_VISIT || code === PLAN_LEVEL;
-}
+const inNetwork = (b: BenefitEntry) => network(b) !== 'out';
 
 function money(v: string | undefined): number | undefined {
   if (v === undefined || v === '') return undefined;
@@ -208,65 +222,122 @@ function money(v: string | undefined): number | undefined {
 }
 
 /**
- * Which copay applies when an ophthalmologist sees this patient in the office?
- * Ophthalmologists bill as specialists, so we look for (in order):
- *   1. office-visit (STC 98) copays the payer labels as specialist
- *   2. office-visit copays with no primary-care label
- *   3. a plan-level (STC 30) copay
- * For routine eye exams we first check the vision (STC AL) benefit.
- * The first tier with data wins. If that tier holds several different amounts we
- * report all of them rather than pick one: a wrong copay is worse than "let me confirm".
+ * Payers pack several service labels into one entry, e.g. Oscar's
+ * "TELEHEALTH SPECIALIST,VISIT OFFICE SPECIALIST" or Kaiser's "..._Specialty Care_In Network_...".
+ * We judge each label on its own.
  */
-export function pickVisitCopay(copays: BenefitEntry[], visitType: VisitType): CopayFinding {
-  const usable = copays.filter(
-    (b) => appliesTo(b, 'in') && isPersonLevel(b) && !NOT_AN_OFFICE_VISIT.test(text(b)) && money(b.amount) !== undefined,
-  );
+function labels(b: BenefitEntry): string[] {
+  return (b.messages ?? []).flatMap((m) => m.split(/[,;_]+/)).map((s) => s.trim().toUpperCase()).filter(Boolean);
+}
 
-  const tiers: { basis: string; entries: BenefitEntry[] }[] = [
-    ...(visitType === 'routine' ? [{ basis: 'routine vision exam', entries: usable.filter((b) => stc(b) === VISION) }] : []),
-    { basis: 'specialist office visit', entries: usable.filter((b) => stc(b) === OFFICE_VISIT && SPECIALIST.test(text(b))) },
-    { basis: 'office visit', entries: usable.filter((b) => stc(b) === OFFICE_VISIT && !PRIMARY_CARE.test(text(b)) && !SPECIALIST.test(text(b))) },
-    { basis: 'plan copay', entries: usable.filter((b) => stc(b) === PLAN_LEVEL && !PRIMARY_CARE.test(text(b))) },
+type Tier = 'specialist' | 'office' | 'skip';
+
+/** Labels that say what service the benefit covers (bookkeeping and network names removed). */
+function serviceLabels(b: BenefitEntry): string[] {
+  return labels(b).filter((l) => !BOILERPLATE.test(l) && !NETWORK_LABEL.test(l));
+}
+
+/**
+ * specialist: some label names specialist care in a normal setting ("SPECIALIST VISIT OR EVALUATION").
+ * office:     no service labels, or a generic office one ("OFFICE VISITS"), and nothing primary-care.
+ * skip:       primary-care-only, or only excluded settings. A PCP copay is never quoted for an eye doctor.
+ * One entry can cover several services at one price (Aetna: "Office Visits, Walk in Clinic,
+ * Mental Health" $30), so a single qualifying label is enough.
+ */
+function tierOf(b: BenefitEntry): Tier {
+  const ls = serviceLabels(b).filter((l) => !NOT_AN_OFFICE_VISIT.test(l));
+  if (ls.some((l) => SPECIALIST.test(l))) return 'specialist';
+  if (ls.some((l) => PRIMARY_CARE.test(l))) return 'skip';
+  if (ls.length > 0 || serviceLabels(b).length === 0) return 'office';
+  return 'skip';
+}
+
+/**
+ * A benefit that lists only specific non-office places (02/10 telehealth, 21-23 hospital, ...) isn't
+ * for an office visit. POS 11 is the office; POS 99 is CMS's catch-all "other place of service",
+ * which Cigna uses for its general specialist copay, so it stays in.
+ */
+function atOffice(b: BenefitEntry): boolean {
+  return !b.placesOfService?.length || b.placesOfService.some((p) => p.code === '11' || p.code === '99');
+}
+
+/** Anthem lists "SPECIALIST, EPO NETWORK" $30 and "SPECIALIST, PAR NETWORK" $45: keep the network we're in. */
+function inClinicNetwork(b: BenefitEntry, clinicNetworks?: string[]): boolean {
+  if (!clinicNetworks?.length) return true;
+  const named = labels(b).map((l) => l.match(NETWORK_LABEL)?.[1]).filter((x): x is string => !!x && !['IN', 'OUT', 'ALL'].includes(x));
+  return named.length === 0 || named.some((n) => clinicNetworks.includes(n));
+}
+
+/**
+ * Which copay applies when an ophthalmologist sees this patient in the office? In order:
+ *   routine exam only: the vision benefit (STC AL)
+ *   1. office-visit copays (STC 98 / BY) labelled specialist
+ *   2. office-visit copays with no service label
+ *   3. a plan-level (STC 30) copay with no primary-care label
+ * The first tier with data wins. If it holds several different amounts we report all of
+ * them instead of choosing: a wrong copay is worse than "let me confirm that for you".
+ */
+export function pickVisitCopay(copays: BenefitEntry[], visitType: VisitType, clinicNetworks?: string[]): CopayFinding {
+  const usable = copays.filter((b) => inNetwork(b) && atOffice(b) && money(b.amount) !== undefined && inClinicNetwork(b, clinicNetworks));
+  const office = usable.filter((b) => OFFICE_VISIT_STCS.has(stc(b) ?? ''));
+
+  const tiers: { basis: CopayBasis; entries: BenefitEntry[] }[] = [
+    ...(visitType === 'routine' ? [{ basis: 'vision' as const, entries: usable.filter((b) => stc(b) === VISION && !NOT_AN_OFFICE_VISIT.test(labels(b).join(' '))) }] : []),
+    { basis: 'specialist', entries: office.filter((b) => tierOf(b) === 'specialist') },
+    { basis: 'office', entries: office.filter((b) => tierOf(b) === 'office') },
+    { basis: 'plan', entries: usable.filter((b) => stc(b) === PLAN_LEVEL && tierOf(b) !== 'skip') },
   ];
 
   for (const tier of tiers) {
     if (!tier.entries.length) continue;
-    const office = tier.entries.filter((b) => b.placesOfService?.some((p) => p.code === '11'));
-    const pool = office.length ? office : tier.entries;
+    const pool = narrowToOffice(preferIndividual(tier.entries));
     const amounts = [...new Set(pool.map((b) => money(b.amount)!))].sort((a, b) => a - b);
     if (amounts.length === 1) return { status: 'single', amount: amounts[0]!, basis: tier.basis };
     return {
       status: 'multiple',
-      options: amounts.map((amount) => ({
-        amount,
-        basis: pool.find((b) => money(b.amount) === amount)?.messages?.join('; ') || tier.basis,
-      })),
+      options: amounts.map((amount) => ({ amount, label: pool.find((b) => money(b.amount) === amount)?.messages?.join('; ') ?? tier.basis })),
     };
   }
   return { status: 'none' };
 }
 
-function pickVisitPercent(coins: BenefitEntry[], side: 'in' | 'out' = 'in'): number | undefined {
-  const usable = coins.filter(
-    (b) => (side === 'in' ? appliesTo(b, 'in') : network(b) === 'out' || network(b) === 'both') &&
-      isPersonLevel(b) && !NOT_AN_OFFICE_VISIT.test(text(b)) && money(b.percent) !== undefined,
-  );
-  const ordered = [
-    ...usable.filter((b) => stc(b) === OFFICE_VISIT && !PRIMARY_CARE.test(text(b))),
-    ...usable.filter((b) => stc(b) === PLAN_LEVEL),
+function preferIndividual(entries: BenefitEntry[]): BenefitEntry[] {
+  const individual = entries.filter((b) => !/FAMILY/.test(b.coverageLevel ?? ''));
+  return individual.length ? individual : entries;
+}
+
+/** POS 11 = office. If the payer splits a benefit by place of service, the office one is ours. */
+function narrowToOffice(entries: BenefitEntry[]): BenefitEntry[] {
+  const office = entries.filter((b) => b.placesOfService?.some((p) => p.code === '11'));
+  return office.length ? office : entries;
+}
+
+function pickVisitPercent(coins: BenefitEntry[], clinicNetworks?: string[]): number | undefined {
+  const usable = coins.filter((b) => money(b.percent) !== undefined && atOffice(b) && inClinicNetwork(b, clinicNetworks));
+  const inNet = usable.some((b) => network(b) !== 'out') ? usable.filter(inNetwork) : usable;
+  const office = inNet.filter((b) => OFFICE_VISIT_STCS.has(stc(b) ?? ''));
+  const tiers = [
+    office.filter((b) => tierOf(b) === 'specialist'),
+    office.filter((b) => tierOf(b) === 'office'),
+    inNet.filter((b) => stc(b) === PLAN_LEVEL && tierOf(b) !== 'skip'),
   ];
-  const value = money(ordered[0]?.percent);
+  const tier = tiers.find((t) => t.length);
+  const value = tier ? money(narrowToOffice(preferIndividual(tier))[0]?.percent) : undefined;
   if (value === undefined) return undefined;
   return value > 1 ? value / 100 : value; // some payers send "20" instead of "0.2"
 }
 
 function pickAccumulator(entries: BenefitEntry[], side: 'in' | 'out'): { total?: number; remaining?: number } {
   const usable = entries.filter(
-    (b) => (side === 'in' ? appliesTo(b, 'in') : network(b) === 'out') &&
+    (b) =>
+      (side === 'in' ? inNetwork(b) : network(b) === 'out') &&
       (stc(b) === PLAN_LEVEL || stc(b) === undefined) &&
-      !/FAMILY/.test(b.coverageLevel ?? ''),
+      !/FAMILY/.test(b.coverageLevel ?? '') &&
+      !/QUALIFIED_MEDICARE_BENEFICIARY/.test(b.insuranceType ?? ''),
   );
-  const remaining = usable.find((b) => /REMAINING/.test(b.timePeriod ?? ''));
-  const total = usable.find((b) => !/REMAINING|TO_DATE/.test(b.timePeriod ?? ''));
+  // Prefer the strictly in-network figure over a combined in-and-out one.
+  const ordered = side === 'in' ? [...usable.filter((b) => network(b) === 'in'), ...usable.filter((b) => network(b) !== 'in')] : usable;
+  const remaining = ordered.find((b) => b.timePeriod === 'REMAINING');
+  const total = ordered.find((b) => b.timePeriod && /YEAR$|CONTRACT|PLAN|SERVICE_YEAR|LIFETIME/.test(b.timePeriod) && b.timePeriod !== 'YEAR_TO_DATE');
   return { total: money(total?.amount), remaining: money(remaining?.amount) };
 }

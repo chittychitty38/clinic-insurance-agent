@@ -1,0 +1,3205 @@
+{
+  "meta": {
+    "traceId": "01M6FN4H5S0F582KZ4YFSK39CM",
+    "outboundTraceId": "01M6FN4H5S0F582KZ4YFSK39CM"
+  },
+  "payerId": "KSRCN",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*723691562*0*T*`~GS*HB*STEDI*117151744*20261103*025211*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN4H5S0F582KZ4YFSK39CM*20260325*0901~HL*1**20*1~NM1*PR*2*KSRCN*****PI*100187~HL*2*1*21*1~NM1*1P*2*NEW YORK MEDICAL PROVIDER*****XX*1999999984~HL*3*2*22*0~NM1*IL*1*DOE*JANE*MID***MI*KAISER123456~REF*6P*3~REF*6P*3~N3*101 MAIN ST~N4*SACRAMENTO*CA*942030200~DMG*D8*20020202*F~EB*1**30**STATE OF CALIFORNIA*******W~REF*18*1122334~REF*6P*3~DTP*346*D8*20200101~MSG*HMO - HMO COMMERCIAL~LS*2120~NM1*PRP*2*KFHP 1000~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**SMALL BUSINESS*******W~REF*18*99887~REF*6P*998877~DTP*292*RD8*20080101-20080930~LS*2120~NM1*PR*2*KFHP 1000~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**STATE OF CALIFORNIA*******W~REF*18*4455667~REF*6P*3~DTP*292*RD8*20150101-20150831~MSG*HMO - HMO COMMERCIAL~LS*2120~NM1*PR*2*KFHP 1000~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**MEDI-CAL SACRAMENTO*******W~REF*18*6677889~REF*6P*55000~DTP*292*RD8*20100101-20140228~MSG*MDC - MEDICAID~LS*2120~NM1*PR*2*KFHP 1001~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**MEDI-CAL SACRAMENTO*******W~REF*18*3344556~REF*6P*55000~DTP*292*RD8*20150101-20150630~MSG*MDC - MEDICAID~LS*2120~NM1*PR*2*KFHP 1001~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**MEDI-CAL SACRAMENTO*******W~REF*18*6677889~REF*6P*55000~DTP*292*RD8*20150101-20160531~MSG*MDC - MEDICAID~LS*2120~NM1*PR*2*KFHP 1001~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**MEDI-CAL SACRAMENTO*******W~REF*18*6677889~REF*6P*55000~DTP*292*RD8*20150701-20150731~MSG*MDC - MEDICAID~LS*2120~NM1*PR*2*KFHP 1001~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**MEDI-CAL SACRAMENTO*******W~REF*18*8899001~REF*6P*55000~DTP*292*RD8*20150601-20150630~MSG*MDC - MEDICAID~LS*2120~NM1*PR*2*KFHP 1001~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*6**30**MEDI-CAL SACRAMENTO*******W~REF*18*2233445~REF*6P*55000~DTP*292*RD8*20150801-20151130~MSG*MDC - MEDICAID~LS*2120~NM1*PR*2*KFHP 1001~N3*202 MAIN ST~N4*SACRAMENTO*CA*94203~LE*2120~EB*B**1^98****15****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP~EB*B**1^98****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 2_MOOP~EB*B**1^98****15****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP~EB*B**1^98****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 2_MOOP~EB*B**1^98****15****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP~EB*B**1^98****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 2_MOOP~EB*B**1^98****15****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP~EB*B**1^98****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 2_MOOP~EB*B**1^98^UC****15****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98^UC****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*1^98^UC***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP~EB*B**1^98^UC****0****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 2_MOOP~EB*I**33********U*Y~DTP*346*D8*20200101~MSG*Therapy/Rehab_Musculoskeletal Therapy_In Network____ADJ LEVEL 1_~EB*B**47****0****U*Y~DTP*346*D8*20200101~MSG*Hospitalization Services_Hospital Inpatient Care_In Network____ADJ LEVEL 1_MOOP~EB*B**47****0****U*Y~DTP*346*D8*20200101~MSG*Hospitalization Services_Bariatric Surgery (Inpatient)_In Network____ADJ LEVEL 1_MOOP~EB*B**47****0****U*Y~DTP*346*D8*20200101~MSG*Hospitalization Services_Hospital Inpatient Care Transgender_In Network____ADJ LEVEL 1_MOOP~EB*B**47****0****U*Y~DTP*346*D8*20200101~MSG*Hospitalization Services_Hospitalization  Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP~EB*B**47****0****U*Y~DTP*346*D8*20200101~MSG*Abortion & Abortion-Related Services per Senate Bill (SB) 245_Hospitalization  Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP~EB*B**86****50****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*86***32*50****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*86***33*50****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 1_MOOP~EB*B**86****0****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 2_MOOP~EB*B**86****0****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Observation_In Network____ADJ LEVEL 1_MOOP~EB*B**86****0****U*Y~DTP*346*D8*20200101~MSG*Emergency Health Coverage_Emergency Department   Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP~EB*B**86****0****U*Y~DTP*346*D8*20200101~MSG*Abortion & Abortion-Related Services per Senate Bill (SB) 245_Emergency Department   Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP~EB*B**98****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP~EB*B**98****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Clinic Administered Drugs for Treatment_In Network____ADJ LEVEL 1_MOOP~EB*B**98****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Clinic Administered adjunct related drugs_In Network____ADJ LEVEL 1_MOOP~EB*B**98****15****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*98****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*98***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 1_MOOP~EB*B**98****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 2_MOOP~EB*B**98****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP~EB*B**98****0****U*Y~DTP*346*D8*20200101~MSG*Family Planning Services_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP~EB*B**98****0****U*Y~DTP*346*D8*20200101~MSG*Abortion & Abortion-Related Services per Senate Bill (SB) 245_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP~EB*B**AL****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Routine Eye Exam and/or refraction_In Network____ADJ LEVEL 1_MOOP~EB*B**AL****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Routine Eye Exam and/or refraction up to 19 years old_In Network____ADJ LEVEL 1_MOOP~EB*B**AL****0****U*Y~DTP*346*D8*20200101~MSG*Vision Service_Routine Eye Exam and/or refraction_In Network____ADJ LEVEL 1_MOOP~EB*B**AL****0****U*Y~DTP*346*D8*20200101~MSG*Vision Service_Routine Eye Exam and/or refraction up to 19 years old_In Network____ADJ LEVEL 1_MOOP~EB*B**AL****0****U*Y~DTP*346*D8*20200101~MSG*Vision Service_Post Cataract Surg. Lens; Frames; Contacts_In Network____ADJ LEVEL 1_~EB*B**MH****15****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*MH****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*MH***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 1_MOOP~EB*B**MH****0****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 2_MOOP~EB*B**MH****7****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Group Therapy_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*MH****7****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Mental Health Service_Group Therapy_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*MH***29*7****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Mental Health Service_Group Therapy_In Network____ADJ LEVEL 1_MOOP~EB*B**MH****0****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Group Therapy_In Network____ADJ LEVEL 2_MOOP~EB*B**MH****15****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*MH****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*MH***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 1_MOOP~EB*B**MH****0****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 2_MOOP~EB*B**MH****0****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_MH Intensive Outpatient Program_In Network____ADJ LEVEL 1_MOOP~EB*B**MH****0****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Partial Hospitalization Program_In Network____ADJ LEVEL 1_MOOP~EB*B**MH****0****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_MH Residential Recovery Services (referred out)_In Network____ADJ LEVEL 1_MOOP~EB*B**MH****0****U*Y~DTP*346*D8*20200101~MSG*Mental Health Service_Individual or Group Therapy (Autism)_In Network____ADJ LEVEL 1_MOOP~EB*B**76****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Dialysis Related Routine Office Visit_In Network____ADJ LEVEL 1_MOOP~EB*B**76****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Dialysis Clinic Administered_In Network____ADJ LEVEL 1_MOOP~EB*B**76****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Dialysis Self Administered_In Network____ADJ LEVEL 1_MOOP~EB*B**76****0****U*Y~DTP*346*D8*20200101~MSG*Ancillary Services (Imaging, Laboratory and Special Procedures)_Routine Laboratory Services for Dialysis_In Network____ADJ LEVEL 1_MOOP~EB*B**3****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Telephone Visit- Primary Care_In Network____ADJ LEVEL 1_MOOP~EB*B**3****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Telephone Visit- Specialty Care_In Network____ADJ LEVEL 1_MOOP~EB*B**3****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Video Visit- Specialty Care_In Network____ADJ LEVEL 1_MOOP~EB*B**3****0****U*Y~DTP*346*D8*20200101~MSG*Professional Services (Plan Provider Office Visits)_Video Visit- Primary Care_In Network____ADJ LEVEL 1_MOOP~EB*B**64****15****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*64****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*64***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 1_MOOP~EB*B**64****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 2_MOOP~EB*B**64****15****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*64****15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 1_MOOP~EB*F*IND*64***29*15****U*Y~HSD*DY*1~DTP*291*D8*20240930~MSG*Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 1_MOOP~EB*B**64****0****U*Y~DTP*346*D8*20200101~MSG*Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 2_MOOP~EB*L***********W~DTP*295*D8*20150222~LS*2120~NM1*P3*1*John Doe*John*MID***XX*1234567890~N3*303 MAIN ST~N4*SACRAMENTO*CA*942030200~LE*2120~EB*G*FAM*30***23*5000*****W~DTP*291*RD8*20240101-20241231~MSG*CA COMMON MOOP CAL-X~EB*G*FAM*30***29*3000*****W~DTP*291*RD8*20240101-20241231~MSG*CA COMMON MOOP CAL-X~EB*G*IND*30***23*2000*****W~DTP*291*RD8*20240101-20241231~MSG*CA COMMON MOOP CAL-X~EB*G*IND*30***29*1000*****W~DTP*291*RD8*20240101-20241231~MSG*CA COMMON MOOP CAL-X~EB*G*FAM*30***23*15000*****W~DTP*291*RD8*20240101-20241231~MSG*DRUG MOOP CAL-X~EB*G*FAM*30***29*14000*****W~DTP*291*RD8*20240101-20241231~MSG*DRUG MOOP CAL-X~EB*G*IND*30***23*7000*****W~DTP*291*RD8*20240101-20241231~MSG*DRUG MOOP CAL-X~EB*G*IND*30***29*6000*****W~DTP*291*RD8*20240101-20241231~MSG*DRUG MOOP CAL-X~SE*396*0001~GE*1*1~IEA*1*723691562~",
+  "payer": {
+    "name": {
+      "organization": "KSRCN"
+    },
+    "type": "PAYER",
+    "identification": "100187"
+  },
+  "provider": {
+    "name": {
+      "organization": "NEW YORK MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "101 MAIN ST",
+      "city": "SACRAMENTO",
+      "state": "CA",
+      "postalCode": "942030200"
+    },
+    "dateOfBirth": "2002-02-02",
+    "gender": "FEMALE",
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE",
+        "middleName": "MID"
+      }
+    },
+    "additionalInformation": {
+      "group": {
+        "number": "3"
+      }
+    },
+    "memberId": "KAISER123456"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "HMO - HMO COMMERCIAL"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1000"
+                },
+                "type": "PRIMARY_PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "1122334"
+              },
+              "group": {
+                "number": "3"
+              }
+            },
+            "planCoverageDescription": "STATE OF CALIFORNIA",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2008-01-01",
+                "end": "2008-09-30"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1000"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "99887"
+              },
+              "group": {
+                "number": "998877"
+              }
+            },
+            "planCoverageDescription": "SMALL BUSINESS",
+            "status": "INACTIVE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "HMO - HMO COMMERCIAL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2015-01-01",
+                "end": "2015-08-31"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1000"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "4455667"
+              },
+              "group": {
+                "number": "3"
+              }
+            },
+            "planCoverageDescription": "STATE OF CALIFORNIA",
+            "status": "INACTIVE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MDC - MEDICAID"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2010-01-01",
+                "end": "2014-02-28"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1001"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "6677889"
+              },
+              "group": {
+                "number": "55000"
+              }
+            },
+            "planCoverageDescription": "MEDI-CAL SACRAMENTO",
+            "status": "INACTIVE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MDC - MEDICAID"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2015-01-01",
+                "end": "2015-06-30"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1001"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "3344556"
+              },
+              "group": {
+                "number": "55000"
+              }
+            },
+            "planCoverageDescription": "MEDI-CAL SACRAMENTO",
+            "status": "INACTIVE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MDC - MEDICAID"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2015-01-01",
+                "end": "2016-05-31"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1001"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "6677889"
+              },
+              "group": {
+                "number": "55000"
+              }
+            },
+            "planCoverageDescription": "MEDI-CAL SACRAMENTO",
+            "status": "INACTIVE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MDC - MEDICAID"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2015-07-01",
+                "end": "2015-07-31"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1001"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "6677889"
+              },
+              "group": {
+                "number": "55000"
+              }
+            },
+            "planCoverageDescription": "MEDI-CAL SACRAMENTO",
+            "status": "INACTIVE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MDC - MEDICAID"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2015-06-01",
+                "end": "2015-06-30"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1001"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "8899001"
+              },
+              "group": {
+                "number": "55000"
+              }
+            },
+            "planCoverageDescription": "MEDI-CAL SACRAMENTO",
+            "status": "INACTIVE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MDC - MEDICAID"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2015-08-01",
+                "end": "2015-11-30"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "KFHP 1001"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "94203"
+                }
+              }
+            ],
+            "additionalInformation": {
+              "plan": {
+                "number": "2233445"
+              },
+              "group": {
+                "number": "55000"
+              }
+            },
+            "planCoverageDescription": "MEDI-CAL SACRAMENTO",
+            "status": "INACTIVE"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "Hospitalization Services_Hospital Inpatient Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "Hospitalization Services_Bariatric Surgery (Inpatient)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "Hospitalization Services_Hospital Inpatient Care Transgender_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "Hospitalization Services_Hospitalization  Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "Abortion & Abortion-Related Services per Senate Bill (SB) 245_Hospitalization  Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "50"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Observation_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Emergency Department   Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Abortion & Abortion-Related Services per Senate Bill (SB) 245_Emergency Department   Abortion & Abortion-Related Services per SB 245_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Clinic Administered Drugs for Treatment_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Clinic Administered adjunct related drugs_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Family Planning Services_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Abortion & Abortion-Related Services per Senate Bill (SB) 245_Provider Visits  Abortion & Abortion-Related Services per SB 245 & Vasectomy per SB 523_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Routine Eye Exam and/or refraction_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Routine Eye Exam and/or refraction up to 19 years old_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "Vision Service_Routine Eye Exam and/or refraction_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "Vision Service_Routine Eye Exam and/or refraction up to 19 years old_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "Vision Service_Post Cataract Surg. Lens; Frames; Contacts_In Network____ADJ LEVEL 1_"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Group Therapy_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "7"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Group Therapy_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_MH Intensive Outpatient Program_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Partial Hospitalization Program_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_MH Residential Recovery Services (referred out)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Individual or Group Therapy (Autism)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Dialysis Related Routine Office Visit_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Dialysis Clinic Administered_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Dialysis Self Administered_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "76",
+              "definition": "Dialysis",
+              "system": "STC"
+            },
+            "messages": [
+              "Ancillary Services (Imaging, Laboratory and Special Procedures)_Routine Laboratory Services for Dialysis_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Telephone Visit- Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Telephone Visit- Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Video Visit- Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "3",
+              "definition": "Consultation",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Video Visit- Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 2_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "amount": "0"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "CA COMMON MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "5000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "CA COMMON MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "3000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "CA COMMON MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "2000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "CA COMMON MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "1000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "DRUG MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "15000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "DRUG MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "14000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "DRUG MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "7000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "DRUG MOOP CAL-X"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "6000"
+          }
+        ],
+        "limitations": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Primary Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Specialty Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Professional Services (Plan Provider Office Visits)_Office Procedures/Services (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Urgent Care_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "timePeriod": "LIFETIME",
+            "amount": "50"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Health Coverage_Emergency Care (Copay waived if admitted)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            },
+            "timePeriod": "LIFETIME_REMAINING",
+            "amount": "50"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Transgender Services Outpatient Procedures (Related Hair Removal)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Individual Therapy_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Group Therapy_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "7"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Group Therapy_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "7"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Mental Health Service_Psychological Testing_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Primary)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "64",
+              "definition": "Acupuncture",
+              "system": "STC"
+            },
+            "messages": [
+              "Outpatient Services_Medically referred acupuncture (Specialty)_In Network____ADJ LEVEL 1_MOOP"
+            ],
+            "serviceLimits": [
+              {
+                "delivery": {
+                  "quantity": {
+                    "value": "1",
+                    "qualifier": "DAYS"
+                  }
+                }
+              }
+            ],
+            "dates": {
+              "plan": {
+                "start": "2024-09-30"
+              }
+            },
+            "timePeriod": "REMAINING",
+            "amount": "15"
+          }
+        ],
+        "nonCovered": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Therapy/Rehab_Musculoskeletal Therapy_In Network____ADJ LEVEL 1_"
+            ],
+            "dates": {
+              "plan": {
+                "start": "2020-01-01"
+              }
+            }
+          }
+        ],
+        "primaryCareProvider": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "dates": {
+              "primaryCareProvider": {
+                "start": "2015-02-22"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "person": {
+                    "firstName": "John",
+                    "lastName": "John Doe",
+                    "middleName": "MID"
+                  }
+                },
+                "type": "PRIMARY_CARE_PROVIDER",
+                "address": {
+                  "addressLine1": "303 MAIN ST",
+                  "city": "SACRAMENTO",
+                  "state": "CA",
+                  "postalCode": "942030200"
+                },
+                "npi": "1234567890"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-44b7-76d2-9221-fadc0af17e41",
+  "eligibilitySearchId": "01a19f52-44b8-7391-be6b-1788eec5d09e"
+}

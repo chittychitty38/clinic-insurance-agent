@@ -1,0 +1,1301 @@
+{
+  "meta": {
+    "traceId": "01M6FN444TG76GX3W7E7Z0C5K6",
+    "outboundTraceId": "01M6FN444TG76GX3W7E7Z0C5K6"
+  },
+  "payerId": "60054",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0251*^*00501*866329165*0*T*`~GS*HB*STEDI*117151744*20261103*025158*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN444TG76GX3W7E7Z0C5K6*20260325*0901~HL*1**20*1~NM1*PR*2*AETNA INC*****PI*953402799~HL*2*1*21*1~NM1*1P*2*Borer, Will and Kunze*****XX*1999999984~HL*3*2*22*1~NM1*IL*1*Doe*John*A***MI*AETNA9wcSu~REF*6P*916700514772464~REF*18*1Kx0Jpcz9F~DTP*346*D8*20240101~DTP*356*D8*20191101~DTP*472*D8*20241126~HL*4*3*23*0~NM1*03*1*Doe*Jordan*A~REF*18*1Kx0Jpcz9F~N3*123 Sunnyvale Lane*Apt 456~N4*South Godfreyview*NY*10144~DMG*D8*20010714*M~INS*N*19~EB*L*FAM*30*PS********W~EB*W***********W~LS*2120~NM1*PR*2*Aetna~N3*PO Box 981106~N4*El Paso*TX*79998~LE*2120~EB*1*FAM*30*PS*Aetna Choice POS II*******W~EB*C*FAM*30***23*0*****Y~EB*C*FAM*30***29*0*****Y~EB*C*IND*30***23*0*****Y~EB*C*IND*30***29*0*****Y~EB*G*IND*30****9450*****Y~MSG*All Other In-Network Providers~EB*G*IND*30***29*9390.81*****Y~EB*G*FAM*30****18900*****Y~MSG*All Other In-Network Providers~EB*G*FAM*30***29*18222.98*****Y~EB*C*IND*30***23*100*****N~EB*C*IND*30***29*100*****N~EB*G*FAM*30***23*0*****N~EB*G*FAM*30***29*0*****N~EB*G*IND*30***23*0*****N~EB*G*IND*30***29*0*****N~EB*F*FAM*30*********W~MSG*This plan may require precert for certain services. To check if one is required please refer to the Code Search Tool on the Aetna website or submit a Precert transaction.~EB*F*FAM*30*********W~MSG*We are unable to determine your participation status with this patient's network.~MSG*NEW YORK PREFERRED is Applicable~MSG*SELF-FUNDED~EB*H*FAM*30*********W~EB*1*FAM*48^33^86^98^UC^50^1^47^MH^AL*********W~EB*A*FAM*33*****0****Y~MSG*All Other In-Network Providers~MSG*Chiropractor Visit or Evaluation~MSG*Lab Performed by Chiropractor~MSG*Xray by Chiropractor~III*ZZ*11~EB*A*FAM*86*****0****Y~MSG*All Other In-Network Providers~MSG*Emergency Room Physician~MSG*Emergency use of Emergency Room~EB*A*FAM*98*****0****Y~MSG*All Other In-Network Providers~MSG*GYN Visit~MSG*Specialist Visit or Evaluation~MSG*Primary Care Visit or Evaluation~III*ZZ*11~EB*A*FAM*33*****0****Y~MSG*All Other In-Network Providers~MSG*Manipulation by Chiropractor~EB*A*FAM*98*****0****Y~MSG*All Other In-Network Providers~MSG*Walk In Clinic Visit~MSG*Telemedicine General Medicine Visit~MSG*Telemedicine Specialist Visit~MSG*Teladoc Virtual Primary Care General Medicine~EB*A*FAM*UC^86*****0****Y~MSG*All Other In-Network Providers~MSG*Urgent Care~MSG*Non Urgent Services at an Urgent Care Facility~EB*A*FAM*50*****0****Y~MSG*All Other In-Network Providers~MSG*Facility~III*ZZ*22~EB*A*FAM*48*****0****Y~MSG*All Other In-Network Providers~MSG*Medical Ancillary~MSG*Semi Private Room and Board~MSG*Intensive Care~EB*B*FAM*33****15*****Y~MSG*All Other In-Network Providers~MSG*Chiropractor Visit or Evaluation,COPAY INCLUDED IN OOP~MSG*Lab Performed by Chiropractor,COPAY INCLUDED IN OOP~MSG*Xray by Chiropractor,COPAY INCLUDED IN OOP~III*ZZ*11~EB*B*FAM*86****0*****Y~MSG*All Other In-Network Providers~MSG*Emergency Room Physician~EB*B*FAM*86****100*****Y~MSG*All Other In-Network Providers~MSG*Emergency use of Emergency Room,COPAY INCLUDED IN OOP~EB*B*FAM*98****15*****Y~MSG*All Other In-Network Providers~MSG*GYN Visit,COPAY INCLUDED IN OOP~MSG*Specialist Visit or Evaluation,COPAY INCLUDED IN OOP~MSG*Primary Care Visit or Evaluation,COPAY INCLUDED IN OOP~III*ZZ*11~EB*B*FAM*33****15*****Y~MSG*All Other In-Network Providers~MSG*Manipulation by Chiropractor,COPAY INCLUDED IN OOP~EB*B*FAM*98****15*****Y~MSG*All Other In-Network Providers~MSG*Walk In Clinic Visit,COPAY INCLUDED IN OOP~MSG*Telemedicine General Medicine Visit,COPAY INCLUDED IN OOP~MSG*Telemedicine Specialist Visit,COPAY INCLUDED IN OOP~EB*B*FAM*UC^86****15*****Y~MSG*All Other In-Network Providers~MSG*Urgent Care,COPAY INCLUDED IN OOP~MSG*Non Urgent Services at an Urgent Care Facility,COPAY INCLUDED IN OOP~EB*B*FAM*98****0*****Y~MSG*All Other In-Network Providers~MSG*Teladoc Virtual Primary Care General Medicine~EB*B*FAM*50****0*****Y~MSG*All Other In-Network Providers~MSG*Facility~III*ZZ*22~EB*B*FAM*48****0*****Y~MSG*All Other In-Network Providers~MSG*Medical Ancillary~EB*B*FAM*48****50*****Y~MSG*All Other In-Network Providers~MSG*Semi Private Room and Board,PER CONFINEMENT,COPAY NOT INCLUDED IN OOP~MSG*Intensive Care,PER CONFINEMENT,COPAY NOT INCLUDED IN OOP~EB*F*FAM*48***23*240*****Y~MSG*All Other In-Network Providers~MSG*Intensive Care,PER CONF DED~EB*F*FAM*48***29*190*****Y~MSG*PER CONF DED~EB*C*FAM*86****100*****N~MSG*Emergency use of Emergency Room,Emergency Room Per Service Ded not waived~EB*C*FAM*UC^86****15*****N~MSG*Urgent Care,Emergency Room Per Service Ded not waived~EB*A*FAM*33*****0****N~MSG*Chiropractor Visit or Evaluation~MSG*Lab Performed by Chiropractor~MSG*Xray by Chiropractor~MSG*Manipulation by Chiropractor~EB*A*FAM*86*****0****N~MSG*Emergency Room Physician~MSG*Emergency use of Emergency Room~EB*A*FAM*98*****0****N~MSG*GYN Visit~MSG*Specialist Visit or Evaluation~MSG*Primary Care Visit or Evaluation~MSG*Telemedicine General Medicine Visit~MSG*Telemedicine Specialist Visit~EB*A*FAM*UC^86*****0****N~MSG*Urgent Care~MSG*Non Urgent Services at an Urgent Care Facility~EB*A*FAM*48^50*****0****N~MSG*Medical Ancillary~EB*A*FAM*48*****0****N~MSG*Semi Private Room and Board~MSG*Intensive Care~EB*B*FAM*33****0*****N~MSG*Chiropractor Visit or Evaluation~MSG*Lab Performed by Chiropractor~MSG*Xray by Chiropractor~MSG*Manipulation by Chiropractor~EB*B*FAM*86****0*****N~MSG*Emergency Room Physician~EB*B*FAM*98****0*****N~MSG*GYN Visit~MSG*Specialist Visit or Evaluation~MSG*Primary Care Visit or Evaluation~MSG*Telemedicine General Medicine Visit~MSG*Telemedicine Specialist Visit~EB*B*FAM*UC^86****15*****N~MSG*Non Urgent Services at an Urgent Care Facility~EB*B*FAM*48^50****0*****N~MSG*Medical Ancillary~EB*B*FAM*48****0*****N~MSG*Semi Private Room and Board~MSG*Intensive Care~EB*F*FAM*86*********N~MSG*Emergency use of Emergency Room/Plan Ded Waived~EB*F*FAM*UC^86*********N~MSG*Urgent Care/Plan Ded Waived~MSG*Non Urgent Services at an Urgent Care Facility/Plan Ded Waived~EB*I*FAM*86*********W~MSG*Non Emergency use of Emergency Room/EXCLUSION~EB*I*FAM*98*********N~MSG*Walk In Clinic Visit/EXCLUSION~SE*195*0001~GE*1*1~IEA*1*866329165~",
+  "payer": {
+    "name": {
+      "organization": "AETNA INC"
+    },
+    "type": "PAYER",
+    "identification": "953402799"
+  },
+  "provider": {
+    "name": {
+      "organization": "Borer, Will and Kunze"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "dates": {
+      "plan": {
+        "start": "2024-01-01"
+      },
+      "eligibility": {
+        "start": "2019-11-01"
+      },
+      "service": {
+        "start": "2024-11-26"
+      }
+    },
+    "name": {
+      "person": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "middleName": "A"
+      }
+    },
+    "additionalInformation": {
+      "plan": {
+        "number": "1Kx0Jpcz9F"
+      },
+      "group": {
+        "number": "916700514772464"
+      }
+    },
+    "memberId": "AETNA9wcSu"
+  },
+  "dependent": {
+    "address": {
+      "addressLine1": "123 Sunnyvale Lane",
+      "addressLine2": "Apt 456",
+      "city": "South Godfreyview",
+      "state": "NY",
+      "postalCode": "10144"
+    },
+    "dateOfBirth": "2001-07-14",
+    "gender": "MALE",
+    "maintenance": {
+      "indicator": "NONE"
+    },
+    "name": {
+      "person": {
+        "firstName": "Jordan",
+        "lastName": "Doe",
+        "middleName": "A"
+      }
+    },
+    "relationToSubscriber": "CHILD",
+    "additionalInformation": {
+      "plan": {
+        "number": "1Kx0Jpcz9F"
+      }
+    }
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "FAMILY",
+            "insuranceType": "POINT_OF_SERVICE_POS",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Aetna Choice POS II",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Chiropractor Visit or Evaluation",
+              "Lab Performed by Chiropractor",
+              "Xray by Chiropractor"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Emergency Room Physician",
+              "Emergency use of Emergency Room"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "GYN Visit",
+              "Specialist Visit or Evaluation",
+              "Primary Care Visit or Evaluation"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Manipulation by Chiropractor"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Walk In Clinic Visit",
+              "Telemedicine General Medicine Visit",
+              "Telemedicine Specialist Visit",
+              "Teladoc Virtual Primary Care General Medicine"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Urgent Care",
+              "Non Urgent Services at an Urgent Care Facility"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Urgent Care",
+              "Non Urgent Services at an Urgent Care Facility"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Facility"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Medical Ancillary",
+              "Semi Private Room and Board",
+              "Intensive Care"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractor Visit or Evaluation",
+              "Lab Performed by Chiropractor",
+              "Xray by Chiropractor",
+              "Manipulation by Chiropractor"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Room Physician",
+              "Emergency use of Emergency Room"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "GYN Visit",
+              "Specialist Visit or Evaluation",
+              "Primary Care Visit or Evaluation",
+              "Telemedicine General Medicine Visit",
+              "Telemedicine Specialist Visit"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care",
+              "Non Urgent Services at an Urgent Care Facility"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care",
+              "Non Urgent Services at an Urgent Care Facility"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Medical Ancillary"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Medical Ancillary"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Semi Private Room and Board",
+              "Intensive Care"
+            ],
+            "percent": "0"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Chiropractor Visit or Evaluation,COPAY INCLUDED IN OOP",
+              "Lab Performed by Chiropractor,COPAY INCLUDED IN OOP",
+              "Xray by Chiropractor,COPAY INCLUDED IN OOP"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Emergency Room Physician"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Emergency use of Emergency Room,COPAY INCLUDED IN OOP"
+            ],
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "GYN Visit,COPAY INCLUDED IN OOP",
+              "Specialist Visit or Evaluation,COPAY INCLUDED IN OOP",
+              "Primary Care Visit or Evaluation,COPAY INCLUDED IN OOP"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Manipulation by Chiropractor,COPAY INCLUDED IN OOP"
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Walk In Clinic Visit,COPAY INCLUDED IN OOP",
+              "Telemedicine General Medicine Visit,COPAY INCLUDED IN OOP",
+              "Telemedicine Specialist Visit,COPAY INCLUDED IN OOP"
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Urgent Care,COPAY INCLUDED IN OOP",
+              "Non Urgent Services at an Urgent Care Facility,COPAY INCLUDED IN OOP"
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Urgent Care,COPAY INCLUDED IN OOP",
+              "Non Urgent Services at an Urgent Care Facility,COPAY INCLUDED IN OOP"
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Teladoc Virtual Primary Care General Medicine"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Facility"
+            ],
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Medical Ancillary"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Semi Private Room and Board,PER CONFINEMENT,COPAY NOT INCLUDED IN OOP",
+              "Intensive Care,PER CONFINEMENT,COPAY NOT INCLUDED IN OOP"
+            ],
+            "amount": "50"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractor Visit or Evaluation",
+              "Lab Performed by Chiropractor",
+              "Xray by Chiropractor",
+              "Manipulation by Chiropractor"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Room Physician"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "GYN Visit",
+              "Specialist Visit or Evaluation",
+              "Primary Care Visit or Evaluation",
+              "Telemedicine General Medicine Visit",
+              "Telemedicine Specialist Visit"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Non Urgent Services at an Urgent Care Facility"
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Non Urgent Services at an Urgent Care Facility"
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Medical Ancillary"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Medical Ancillary"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Semi Private Room and Board",
+              "Intensive Care"
+            ],
+            "amount": "0"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency use of Emergency Room,Emergency Room Per Service Ded not waived"
+            ],
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care,Emergency Room Per Service Ded not waived"
+            ],
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care,Emergency Room Per Service Ded not waived"
+            ],
+            "amount": "15"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers"
+            ],
+            "amount": "9450"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "9390.81"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers"
+            ],
+            "amount": "18900"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "18222.98"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          }
+        ],
+        "limitations": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "This plan may require precert for certain services. To check if one is required please refer to the Code Search Tool on the Aetna website or submit a Precert transaction."
+            ]
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "We are unable to determine your participation status with this patient's network.",
+              "NEW YORK PREFERRED is Applicable",
+              "SELF-FUNDED"
+            ]
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "All Other In-Network Providers",
+              "Intensive Care,PER CONF DED"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "240"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "PER CONF DED"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "190"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency use of Emergency Room/Plan Ded Waived"
+            ]
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care/Plan Ded Waived",
+              "Non Urgent Services at an Urgent Care Facility/Plan Ded Waived"
+            ]
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care/Plan Ded Waived",
+              "Non Urgent Services at an Urgent Care Facility/Plan Ded Waived"
+            ]
+          }
+        ],
+        "unlimited": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            }
+          }
+        ],
+        "nonCovered": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Non Emergency use of Emergency Room/EXCLUSION"
+            ]
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Walk In Clinic Visit/EXCLUSION"
+            ]
+          }
+        ],
+        "primaryCareProvider": [
+          {
+            "coverageLevel": "FAMILY",
+            "insuranceType": "POINT_OF_SERVICE_POS",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            }
+          }
+        ],
+        "otherSourceOfData": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "Aetna"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "PO Box 981106",
+                  "city": "El Paso",
+                  "state": "TX",
+                  "postalCode": "79998"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-1097-734b-bf53-712d3e0b2aab",
+  "eligibilitySearchId": "01a19f52-1099-7545-891e-81b93d68c363"
+}

@@ -1,0 +1,696 @@
+{
+  "meta": {
+    "traceId": "01M6FN454KAZMNW8FMAVBWC61W",
+    "outboundTraceId": "01M6FN454KAZMNW8FMAVBWC61W"
+  },
+  "payerId": "62308",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0251*^*00501*435203823*0*T*`~GS*HB*STEDI*117151744*20261103*025159*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN454KAZMNW8FMAVBWC61W*20260325*0901~HL*1**20*1~NM1*PR*2*CHLIC*****FI*591056496~PER*IC**TE*8002446224*UR*cignaforhcp.cigna.com~HL*2*1*21*1~NM1*1P*2*Lowe, Batz and Swaniawski*****XX*1999999984~HL*3*2*22*0~NM1*IL*1*Doe*Jordan****MI*CIGNAJTUxNm~REF*6P*6500216~REF*6P*6500216*Simonis - Bechtelar~REF*Q4*2TkTVjhXLk~N3*123 Sunnyvale Lane~N4*Deontaefurt*FL*492107609~DMG*D8*20150920*M~DTP*346*D8*20240101~DTP*347*D8*20241231~DTP*356*D8*20210101~EB*1**30**Open Access Plus*******W~MSG*Preferred Care Management~EB*G*FAM*30***23*18000*****N~EB*C*FAM*30***23*4200*****N~MSG*Benefit does apply to member's out-of-pocket maximum~EB*A*FAM*30*****.3****N~MSG*This benefit does apply to member's out-of-pocket maximum~EB*A*FAM*30*****.1****Y~MSG*This benefit does apply to member's out-of-pocket maximum~EB*C*FAM*30***23*1400*****Y~MSG*Benefit does apply to member's out-of-pocket maximum~EB*G*FAM*30***23*9000*****Y~EB*A*IND*30*****.1****Y~MSG*This benefit does apply to member's out-of-pocket maximum~EB*G*IND*30***23*3000*****Y~EB*C*IND*30***23*700*****Y~MSG*Benefit does apply to member's out-of-pocket maximum~EB*C*IND*30***23*2100*****N~MSG*Benefit does apply to member's out-of-pocket maximum~EB*A*IND*30*****.3****N~MSG*This benefit does apply to member's out-of-pocket maximum~EB*G*IND*30***23*6000*****N~EB*1**A6*********W~EB*C*IND*A6***23*0****N*W~III*ZZ*23~EB*B*IND*A6***27*40****N*Y~MSG*Cognitive Therapy~MSG*Benefit does apply to member's out-of-pocket maximum~III*ZZ*11~EB*A*IND*A6*****0***N*Y~III*ZZ*11~EB*A*FAM*A6*****.1***N*N~MSG*This benefit does apply to member's out-of-pocket maximum~III*ZZ*23~EB*A*IND*A6*****.1***N*N~MSG*This benefit does apply to member's out-of-pocket maximum~III*ZZ*23~EB*A*IND*A6*****.2***N*N~MSG*This benefit does apply to member's out-of-pocket maximum~III*ZZ*11~EB*B*IND*A6***27*25****N*Y~MSG*Benefit does apply to member's out-of-pocket maximum~III*ZZ*11~EB*C*FAM*A6***23*0****N*Y~III*ZZ*11~EB*A*IND*A6*****0***Y*Y~III*ZZ*56~EB*CB**A6********Y*W~EB*B*IND*A6***27*25****Y*Y~MSG*Benefit does apply to member's out-of-pocket maximum~III*ZZ*56~EB*A*IND*A6*****.2***Y*N~MSG*This benefit does apply to member's out-of-pocket maximum~III*ZZ*56~EB*B*IND*A6***36*200****N*Y~MSG*Benefit does apply to member's out-of-pocket maximum~III*ZZ*21~EB*C*FAM*A6***23*0****Y*Y~III*ZZ*56~EB*G*FAM*30***29*18000*****N~EB*C*FAM*30***29*4200*****N~MSG*Benefit does apply to member's out-of-pocket maximum~EB*C*FAM*30***29*0*****Y~MSG*Benefit does apply to member's out-of-pocket maximum~EB*G*FAM*30***29*2987.54*****Y~EB*G*IND*30***29*2815.15*****Y~EB*C*IND*30***29*700*****Y~MSG*Benefit does apply to member's out-of-pocket maximum~EB*C*IND*30***29*2100*****N~MSG*Benefit does apply to member's out-of-pocket maximum~EB*G*IND*30***29*6000*****N~SE*90*0001~GE*1*1~IEA*1*435203823~",
+  "payer": {
+    "name": {
+      "organization": "CHLIC"
+    },
+    "type": "PAYER",
+    "contacts": [
+      {
+        "phoneNumbers": [
+          "8002446224"
+        ],
+        "urls": [
+          "cignaforhcp.cigna.com"
+        ]
+      }
+    ],
+    "tin": "591056496"
+  },
+  "provider": {
+    "name": {
+      "organization": "Lowe, Batz and Swaniawski"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "123 Sunnyvale Lane",
+      "city": "Deontaefurt",
+      "state": "FL",
+      "postalCode": "492107609"
+    },
+    "dates": {
+      "plan": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "eligibility": {
+        "start": "2021-01-01"
+      }
+    },
+    "dateOfBirth": "2015-09-20",
+    "gender": "MALE",
+    "name": {
+      "person": {
+        "firstName": "Jordan",
+        "lastName": "Doe"
+      }
+    },
+    "additionalInformation": {
+      "group": {
+        "number": "6500216",
+        "name": "Simonis - Bechtelar"
+      },
+      "priorIdentifierNumber": "2TkTVjhXLk"
+    },
+    "memberId": "CIGNAJTUxNm"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Preferred Care Management"
+            ],
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "percent": "0.3"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "percent": "0.3"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "percent": "0.1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "56",
+                "name": "Psychiatric Residential Treatment Center"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "This benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "56",
+                "name": "Psychiatric Residential Treatment Center"
+              }
+            ],
+            "percent": "0.2"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "Cognitive Therapy",
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "40"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "56",
+                "name": "Psychiatric Residential Treatment Center"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "placesOfService": [
+              {
+                "code": "21",
+                "name": "Inpatient Hospital"
+              }
+            ],
+            "timePeriod": "ADMISSION",
+            "amount": "200"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "4200"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "1400"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "700"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "2100"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "23",
+                "name": "Emergency Room - Hospital"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "NOT_REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "placesOfService": [
+              {
+                "code": "56",
+                "name": "Psychiatric Residential Treatment Center"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "4200"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "700"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "Benefit does apply to member's out-of-pocket maximum"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "2100"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "18000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "9000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "3000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "6000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "18000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "2987.54"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "2815.15"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "6000"
+          }
+        ],
+        "coverageBasis": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "priorAuthIndicator": "REQUIRED",
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            }
+          }
+        ]
+      },
+      "name": "Open Access Plus"
+    }
+  ],
+  "id": "ec_01a19f52-1491-731d-abba-b914f5bf2dd1",
+  "eligibilitySearchId": "01a19f52-1492-70b6-b336-e8a714fc757d"
+}

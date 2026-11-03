@@ -1,0 +1,1725 @@
+{
+  "meta": {
+    "traceId": "01M6FN4JHTGA18J03HFFTHE1SM",
+    "outboundTraceId": "01M6FN4JHTGA18J03HFFTHE1SM"
+  },
+  "payerId": "68069",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*573638401*0*T*`~GS*HB*STEDI*117151744*20261103*025212*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN4JHTGA18J03HFFTHE1SM*20260325*0901~HL*1**20*1~NM1*PR*2*Ambetter Missouri*****PI*68069~HL*2*1*21*1~NM1*1P*2*NEW YORK MEDICAL PROVIDER*****XX*1999999984~HL*3*2*22*0~NM1*IL*1*DOE*JOHN*Middle***MI*AMBETTER123~REF*18*11111AA2222222-33~REF*18*11111AA2222222-33*MO PLAN~N3*101 Main St~N4*Jefferson City*MO*65043~DMG*D8*19940404*M~DTP*343*D8*20241231~DTP*346*D8*20240101~DTP*347*D8*20241231~DTP*636*D8*20240917~EB*1**30**Gold Plan*******W~MSG*To determine if a prior authorization is required, please check the health plan's website.~LS*2120~NM1*P3*1*Dough*Jane****XX*1234567890~LE*2120~EB*1**1**Gold Plan*******W~EB*1**4**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*4**Gold Plan*27**.5****Y~EB*I**4**Gold Plan*******N~EB*1**5**Gold Plan*******Y~EB*B*FAM*5**Gold Plan*27*20*****Y~MSG*per visit~EB*I**5**Gold Plan*******N~EB*1**12**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*12**Gold Plan*27**.5****Y~EB*I**12**Gold Plan*******N~EB*1**13**Gold Plan*******Y~EB*A*FAM*13**Gold Plan*27**.5****Y~EB*I**13**Gold Plan*******N~EB*1**18**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*18**Gold Plan*27**.5****Y~EB*I**18**Gold Plan*******N~EB*1**33**Gold Plan*******Y~MSG*Limited to 26 visits per year (visits in excess of 26 require prior authorization).~EB*A*FAM*33**Gold Plan*27**.5****Y~EB*I**33**Gold Plan*******N~EB*V**35**Gold Plan*******Y~EB*V**35**Gold Plan*******N~EB*1**48**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*48**Gold Plan*27**.5****Y~EB*I**48**Gold Plan*******N~EB*1**50**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*50**Gold Plan*27**.5****Y~EB*I**50**Gold Plan*******N~EB*1**51**Gold Plan*******Y~MSG*Covered No Limit.~EB*A*FAM*51**Gold Plan*27**.5****Y~EB*1**51**Gold Plan*******N~MSG*Covered No Limit.~EB*A*FAM*51**Gold Plan*27**.5****N~EB*1**52**Gold Plan*******Y~MSG*Covered No Limit.~EB*A*FAM*52**Gold Plan*27**.5****Y~EB*1**52**Gold Plan*******N~MSG*Covered No Limit.~EB*A*FAM*52**Gold Plan*27**.5****N~EB*1**53**Gold Plan*******Y~EB*A*FAM*53**Gold Plan*27**.5****Y~EB*I**53**Gold Plan*******N~EB*1**62**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*62**Gold Plan*27**.5****Y~EB*I**62**Gold Plan*******N~EB*1**65**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*65**Gold Plan*27**.5****Y~EB*I**65**Gold Plan*******N~EB*1**68**Gold Plan*******Y~MSG*Covered in accordance with ACA guidelines.~EB*B*FAM*68**Gold Plan*27*0*****Y~EB*I**68**Gold Plan*******N~EB*1**69**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*69**Gold Plan*27**.5****Y~EB*I**69**Gold Plan*******N~EB*1**86**Gold Plan*******Y~MSG*Covered No Limit.~EB*A*FAM*86**Gold Plan*27**.5****Y~EB*1**86**Gold Plan*******N~MSG*Covered No Limit.~EB*A*FAM*86**Gold Plan*27**.5****N~EB*1**88**Gold Plan*******Y~EB*B*FAM*88**Gold Plan*27*10*****Y~MSG*per prescription~EB*I**88**Gold Plan*******N~EB*1**98**Gold Plan*******Y~MSG*PCP~EB*B*FAM*98**Gold Plan*27*15*****Y~MSG*per visit~MSG*PCP~EB*I**98**Gold Plan*******N~MSG*PCP~EB*1**98**Gold Plan*******Y~MSG*Specialist~MSG*Covered No Limit.~EB*B*FAM*98**Gold Plan*27*30*****Y~MSG*per visit~MSG*Specialist~EB*I**98**Gold Plan*******N~MSG*Specialist~EB*1**A4**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit. (Primary Care Provider (PCP) and other practitioner office visits do not require prior authorization.) Note| Services (excluding Emergency Room Care / Emergency Services) rendered by an out-of-network provider~EB*A*FAM*A4**Gold Plan*27**.5****Y~EB*I**A4**Gold Plan*******N~EB*1**A6**Gold Plan*******Y~EB*A*FAM*A6**Gold Plan*27**.5****Y~EB*I**A6**Gold Plan*******N~EB*1**A7**Gold Plan*******Y~EB*A*FAM*A7**Gold Plan*27**.5****Y~EB*I**A7**Gold Plan*******N~EB*1**A8**Gold Plan*******Y~EB*A*FAM*A8**Gold Plan*27**.5****Y~EB*I**A8**Gold Plan*******N~EB*1**AD**Gold Plan*******Y~EB*A*FAM*AD**Gold Plan*27**.5****Y~EB*I**AD**Gold Plan*******N~EB*1**AF**Gold Plan*******Y~EB*A*FAM*AF**Gold Plan*27**.5****Y~EB*I**AF**Gold Plan*******N~EB*1**AG**Gold Plan*******Y~MSG*Prior authorization may be required. Limited to 150 days per year.~EB*A*FAM*AG**Gold Plan*27**.5****Y~EB*I**AG**Gold Plan*******N~EB*V**AL**Gold Plan*******Y~EB*V**AL**Gold Plan*******N~EB*1**BZ**Gold Plan*******Y~MSG*Covered in accordance with ACA guidelines.~EB*B*FAM*BZ**Gold Plan*27*0*****Y~EB*I**BZ**Gold Plan*******N~EB*1**MH**Gold Plan*******Y~MSG*Prior authorization may be required. Covered No Limit.~EB*A*FAM*MH**Gold Plan*27**.5****Y~EB*I**MH**Gold Plan*******N~EB*1**PT**Gold Plan*******Y~EB*B*FAM*PT**Gold Plan*27*15*****Y~MSG*per visit~EB*I**PT**Gold Plan*******N~EB*1**UC**Gold Plan*******Y~MSG*Covered No Limit.~EB*B*FAM*UC**Gold Plan*27*10*****Y~MSG*per visit~EB*1**UC**Gold Plan*******N~MSG*Covered No Limit.~EB*B*FAM*UC**Gold Plan*27*10*****N~MSG*per visit~EB*C*IND*30**Gold Plan*23*0*****Y~EB*C*IND*30**Gold Plan*29*0*****Y~EB*C*FAM*30**Gold Plan*23*0*****Y~EB*C*FAM*30**Gold Plan*29*0*****Y~EB*C*IND*30**Gold Plan*23*0*****N~EB*C*IND*30**Gold Plan*29*0*****N~EB*C*FAM*30**Gold Plan*23*0*****N~EB*C*FAM*30**Gold Plan*29*0*****N~EB*G*IND*30**Gold Plan*23*3000*****Y~EB*G*IND*30**Gold Plan*29*2000*****Y~EB*G*FAM*30**Gold Plan*23*6000*****Y~EB*G*FAM*30**Gold Plan*29*5000*****Y~EB*G*IND*30**Gold Plan*23*0*****N~EB*G*IND*30**Gold Plan*29*0*****N~EB*G*FAM*30**Gold Plan*23*0*****N~EB*G*FAM*30**Gold Plan*29*0*****N~SE*174*0001~GE*1*1~IEA*1*573638401~",
+  "payer": {
+    "name": {
+      "organization": "Ambetter Missouri"
+    },
+    "type": "PAYER",
+    "identification": "68069"
+  },
+  "provider": {
+    "name": {
+      "organization": "NEW YORK MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "101 Main St",
+      "city": "Jefferson City",
+      "state": "MO",
+      "postalCode": "65043"
+    },
+    "dates": {
+      "plan": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "premiumPaidToDate": {
+        "end": "2024-12-31"
+      },
+      "dateOfLastUpdate": {
+        "start": "2024-09-17"
+      }
+    },
+    "dateOfBirth": "1994-04-04",
+    "gender": "MALE",
+    "name": {
+      "person": {
+        "firstName": "JOHN",
+        "lastName": "DOE",
+        "middleName": "Middle"
+      }
+    },
+    "additionalInformation": {
+      "plan": {
+        "number": "11111AA2222222-33",
+        "name": "MO PLAN"
+      }
+    },
+    "memberId": "AMBETTER123"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "To determine if a prior authorization is required, please check the health plan's website."
+            ],
+            "relatedEntities": [
+              {
+                "name": {
+                  "person": {
+                    "firstName": "Jane",
+                    "lastName": "Dough"
+                  }
+                },
+                "type": "PRIMARY_CARE_PROVIDER",
+                "npi": "1234567890"
+              }
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "12",
+              "definition": "Durable Medical Equipment Purchase",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "13",
+              "definition": "Ambulatory Service Center Facility",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "18",
+              "definition": "Durable Medical Equipment Rental",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Limited to 26 visits per year (visits in excess of 26 require prior authorization)."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "53",
+              "definition": "Hospital - Ambulatory Surgical",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "65",
+              "definition": "Newborn Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "68",
+              "definition": "Well Baby Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered in accordance with ACA guidelines."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PCP"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist",
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A4",
+              "definition": "Psychiatric",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit. (Primary Care Provider (PCP) and other practitioner office visits do not require prior authorization.) Note| Services (excluding Emergency Room Care / Emergency Services) rendered by an out-of-network provider"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A7",
+              "definition": "Psychiatric - Inpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A8",
+              "definition": "Psychiatric - Outpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AF",
+              "definition": "Speech Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AG",
+              "definition": "Skilled Nursing Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Limited to 150 days per year."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered in accordance with ACA guidelines."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Prior authorization may be required. Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "PT",
+              "definition": "Physical Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Covered No Limit."
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "12",
+              "definition": "Durable Medical Equipment Purchase",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "13",
+              "definition": "Ambulatory Service Center Facility",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "18",
+              "definition": "Durable Medical Equipment Rental",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "53",
+              "definition": "Hospital - Ambulatory Surgical",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "65",
+              "definition": "Newborn Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A4",
+              "definition": "Psychiatric",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A7",
+              "definition": "Psychiatric - Inpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "A8",
+              "definition": "Psychiatric - Outpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AF",
+              "definition": "Speech Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AG",
+              "definition": "Skilled Nursing Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "percent": "0.5"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "per visit"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "68",
+              "definition": "Well Baby Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "messages": [
+              "per prescription"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "per visit",
+              "PCP"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "per visit",
+              "Specialist"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "PT",
+              "definition": "Physical Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "per visit"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "15"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "per visit"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "per visit"
+            ],
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "VISIT",
+            "amount": "10"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "3000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "2000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "6000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "5000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          }
+        ],
+        "nonCovered": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "12",
+              "definition": "Durable Medical Equipment Purchase",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "13",
+              "definition": "Ambulatory Service Center Facility",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "18",
+              "definition": "Durable Medical Equipment Rental",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "53",
+              "definition": "Hospital - Ambulatory Surgical",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "65",
+              "definition": "Newborn Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "68",
+              "definition": "Well Baby Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "69",
+              "definition": "Maternity",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PCP"
+            ],
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Specialist"
+            ],
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A4",
+              "definition": "Psychiatric",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A6",
+              "definition": "Psychotherapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A7",
+              "definition": "Psychiatric - Inpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "A8",
+              "definition": "Psychiatric - Outpatient",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AF",
+              "definition": "Speech Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AG",
+              "definition": "Skilled Nursing Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "PT",
+              "definition": "Physical Therapy",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          }
+        ],
+        "cannotProcess": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "35",
+              "definition": "Dental Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "35",
+              "definition": "Dental Care",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-4a39-741f-b6a9-1356136c7490",
+  "eligibilitySearchId": "01a19f52-4a3a-739a-8776-6032e1a8c46e"
+}

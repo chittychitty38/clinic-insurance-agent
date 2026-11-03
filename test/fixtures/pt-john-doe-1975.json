@@ -1,0 +1,1318 @@
+{
+  "meta": {
+    "traceId": "01M6FN45VZ7482D4AR23N4XCPN",
+    "outboundTraceId": "01M6FN45VZ7482D4AR23N4XCPN"
+  },
+  "payerId": "040",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0251*^*00501*163964790*0*T*`~GS*HB*STEDI*117151744*20261103*025159*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN45VZ7482D4AR23N4XCPN*20260325*0901~HL*1**20*1~NM1*PR*2*ANTHEM BLUE CROSS*****PI*040~HL*2*1*21*1~NM1*1P*2*NEW YORK MEDICAL PROVIDER*****XX*1999999984~HL*3*2*22*1~NM1*IL*1*DOE*JANE*E***MI*CGMBCBSCA123~REF*6P*Z444555666*ONLY PLAN IN STATE~REF*18*040*ONLY PLAN IN STATE~DTP*346*D8*20230101~HL*4*3*23*0~NM1*03*1*DOE*JOHN~REF*6P*Z444555666*ONLY PLAN IN STATE~REF*18*040*ONLY PLAN IN STATE~DMG*D8*19750101*M~INS*N*01*001*25~EB*1*FAM*30*PR*INCENTIVE*******W~LS*2120~NM1*VER*2*Anthem Blue Cross and Blue Shield Ohio*****PI*47171~NM1*VER*2*Anthem Blue Cross Blue Shield Ohio*****PI*00834~LE*2120~EB*A*IND*BZ^50*****0****Y~DTP*348*D8*20240101~EB*I**BZ*********N~DTP*348*D8*20240101~EB*1**BZ^MH^UC^33^47^48^50^98*********Y~DTP*348*D8*20240101~EB*B*IND*98***27*30*****Y~DTP*348*D8*20240101~MSG*SPECIALIST~MSG*EPO NETWORK~EB*B*IND*98***27*45*****Y~DTP*348*D8*20240101~MSG*SPECIALIST~MSG*PAR NETWORK~EB*I**98*********N~DTP*348*D8*20240101~MSG*SPECIALIST~EB*1**98*********Y~DTP*348*D8*20240101~MSG*SPECIALIST~EB*B*IND*UC***27*20*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~III*ZZ*11~EB*B*IND*UC***27*20*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~III*ZZ*19~EB*B*IND*UC***27*20*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~III*ZZ*22~EB*B*IND*UC***27*30*****Y~DTP*348*D8*20240101~MSG*PAR NETWORK~III*ZZ*11~EB*B*IND*UC***27*30*****Y~DTP*348*D8*20240101~MSG*PAR NETWORK~III*ZZ*19~EB*B*IND*UC***27*30*****Y~DTP*348*D8*20240101~MSG*PAR NETWORK~III*ZZ*22~EB*1**1^51^52^86^88*********W~DTP*348*D8*20240101~EB*G*FAM*30***23*10000*****Y~DTP*348*D8*20240101~MSG*EXCLUDES DEDUCTIBLE~MSG*PAR NETWORK~EB*G*FAM*30***29*9500*****Y~MSG*EXCLUDES DEDUCTIBLE~MSG*PAR NETWORK~EB*G*FAM*30***23*5500*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~EB*G*FAM*30***29*5000*****Y~MSG*EXCLUDES DEDUCTIBLE~MSG*EPO NETWORK~EB*G*IND*30***23*3000*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~EB*G*IND*30***29*2500*****Y~MSG*EXCLUDES DEDUCTIBLE~MSG*EPO NETWORK~EB*G*IND*30***23*5500*****Y~DTP*348*D8*20240101~MSG*EXCLUDES DEDUCTIBLE~MSG*PAR NETWORK~EB*G*IND*30***29*5000*****Y~MSG*EXCLUDES DEDUCTIBLE~MSG*PAR NETWORK~EB*B*IND*33***27*30*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~MSG*PAR NETWORK~EB*F**33***23***VS*30**Y~DTP*348*D8*20240101~MSG*COMBINED EPO/PAR~MSG*PAR NETWORK~EB*F**33***29***VS*30**Y~MSG*COMBINED EPO/PAR~MSG*PAR NETWORK~EB*A*IND*47*****0****Y~DTP*348*D8*20240101~III*ZZ*19~EB*A*IND*47*****0****Y~DTP*348*D8*20240101~III*ZZ*22~EB*A*IND*47*****0***U*Y~DTP*348*D8*20240101~MSG*EPO NETWORK~MSG*PAR NETWORK~III*ZZ*21~LS*2120~NM1*X3*2*UTILIZATION MANAGEMENT~PER*IC**TE*8002227777~LE*2120~EB*B*IND*47***36*1000****U*Y~DTP*348*D8*20240101~MSG*PAR NETWORK~III*ZZ*21~EB*A*IND*48*****0***U*Y~DTP*348*D8*20240101~MSG*EPO NETWORK~MSG*PAR NETWORK~LS*2120~NM1*X3*2*UTILIZATION MANAGEMENT~PER*IC**TE*8002227777~LE*2120~EB*B*IND*48***36*1000****U*Y~DTP*348*D8*20240101~MSG*PAR NETWORK~EB*B*IND*51^52***27*200*****N~DTP*348*D8*20240101~EB*B*IND*51^52***27*200*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~MSG*PAR NETWORK~EB*C*IND*51^52***23*0*****Y~DTP*292*RD8*20240101-20241231~MSG*PAR NETWORK~EB*A*IND*86*****0****N~DTP*348*D8*20240101~EB*A*IND*86*****0****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~MSG*PAR NETWORK~EB*B*IND*86***27*200*****N~DTP*348*D8*20240101~MSG*FACILITY BENEFIT~EB*B*IND*86***27*200*****Y~DTP*348*D8*20240101~MSG*FACILITY BENEFIT~MSG*EPO NETWORK~MSG*PAR NETWORK~EB*C*IND*86***23*0*****Y~DTP*292*RD8*20240101-20241231~MSG*FACILITY BENEFIT~MSG*PAR NETWORK~EB*B*IND*98***27*20*****Y~DTP*348*D8*20240101~MSG*EPO NETWORK~EB*B*IND*98***27*30*****Y~DTP*348*D8*20240101~MSG*PAR NETWORK~EB*P***********W~MSG*UNLESS OTHERWISE REQUIRED BY STATE LAW, THIS NOTICE IS NOT A GUARANTEE OF PAYMENT. BENEFITS ARE SUBJECT TO ALL CONTRACT LIMITS AND THE MEMBER'S STATUS ON THE DATE OF SERVICE. ACCUMULATED AMOUNTS SUCH AS DEDUCTIBLE MAY CHANGE AS ADDITIONAL CLAIMS ARE PROCESSED.~SE*171*0001~GE*1*1~IEA*1*163964790~",
+  "payer": {
+    "name": {
+      "organization": "ANTHEM BLUE CROSS"
+    },
+    "type": "PAYER",
+    "identification": "040"
+  },
+  "provider": {
+    "name": {
+      "organization": "NEW YORK MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "dates": {
+      "plan": {
+        "start": "2023-01-01"
+      }
+    },
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE",
+        "middleName": "E"
+      }
+    },
+    "additionalInformation": {
+      "plan": {
+        "number": "040",
+        "name": "ONLY PLAN IN STATE"
+      },
+      "group": {
+        "number": "Z444555666",
+        "name": "ONLY PLAN IN STATE"
+      }
+    },
+    "memberId": "CGMBCBSCA123"
+  },
+  "dependent": {
+    "dateOfBirth": "1975-01-01",
+    "gender": "MALE",
+    "maintenance": {
+      "indicator": "PAYER_INDICATED"
+    },
+    "name": {
+      "person": {
+        "firstName": "JOHN",
+        "lastName": "DOE"
+      }
+    },
+    "relationToSubscriber": "SPOUSE",
+    "additionalInformation": {
+      "plan": {
+        "number": "040",
+        "name": "ONLY PLAN IN STATE"
+      },
+      "group": {
+        "number": "Z444555666",
+        "name": "ONLY PLAN IN STATE"
+      }
+    }
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "FAMILY",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "Anthem Blue Cross and Blue Shield Ohio"
+                },
+                "type": "PARTY_PERFORMING_VERIFICATION",
+                "payerId": "47171"
+              },
+              {
+                "name": {
+                  "organization": "Anthem Blue Cross Blue Shield Ohio"
+                },
+                "type": "PARTY_PERFORMING_VERIFICATION",
+                "payerId": "00834"
+              }
+            ],
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "19",
+                "name": "Off Campus - Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "UTILIZATION MANAGEMENT"
+                },
+                "type": "UTILIZATION_MANAGEMENT_ORGANIZATION",
+                "contacts": [
+                  {
+                    "phoneNumbers": [
+                      "8002227777"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "placesOfService": [
+              {
+                "code": "21",
+                "name": "Inpatient Hospital"
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "UTILIZATION MANAGEMENT"
+                },
+                "type": "UTILIZATION_MANAGEMENT_ORGANIZATION",
+                "contacts": [
+                  {
+                    "phoneNumbers": [
+                      "8002227777"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "percent": "0"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "SPECIALIST",
+              "EPO NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "SPECIALIST",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "45"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "19",
+                "name": "Off Campus - Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "11",
+                "name": "Office"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "19",
+                "name": "Off Campus - Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "22",
+                "name": "On Campus-Outpatient Hospital"
+              }
+            ],
+            "timePeriod": "VISIT",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "placesOfService": [
+              {
+                "code": "21",
+                "name": "Inpatient Hospital"
+              }
+            ],
+            "timePeriod": "ADMISSION",
+            "amount": "1000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "priorAuthIndicator": "U",
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "ADMISSION",
+            "amount": "1000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "FACILITY BENEFIT"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "FACILITY BENEFIT",
+              "EPO NETWORK",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "VISIT",
+            "amount": "30"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "51",
+              "definition": "Hospital - Emergency Accident",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "52",
+              "definition": "Hospital - Emergency Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "FACILITY BENEFIT",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EXCLUDES DEDUCTIBLE",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "10000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EXCLUDES DEDUCTIBLE",
+              "PAR NETWORK"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "9500"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "5500"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EXCLUDES DEDUCTIBLE",
+              "EPO NETWORK"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "5000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EPO NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "3000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EXCLUDES DEDUCTIBLE",
+              "EPO NETWORK"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "2500"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EXCLUDES DEDUCTIBLE",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "5500"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "EXCLUDES DEDUCTIBLE",
+              "PAR NETWORK"
+            ],
+            "timePeriod": "REMAINING",
+            "amount": "5000"
+          }
+        ],
+        "limitations": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "COMBINED EPO/PAR",
+              "PAR NETWORK"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "quantity": {
+              "value": "30",
+              "qualifier": "VISITS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "COMBINED EPO/PAR",
+              "PAR NETWORK"
+            ],
+            "timePeriod": "REMAINING",
+            "quantity": {
+              "value": "30",
+              "qualifier": "VISITS"
+            }
+          }
+        ],
+        "nonCovered": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "BZ",
+              "definition": "Physician Visit - Office: Well",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01"
+              }
+            }
+          }
+        ],
+        "benefitDisclaimer": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "messages": [
+              "UNLESS OTHERWISE REQUIRED BY STATE LAW, THIS NOTICE IS NOT A GUARANTEE OF PAYMENT. BENEFITS ARE SUBJECT TO ALL CONTRACT LIMITS AND THE MEMBER'S STATUS ON THE DATE OF SERVICE. ACCUMULATED AMOUNTS SUCH AS DEDUCTIBLE MAY CHANGE AS ADDITIONAL CLAIMS ARE PROCESSED."
+            ]
+          }
+        ]
+      },
+      "name": "INCENTIVE"
+    }
+  ],
+  "id": "ec_01a19f52-177d-70d8-9305-36f5ce60ff3c",
+  "eligibilitySearchId": "01a19f52-177e-7766-bfae-6648541eb53a"
+}

@@ -34,12 +34,12 @@ const doe = (first: string): Person => ({ firstName: first, lastName: 'Doe' });
 
 export const PATIENTS: Patient[] = [
   // Students and family members covered on someone else's plan
-  { id: 'pt-jordan-doe-2001', firstName: 'Jordan', lastName: 'Doe', dateOfBirth: '2001-07-14', phone: '+15550100101', coverage: { payerKey: 'aetna', memberId: 'AETNA9wcSu', relationship: 'child', policyholder: doe('John') }, scenario: 'Active: Aetna, student on a parent\'s plan' },
-  { id: 'pt-jordan-doe-2015', firstName: 'Jordan', lastName: 'Doe', dateOfBirth: '2015-09-20', phone: '+15550100102', coverage: { payerKey: 'cigna', memberId: 'CIGNAJTUxNm', relationship: 'child', policyholder: doe('John') }, scenario: 'Active: Cigna, child on a parent\'s plan' },
-  { id: 'pt-john-doe-1975', firstName: 'John', lastName: 'Doe', dateOfBirth: '1975-01-01', phone: '+15550100103', coverage: { payerKey: 'anthem-ca', memberId: 'CGMBCBSCA123', relationship: 'spouse', policyholder: doe('Jane') }, scenario: 'Active: Anthem Blue Cross, spouse\'s plan' },
+  { id: 'pt-jordan-doe-2001', firstName: 'Jordan', lastName: 'Doe', dateOfBirth: '2001-07-14', phone: '+15550100101', coverage: { payerKey: 'aetna', memberId: 'AETNA9wcSu', relationship: 'child', policyholder: doe('John') }, scenario: 'Active: Aetna, student on a parent\'s plan ($15 specialist)' },
+  { id: 'pt-jordan-doe-2015', firstName: 'Jordan', lastName: 'Doe', dateOfBirth: '2015-09-20', phone: '+15550100102', coverage: { payerKey: 'cigna', memberId: 'CIGNAJTUxNm', relationship: 'child', policyholder: doe('John') }, scenario: 'Active: Cigna, child on a parent\'s plan (10% coinsurance, no copay)' },
+  { id: 'pt-john-doe-1975', firstName: 'John', lastName: 'Doe', dateOfBirth: '1975-01-01', phone: '+15550100103', coverage: { payerKey: 'anthem-ca', memberId: 'CGMBCBSCA123', relationship: 'spouse', policyholder: doe('Jane') }, scenario: 'Active: Anthem, spouse\'s plan (EPO vs PAR network copays)' },
   { id: 'pt-jane-doe-2015', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '2015-01-01', phone: '+15550100104', coverage: { payerKey: 'bcbs-tx', memberId: 'A2CBCBSTX123', relationship: 'child', policyholder: doe('John') }, scenario: 'Active: BCBS Texas, child on a parent\'s plan' },
   { id: 'pt-jane-doe-2001-oscar', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '2001-01-01', phone: '+15550100105', coverage: { payerKey: 'oscar', memberId: 'OSCAR123456', relationship: 'child', policyholder: doe('John') }, scenario: 'Active: Oscar, student on a parent\'s plan' },
-  { id: 'pt-jane-doe-1952', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1952-11-21', phone: '+15550100106', coverage: { payerKey: 'uhc', memberId: 'UHC202649', relationship: 'spouse', policyholder: doe('John') }, scenario: 'Active: UnitedHealthcare, spouse\'s plan' },
+  { id: 'pt-jane-doe-1952', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1952-11-21', phone: '+15550100106', coverage: { payerKey: 'uhc', memberId: 'UHC202649', relationship: 'spouse', policyholder: doe('John') }, scenario: 'Not accepted: plan network. UHC says we\'re out of network for her plan' },
 
   // Patients who hold their own policy
   { id: 'pt-jane-doe-2004', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '2004-04-04', phone: '+15550100107', coverage: { payerKey: 'aetna', memberId: 'AETNA12345', relationship: 'self' }, scenario: 'Active: Aetna, own policy' },
@@ -50,9 +50,9 @@ export const PATIENTS: Patient[] = [
   { id: 'pt-frank-castillo', firstName: 'Frank', lastName: 'Castillo', dateOfBirth: '1975-04-05', phone: '+15550100112', coverage: { payerKey: 'cigna', memberId: 'FTRJRG3254', relationship: 'self' }, scenario: 'Active: Cigna' },
   { id: 'pt-casey-fossum', firstName: 'Casey', lastName: 'Fossum', dateOfBirth: '1976-05-06', phone: '+15550100113', coverage: { payerKey: 'cigna', memberId: '5641296', relationship: 'self' }, scenario: 'Active: Cigna' },
   { id: 'pt-rich-garces', firstName: 'Rich', lastName: 'Garces', dateOfBirth: '1977-06-07', phone: '+15550100114', coverage: { payerKey: 'cigna', memberId: 'DHW5445', relationship: 'self' }, scenario: 'Active: Cigna' },
-  { id: 'pt-jane-doe-1975', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1975-05-05', phone: '+15550100115', coverage: { payerKey: 'humana', memberId: 'HUMANA123', relationship: 'self' }, scenario: 'Active: Humana' },
-  { id: 'pt-jane-doe-1955', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1955-05-05', phone: '+15550100116', coverage: { payerKey: 'medicare', memberId: '1AA2CC3DD45', relationship: 'self' }, scenario: 'Active: Medicare (coinsurance, no copay)' },
-  { id: 'pt-jane-doe-1971', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1971-01-01', phone: '+15550100117', coverage: { payerKey: 'uhc', memberId: 'UHC123456', relationship: 'self' }, scenario: 'Active: UnitedHealthcare' },
+  { id: 'pt-jane-doe-1975', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1975-05-05', phone: '+15550100115', coverage: { payerKey: 'humana', memberId: 'HUMANA123', relationship: 'self' }, scenario: 'Active: Humana PPO (20% coinsurance)' },
+  { id: 'pt-jane-doe-1955', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1955-05-05', phone: '+15550100116', coverage: { payerKey: 'medicare', memberId: '1AA2CC3DD45', relationship: 'self' }, scenario: 'Active: Medicare + QMB (owes nothing)' },
+  { id: 'pt-jane-doe-1971', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '1971-01-01', phone: '+15550100117', coverage: { payerKey: 'uhc', memberId: 'UHC123456', relationship: 'self' }, scenario: 'Active: UHC HMO (referral required)' },
 
   // Not accepted
   { id: 'pt-jane-doe-2002', firstName: 'Jane', lastName: 'Doe', dateOfBirth: '2002-02-02', phone: '+15550100118', coverage: { payerKey: 'kaiser', memberId: 'KAISER123456', relationship: 'self' }, scenario: 'Not accepted: Kaiser (out of network)' },

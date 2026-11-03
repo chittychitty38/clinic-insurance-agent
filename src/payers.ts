@@ -18,6 +18,11 @@ export interface Payer {
   inNetwork: boolean;
   /** Extra context the agent says when we're out of network. */
   outOfNetworkNote?: string;
+  /**
+   * Some payers run several networks and price visits per network (Anthem: "SPECIALIST, EPO
+   * NETWORK" $30 vs "SPECIALIST, PAR NETWORK" $45). These are the ones the clinic is in.
+   */
+  clinicNetworks?: string[];
 }
 
 export const PAYERS: Payer[] = [
@@ -49,6 +54,7 @@ export const PAYERS: Payer[] = [
     key: 'anthem-ca',
     stediPayerId: '040',
     displayName: 'Anthem Blue Cross',
+    clinicNetworks: ['PAR'],
     aliases: ['anthem', 'anthem blue cross', 'anthem bcbs', 'blue cross of california', 'anthem blue cross california', 'blue cross', 'blue cross blue shield', 'bcbs'],
     kind: 'medical',
     inNetwork: true,

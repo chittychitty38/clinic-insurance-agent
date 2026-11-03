@@ -1,0 +1,1581 @@
+{
+  "meta": {
+    "traceId": "01M6FN4F77JW7EHY3924MDZH5C",
+    "outboundTraceId": "01M6FN4F77JW7EHY3924MDZH5C",
+    "subscriberTraceNumbers": [
+      {
+        "type": "CURRENT_TRANSACTION",
+        "referenceIdentification": "000011112222333",
+        "originatingCompanyIdentifier": "0101010101"
+      }
+    ]
+  },
+  "payerId": "61101",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*147983526*0*T*`~GS*HB*STEDI*117151744*20261103*025209*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN4F77JW7EHY3924MDZH5C*20260325*0901~HL*1**20*1~NM1*PR*2*HUMANA*****PI*61101~HL*2*1*21*1~NM1*1P*2*MEDICAL PROVIDER*****XX*1999999984~HL*3*2*22*0~TRN*1*000011112222333*0101010101~NM1*IL*1*DOE*JANE*L***MI*HUMANA123~REF*6P*11223344~REF*6P*11223344*HUMANA INSURANCE COMPANY~REF*F6*1A22BB3CC44~N3*101 MAIN ST~N4*ATLANTA*GA*303010001~DMG*D8*19750505*F~DTP*346*D8*20240101~DTP*472*D8*20240917~EB*1*EMP*30*PR*Humana Gold Plan*******W~MSG*000 111~MSG*Medicare PPO~MSG*Member cannot be balanced billed for medical copayments, coinsurance or deductibles on this Plan. Member is cost-share protected by the state Medicaid. In WA if Medicaid is not cost-share protecting members, Humana will process the claim paying member cost share.~MSG*THIS MEMBER MAY BE ELIGIBLE FOR A FREE FITNESS MEMBERSHIP.~EB*L***********W~LS*2120~NM1*P3*1*John*Dough~N3*202 Main St~N4*Tulsa*OK*74008~PER*IC**TE*9999999999~LE*2120~EB*F**30******YY*26**W~MSG*MAX DEPENDENT AGE~EB*F**30******YY*31**W~MSG*MAX STUDENT AGE~EB*L****AFFILIATION/CENTER*******W~LS*2120~NM1*GW*2*OK EMP PPO*****PI*34343434~LE*2120~EB*W***********W~MSG*NO DESCRIPTION PROVIDED~EB*1**1^54^33^98^88^UC^47^50^AL^MH^35^86^48*********W~EB*1*IND*1*PR***0*****Y~EB*A*IND*49*PR**36**0****Y~MSG*INPATIENT HOSPITAL ROOM AND BOARD~EB*B*IND*49*PR**36*2000*****Y~MSG*INPATIENT HOSPITAL ROOM AND BOARD~EB*C*IND*49*PR***0*****Y~MSG*INPATIENT HOSPITAL ROOM AND BOARD~EB*A*IND*48*PR**23**0****Y~MSG*INPATIENT HOSPITAL~EB*C*IND*48*PR***0*****Y~MSG*INPATIENT HOSPITAL~EB*A*IND*86*PR**23**0****Y~MSG*ER~EB*B*IND*86*PR**26*100*****Y~MSG*ER~EB*A*IND*86*PR**23**0****Y~MSG*ANESTHESIA~EB*B*IND*86*PR**26*100*****Y~MSG*ANESTHESIA~EB*C*IND*86*PR***0*****Y~MSG*ER~EB*C*IND*86*PR***0*****Y~MSG*ANESTHESIA~EB*I*IND*35*PR***0*****Y~MSG*VIEW CONTRACT FOR COVERAGE DETAILS~EB*A*IND*MH^98*PR**23**0****Y~MSG*TELEHEALTH VISIT PCP~III*ZZ*10~EB*A*IND*MH*PR**23**0****Y~MSG*TELEHEALTH VISIT SPECIALIST~III*ZZ*10~EB*C*IND*MH^98*PR***0*****Y~MSG*TELEHEALTH VISIT PCP~III*ZZ*10~EB*C*IND*MH^98*PR***0*****Y~MSG*TELEHEALTH VISIT SPECIALIST~III*ZZ*10~EB*1*IND*MH*PR***0*****Y~MSG*PHYSICIAN OFFICE VISIT SPECIALIST~EB*A*IND*AL*PR**23**0****Y~MSG*ROUTINE VISION EXAM~EB*F*IND*AL*PR**23*40*****Y~MSG*ROUTINE VISION EXAM~EB*C*IND*AL*PR***0*****Y~MSG*ROUTINE VISION EXAM~EB*A*IND*50*PR****.2****Y~MSG*OUTPATIENT HOSPITAL SURGERY~EB*A*IND*50*PR****.2****Y~MSG*OUTPATIENT HOSPITAL ANESTHESIA~EB*A*IND*50*PR****.2****Y~MSG*OUTPATIENT HOSPITAL MRI SCAN~EB*A*IND*50*PR****.2****Y~MSG*OUTPATIENT HOSPITAL CAT SCAN~EB*C*IND*50*PR***250*****Y~MSG*OUTPATIENT HOSPITAL SURGERY~EB*C*IND*50*PR***250*****Y~MSG*OUTPATIENT HOSPITAL ANESTHESIA~EB*C*IND*50*PR***250*****Y~MSG*OUTPATIENT HOSPITAL MRI SCAN~EB*C*IND*50*PR***250*****Y~MSG*OUTPATIENT HOSPITAL CAT SCAN~EB*1*IND*47*PR***0*****Y~MSG*INPATIENT HOSPITAL~EB*A*IND*UC*PR****.2****Y~MSG*PHYSICIAN OFFICE URGENT CARE~EB*A*IND*UC*PR****.2****Y~MSG*PHYSICIAN OFFICE PREFERRED URGENT CARE~EB*A*IND*UC*PR****.2****Y~MSG*TELEHEALTH URGENT CARE~EB*C*IND*UC*PR***0*****Y~MSG*PHYSICIAN OFFICE URGENT CARE~EB*C*IND*UC*PR***0*****Y~MSG*PHYSICIAN OFFICE PREFERRED URGENT CARE~EB*C*IND*UC*PR***0*****Y~MSG*TELEHEALTH URGENT CARE~EB*C**88****550*****Y~EB*C**88****0*****Y~EB*B**88****35*****Y~MSG*LEVEL 3~EB*B**88****35*****Y~EB*A*IND*98*PR****.2****Y~MSG*PHYSICIAN OFFICE VISIT PCP~EB*A*IND*98*PR****.2****Y~MSG*PHYSICIAN OFFICE VISIT SPECIALIST~EB*A*IND*98*PR****.2****Y~MSG*PHYSICIAN OFFICE VISIT FREESTANDING RAD CTR~EB*A*IND*98*PR****.2****Y~MSG*PHYSICIAN OFFICE VISIT COMP OUTPT REHAB FACILITY~EB*B*IND*98*PR**23*0*****Y~MSG*TELEHEALTH VISIT PCP~III*ZZ*10~EB*F*IND*98*PR**23**1****Y~MSG*TELEHEALTH VISIT PCP~III*ZZ*10~EB*A*IND*98*PR****.2****Y~MSG*TELEHEALTH VISIT SPECIALIST~III*ZZ*10~EB*C*IND*98*PR***250*****Y~MSG*PHYSICIAN OFFICE VISIT PCP~EB*C*IND*98*PR***250*****Y~MSG*PHYSICIAN OFFICE VISIT SPECIALIST~EB*C*IND*98*PR***250*****Y~MSG*PHYSICIAN OFFICE VISIT FREESTANDING RAD CTR~EB*C*IND*98*PR***250*****Y~MSG*PHYSICIAN OFFICE VISIT COMP OUTPT REHAB FACILITY~EB*I*IND*98*PR***0*****Y~MSG*PHYSICIAN OFFICE DOCTOR ON DEMAND NOT COVERED~EB*A*IND*33*PR****.2****Y~MSG*MEDICARE COVERED MANIPULATIONS~EB*I*IND*33*PR***0*****Y~MSG*MANIPULATIONS~EB*I*IND*33*PR***0*****Y~MSG*RADIOLOGY~EB*C*IND*33*PR***250*****Y~MSG*MEDICARE COVERED MANIPULATIONS~EB*C*IND*30*PR**23*250*****Y~MSG*SEE EXACT BENEFIT TO VERIFY IF DEDUCTIBLE APPLIES~EB*G*IND*30*PR**23*8000*****Y~EB*G*IND*30***24*200*****W~EB*G*IND*30***29*8500*****W~EB*G*IND*30***24*200*****Y~EB*G*IND*30***29*4000*****Y~EB*F*IND*30***24*30000*****W~EB*F*IND*30***29*9000000*****W~EB*C*IND*30***24*250*****W~EB*C*IND*30***29*0*****W~EB*F*IND*30***24*10000*****W~EB*F*IND*30***29*9000000*****W~EB*G*IND*30***24*400*****W~EB*G*IND*30***29*12000*****W~EB*G*IND*30***24*400*****Y~EB*G*IND*30***29*7500*****Y~EB*P***********W~MSG*THIS IS ONLY AN ESTIMATION OF BENEFITS, AND ALL PAYMENTS ARE SUBJECT TO POLICY GUIDELINES, MEDICAL NECESSITY, AND MEMBER ELIGIBILITY AT THE TIME SERVICES ARE PERFORMED.~SE*175*0001~GE*1*1~IEA*1*147983526~",
+  "payer": {
+    "name": {
+      "organization": "HUMANA"
+    },
+    "type": "PAYER",
+    "identification": "61101"
+  },
+  "provider": {
+    "name": {
+      "organization": "MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "101 MAIN ST",
+      "city": "ATLANTA",
+      "state": "GA",
+      "postalCode": "303010001"
+    },
+    "dates": {
+      "plan": {
+        "start": "2024-01-01"
+      },
+      "service": {
+        "start": "2024-09-17"
+      }
+    },
+    "dateOfBirth": "1975-05-05",
+    "gender": "FEMALE",
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE",
+        "middleName": "L"
+      }
+    },
+    "additionalInformation": {
+      "group": {
+        "number": "11223344",
+        "name": "HUMANA INSURANCE COMPANY"
+      },
+      "mbi": "1A22BB3CC44"
+    },
+    "memberId": "HUMANA123"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "000 111",
+              "Medicare PPO",
+              "Member cannot be balanced billed for medical copayments, coinsurance or deductibles on this Plan. Member is cost-share protected by the state Medicaid. In WA if Medicaid is not cost-share protecting members, Humana will process the claim paying member cost share.",
+              "THIS MEMBER MAY BE ELIGIBLE FOR A FREE FITNESS MEMBERSHIP."
+            ],
+            "planCoverageDescription": "Humana Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "54",
+              "definition": "Long Term Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "35",
+              "definition": "Dental Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT SPECIALIST"
+            ],
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "messages": [
+              "INPATIENT HOSPITAL"
+            ],
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "49",
+              "definition": "Hospital - Room and Board",
+              "system": "STC"
+            },
+            "messages": [
+              "INPATIENT HOSPITAL ROOM AND BOARD"
+            ],
+            "timePeriod": "ADMISSION",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "INPATIENT HOSPITAL"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "ER"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "ANESTHESIA"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT SPECIALIST"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL SURGERY"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL ANESTHESIA"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL MRI SCAN"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL CAT SCAN"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE URGENT CARE"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE PREFERRED URGENT CARE"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH URGENT CARE"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT PCP"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT SPECIALIST"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT FREESTANDING RAD CTR"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT COMP OUTPT REHAB FACILITY"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT SPECIALIST"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MEDICARE COVERED MANIPULATIONS"
+            ],
+            "percent": "0.2"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "49",
+              "definition": "Hospital - Room and Board",
+              "system": "STC"
+            },
+            "messages": [
+              "INPATIENT HOSPITAL ROOM AND BOARD"
+            ],
+            "timePeriod": "ADMISSION",
+            "amount": "2000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "ER"
+            ],
+            "timePeriod": "EPISODE",
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "ANESTHESIA"
+            ],
+            "timePeriod": "EPISODE",
+            "amount": "100"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "messages": [
+              "LEVEL 3"
+            ],
+            "amount": "35"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "amount": "35"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "49",
+              "definition": "Hospital - Room and Board",
+              "system": "STC"
+            },
+            "messages": [
+              "INPATIENT HOSPITAL ROOM AND BOARD"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "INPATIENT HOSPITAL"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "ER"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "ANESTHESIA"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT SPECIALIST"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT SPECIALIST"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL SURGERY"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL ANESTHESIA"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL MRI SCAN"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OUTPATIENT HOSPITAL CAT SCAN"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE URGENT CARE"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE PREFERRED URGENT CARE"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH URGENT CARE"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "amount": "550"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT PCP"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT SPECIALIST"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT FREESTANDING RAD CTR"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE VISIT COMP OUTPT REHAB FACILITY"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MEDICARE COVERED MANIPULATIONS"
+            ],
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "SEE EXACT BENEFIT TO VERIFY IF DEDUCTIBLE APPLIES"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "YEAR_TO_DATE",
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "8000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "YEAR_TO_DATE",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "8500"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "YEAR_TO_DATE",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "4000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "YEAR_TO_DATE",
+            "amount": "400"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "12000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "YEAR_TO_DATE",
+            "amount": "400"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "7500"
+          }
+        ],
+        "limitations": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MAX DEPENDENT AGE"
+            ],
+            "quantity": {
+              "value": "26",
+              "qualifier": "YEARS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "messages": [
+              "MAX STUDENT AGE"
+            ],
+            "quantity": {
+              "value": "31",
+              "qualifier": "YEARS"
+            }
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "ROUTINE VISION EXAM"
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "40"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH VISIT PCP"
+            ],
+            "placesOfService": [
+              {
+                "code": "10",
+                "name": "Telehealth Provided in Patient's Home"
+              }
+            ],
+            "timePeriod": "CALENDAR_YEAR",
+            "percent": "1"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "YEAR_TO_DATE",
+            "amount": "30000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "9000000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "YEAR_TO_DATE",
+            "amount": "10000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "9000000"
+          }
+        ],
+        "nonCovered": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "35",
+              "definition": "Dental Care",
+              "system": "STC"
+            },
+            "messages": [
+              "VIEW CONTRACT FOR COVERAGE DETAILS"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICIAN OFFICE DOCTOR ON DEMAND NOT COVERED"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "MANIPULATIONS"
+            ],
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "RADIOLOGY"
+            ],
+            "amount": "0"
+          }
+        ],
+        "primaryCareProvider": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "person": {
+                    "firstName": "Dough",
+                    "lastName": "John"
+                  }
+                },
+                "type": "PRIMARY_CARE_PROVIDER",
+                "address": {
+                  "addressLine1": "202 Main St",
+                  "city": "Tulsa",
+                  "state": "OK",
+                  "postalCode": "74008"
+                },
+                "contacts": [
+                  {
+                    "phoneNumbers": [
+                      "9999999999"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "OK EMP PPO"
+                },
+                "type": "GROUP",
+                "payerId": "34343434"
+              }
+            ],
+            "planCoverageDescription": "AFFILIATION/CENTER"
+          }
+        ],
+        "benefitDisclaimer": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "messages": [
+              "THIS IS ONLY AN ESTIMATION OF BENEFITS, AND ALL PAYMENTS ARE SUBJECT TO POLICY GUIDELINES, MEDICAL NECESSITY, AND MEMBER ELIGIBILITY AT THE TIME SERVICES ARE PERFORMED."
+            ]
+          }
+        ],
+        "otherSourceOfData": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "messages": [
+              "NO DESCRIPTION PROVIDED"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-3ce5-7364-8402-4d8034989c55",
+  "eligibilitySearchId": "01a19f52-3ce6-7306-866d-26fe24cf6dd9"
+}

@@ -1,0 +1,780 @@
+{
+  "meta": {
+    "traceId": "01M6FN4970GT8WN42EB4CCDHW8",
+    "outboundTraceId": "01M6FN4970GT8WN42EB4CCDHW8"
+  },
+  "payerId": "60054",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*814701051*0*T*`~GS*HB*STEDI*117151744*20261103*025203*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN4970GT8WN42EB4CCDHW8*20260325*0901~HL*1**20*1~NM1*PR*2*AETNA INC*****PI*953402799~HL*2*1*21*1~NM1*1P*2*MEDICAL PROVIDER*****XX*1999999984~HL*3*2*22*0~NM1*IL*1*DOE*JANE****MI*AETNA12345~REF*6P*111222333444555~REF*18*1122334~REF*6P*111222333444555*New Jersey Plan~REF*18*1122334~N3*101 MAIN ST~N4*TRENTON*NJ*08601~DMG*D8*20040404*F~DTP*346*D8*20240401~DTP*472*D8*20240917~EB*W***********W~LS*2120~NM1*PR*2*Aetna~N3*202 Main St~N4*El Paso*TX*79998~LE*2120~EB*1*EMP*30*PR*Gold Plan*******W~EB*C*IND*30***25*500*****Y~DTP*346*D8*20240401~EB*C*IND*30***29*500*****Y~EB*G*IND*30***25*7000*****Y~EB*G*IND*30***29*7000*****Y~EB*C*IND*30***25*1000*****N~DTP*346*D8*20240401~EB*C*IND*30***29*1000*****N~EB*G*IND*30***25*14000*****N~EB*G*IND*30***29*14000*****N~EB*1*EMP*1^33^47^48^50^86^98^UC^MH^AL*********W~EB*A*EMP*33^86^98^MH^UC*****0****Y~MSG*Chiropractic~MSG*Office Visits~MSG*Urgent Care~MSG*Walk in Clinic~MSG*Mental Health (outpatient)~EB*A*EMP*86*****.2****Y~MSG*Emergency Room~EB*A*EMP*48^50^MH*****.2****Y~MSG*IP Hospital Room and Board~MSG*IP Hospital Miscellaneous~MSG*OP Hospital Miscellaneous~MSG*Mental Health (inpatient)~EB*B*EMP*33****25*****Y~MSG*Chiropractic~EB*B*EMP*98^MH^UC****30*****Y~MSG*Office Visits~MSG*Walk in Clinic~MSG*Mental Health (outpatient)~EB*B*EMP*86^UC****40*****Y~MSG*Urgent Care~EB*A*EMP*33^48^50^86^98^MH^UC*****.5****N~MSG*Chiropractic~MSG*IP Hospital Room and Board~MSG*IP Hospital Miscellaneous~MSG*Office Visits~MSG*Urgent Care~MSG*Walk in Clinic~MSG*OP Hospital Miscellaneous~MSG*Mental Health (inpatient)~MSG*Mental Health (outpatient)~EB*A*EMP*86*****.2****N~MSG*Emergency Room~SE*69*0001~GE*1*1~IEA*1*814701051~",
+  "payer": {
+    "name": {
+      "organization": "AETNA INC"
+    },
+    "type": "PAYER",
+    "identification": "953402799"
+  },
+  "provider": {
+    "name": {
+      "organization": "MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "101 MAIN ST",
+      "city": "TRENTON",
+      "state": "NJ",
+      "postalCode": "08601"
+    },
+    "dates": {
+      "plan": {
+        "start": "2024-04-01"
+      },
+      "service": {
+        "start": "2024-09-17"
+      }
+    },
+    "dateOfBirth": "2004-04-04",
+    "gender": "FEMALE",
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE"
+      }
+    },
+    "additionalInformation": {
+      "plan": {
+        "number": "1122334"
+      },
+      "group": {
+        "number": "111222333444555",
+        "name": "New Jersey Plan"
+      }
+    },
+    "memberId": "AETNA12345"
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "insuranceType": "PREFERRED_PROVIDER_ORGANIZATION_PPO",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "Gold Plan",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "47",
+              "definition": "Hospital",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Room"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)"
+            ],
+            "percent": "0.2"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic",
+              "IP Hospital Room and Board",
+              "IP Hospital Miscellaneous",
+              "Office Visits",
+              "Urgent Care",
+              "Walk in Clinic",
+              "OP Hospital Miscellaneous",
+              "Mental Health (inpatient)",
+              "Mental Health (outpatient)"
+            ],
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Emergency Room"
+            ],
+            "percent": "0.2"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "Chiropractic"
+            ],
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "Office Visits",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "Office Visits",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Office Visits",
+              "Walk in Clinic",
+              "Mental Health (outpatient)"
+            ],
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care"
+            ],
+            "amount": "40"
+          },
+          {
+            "coverageLevel": "EMPLOYEE_ONLY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "Urgent Care"
+            ],
+            "amount": "40"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "plan": {
+                "start": "2024-04-01"
+              }
+            },
+            "timePeriod": "CONTRACT",
+            "amount": "500"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "500"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "plan": {
+                "start": "2024-04-01"
+              }
+            },
+            "timePeriod": "CONTRACT",
+            "amount": "1000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "1000"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CONTRACT",
+            "amount": "7000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "7000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "CONTRACT",
+            "amount": "14000"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "timePeriod": "REMAINING",
+            "amount": "14000"
+          }
+        ],
+        "otherSourceOfData": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "relatedEntities": [
+              {
+                "name": {
+                  "organization": "Aetna"
+                },
+                "type": "PAYER",
+                "address": {
+                  "addressLine1": "202 Main St",
+                  "city": "El Paso",
+                  "state": "TX",
+                  "postalCode": "79998"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-24df-7784-b394-4c61edf0cb9b",
+  "eligibilitySearchId": "01a19f52-24df-7784-b394-4c6211fe6038"
+}

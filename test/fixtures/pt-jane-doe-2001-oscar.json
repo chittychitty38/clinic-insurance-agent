@@ -1,0 +1,2012 @@
+{
+  "meta": {
+    "traceId": "01M6FN47MN4HM2SV5826XYA4K5",
+    "outboundTraceId": "01M6FN47MN4HM2SV5826XYA4K5"
+  },
+  "payerId": "OSCAR",
+  "x12": "ISA*00*          *00*          *ZZ*STEDI          *01*117151744      *261103*0252*^*00501*151977736*0*T*`~GS*HB*STEDI*117151744*20261103*025201*1*X*005010X279A1~ST*271*0001*005010X279A1~BHT*0022*11*01M6FN47MN4HM2SV5826XYA4K5*20260325*0901~HL*1**20*1~NM1*PR*2*OSCAR*****PI*101355~HL*2*1*21*1~NM1*1P*2*NEW YORK MEDICAL PROVIDER*****XX*1999999984~HL*3*2*22*1~NM1*IL*1*DOE*JOHN****MI*OSCAR123456~REF*18*AAABBBCC*OSCARGOLD~N3*101 MAIN ST~N4*TALLAHASSEE*FL*32301~DTP*291*RD8*20240101-20250101~HL*4*3*23*0~NM1*03*1*DOE*JANE~REF*18*AAABBBCC*OSCARGOLD~REF*N6*OSCAR~N3*101 MAIN ST~N4*TALLAHASSEE*FL*32301~DMG*D8*20010101*F~INS*N*19~EB*1**30**OSCARGOLD*******W~EB*1**1^2^4^5^6^33^48^50^62^73^78^86^88^98^AD^AE^AF^AL^MH^UC**GOLDLITE*23******Y~DTP*292*RD8*20240101-20241231~EB*A**AF**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*SPEECH THERAPY OFFICE,SPEECH THERAPY OUTPATIENT~EB*A**5**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*INDEPENDENT LAB~EB*A**78**GOLDLITE***.5****Y~DTP*292*RD8*20240101-20241231~MSG*CHEMOTHERAPY OUTPATIENT ALL~EB*A**48**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*GENERAL INPATIENT FACILITY~EB*A**33**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*CHIROPRACTIC~EB*A**AE**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*PHYSICAL THERAPY OFFICE,PHYSICAL THERAPY OUTPATIENT~EB*A**50**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*OTHER OUTPATIENT FACILITY~EB*A**86**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*EMERGENCY PHYSICIAN~EB*A**MH**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*MENTAL HEALTH OFFICE PHYSICIAN~EB*A**5**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*LAB GENERAL OUTPATIENT PHYSICIAN,INDEPENDENT LAB,LAB OUTPATIENT FACILITY,LAB OUTPATIENT PHYSICIAN,LAB OFFICE PCP,LAB OUTPATIENT PHYSICIAN PREFERRED,LAB OFFICE INDEPENDENT OUTPATIENT FACILITY PREFERRED,LAB INPATIENT PHYSICIAN,LAB OFFICE SPECIALIST~MSG*LAB GENERAL OFF INDEPENDENT OUTPATIENT FACILITY,ALLERGY LAB OFFICE AND OUTPATIENT~EB*A**73**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*DIAGNOSTIC OUTPATIENT PHYSICIAN,DIAGNOSTIC OUTPATIENT FACILITY,DIAGNOSTIC OFFICE SPECIALIST,DIAGNOSTIC INPATIENT PHYSICIAN,DIAGNOSTIC OFFICE PCP~EB*A**AD**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*OCCUPATIONAL THERAPY OFFICE,OCCUPATIONAL THERAPY SPECIALIST~EB*A**78**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*CHEMOTHERAPY OFFICE PHYSICIAN~EB*A**UC**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*URGENT CARE OUTPATIENT FACILITY,URGENT CARE~EB*A**AL**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*VISION EXAM~EB*A**2**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*SURGICAL OUTPATIENT FACILITY,SURGICAL INPATIENT PHYSICIAN,SURGICAL OFFICE PCP,SURGICAL OUTPATIENT PHYSICIAN,SURGICAL OFFICE SPECIALIST~EB*A**4**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*LOW RADIOLOGY OFFICE SPECIALIST,LOW RADIOLOGY INPATIENT PHYSICIAN,LOW RADIOLOGY OFFICE PCP,LOW RADIOLOGY OUTPATIENT FACILITY,LOW RADIOLOGY OUTPATIENT PHYSICIAN~EB*A**6^62**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*HIGH RADIOLOGY OUTPATIENT PHYSICIAN,HIGH RADIOLOGY INPATIENT PHYSICIAN,HIGH RADIOLOGY OUTPATIENT FACILITY,HIGH RADIOLOGY OFFICE ALL~EB*A**98**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*VISIT OFFICE PCP,TELEHEALTH PRIMARY CARE,TELADOC,VISIT OFFICE SPECIALIST,TELEHEALTH SPECIALIST~EB*A**98**GOLDLITE***0****Y~DTP*292*RD8*20240101-20241231~MSG*VISIT OFFICE PCP~EB*B**98**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*TELADOC~EB*B**2**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*SURGICAL OFFICE SPECIALIST~EB*B**AL**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*VISION EXAM~EB*B**5**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*INDEPENDENT LAB~EB*B**5**GOLDLITE**10*****Y~DTP*292*RD8*20240101-20241231~MSG*LAB OFFICE INDEPENDENT OUTPATIENT FACILITY PREFERRED~EB*B**98**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*TELEHEALTH SPECIALIST,VISIT OFFICE SPECIALIST~EB*B**UC**GOLDLITE**30*****Y~DTP*292*RD8*20240101-20241231~MSG*URGENT CARE,URGENT CARE OUTPATIENT FACILITY~EB*B**MH**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*MENTAL HEALTH OFFICE PHYSICIAN~EB*B**2**GOLDLITE**50*****Y~DTP*292*RD8*20240101-20241231~MSG*SURGICAL OUTPATIENT PHYSICIAN,SURGICAL INPATIENT PHYSICIAN~EB*B**2**GOLDLITE**200*****Y~DTP*292*RD8*20240101-20241231~MSG*SURGICAL OUTPATIENT FACILITY~EB*B**5**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*LAB OUTPATIENT PHYSICIAN PREFERRED,LAB GENERAL OUTPATIENT PHYSICIAN,LAB OUTPATIENT PHYSICIAN~EB*B**86**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*EMERGENCY PHYSICIAN~EB*B**73**GOLDLITE**20*****Y~DTP*292*RD8*20240101-20241231~MSG*DIAGNOSTIC INPATIENT PHYSICIAN,DIAGNOSTIC OUTPATIENT FACILITY~EB*B**6^62**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*HIGH RADIOLOGY OFFICE ALL~EB*B**78**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*CHEMOTHERAPY OUTPATIENT ALL~EB*B**4**GOLDLITE**30*****Y~DTP*292*RD8*20240101-20241231~MSG*LOW RADIOLOGY INPATIENT PHYSICIAN,LOW RADIOLOGY OUTPATIENT FACILITY~EB*B**AD**GOLDLITE**30*****Y~DTP*292*RD8*20240101-20241231~MSG*OCCUPATIONAL THERAPY SPECIALIST,OCCUPATIONAL THERAPY OFFICE~EB*B**6^62**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*HIGH RADIOLOGY OUTPATIENT PHYSICIAN~EB*B**98**GOLDLITE**5*****Y~DTP*292*RD8*20240101-20241231~MSG*VISIT OFFICE PCP~EB*B**73**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*DIAGNOSTIC OFFICE SPECIALIST~EB*B**33**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*CHIROPRACTIC~EB*B**5**GOLDLITE**20*****Y~DTP*292*RD8*20240101-20241231~MSG*LAB GENERAL OFF INDEPENDENT OUTPATIENT FACILITY,ALLERGY LAB OFFICE AND OUTPATIENT,INDEPENDENT LAB,LAB INPATIENT PHYSICIAN,LAB OUTPATIENT FACILITY~EB*B**4**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*LOW RADIOLOGY OUTPATIENT PHYSICIAN~EB*B**5**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*LAB OFFICE SPECIALIST~EB*B**6^62**GOLDLITE**50*****Y~DTP*292*RD8*20240101-20241231~MSG*HIGH RADIOLOGY OUTPATIENT FACILITY,HIGH RADIOLOGY INPATIENT PHYSICIAN~EB*B**98**GOLDLITE**5*****Y~DTP*292*RD8*20240101-20241231~MSG*VISIT OFFICE PCP,TELEHEALTH PRIMARY CARE~EB*B**AF**GOLDLITE**30*****Y~DTP*292*RD8*20240101-20241231~MSG*SPEECH THERAPY OUTPATIENT,SPEECH THERAPY OFFICE~EB*B**48**GOLDLITE**250*****Y~DTP*292*RD8*20240101-20241231~MSG*GENERAL INPATIENT FACILITY~EB*B**4**GOLDLITE**5*****Y~DTP*292*RD8*20240101-20241231~MSG*LOW RADIOLOGY OFFICE PCP~EB*B**5**GOLDLITE**5*****Y~DTP*292*RD8*20240101-20241231~MSG*LAB OFFICE PCP~EB*B**73**GOLDLITE**5*****Y~DTP*292*RD8*20240101-20241231~MSG*DIAGNOSTIC OFFICE PCP~EB*B**78**GOLDLITE**200*****Y~DTP*292*RD8*20240101-20241231~MSG*CHEMOTHERAPY OFFICE PHYSICIAN~EB*B**4**GOLDLITE**25*****Y~DTP*292*RD8*20240101-20241231~MSG*LOW RADIOLOGY OFFICE SPECIALIST~EB*B**2**GOLDLITE**5*****Y~DTP*292*RD8*20240101-20241231~MSG*SURGICAL OFFICE PCP~EB*B**73**GOLDLITE**0*****Y~DTP*292*RD8*20240101-20241231~MSG*DIAGNOSTIC OUTPATIENT PHYSICIAN~EB*B**50**GOLDLITE**200*****Y~DTP*292*RD8*20240101-20241231~MSG*OTHER OUTPATIENT FACILITY~EB*B**AE**GOLDLITE**30*****Y~DTP*292*RD8*20240101-20241231~MSG*PHYSICAL THERAPY OUTPATIENT,PHYSICAL THERAPY OFFICE~EB*C*FAM*30**OSCARGOLD*29*0*****Y~DTP*292*RD8*20240101-20250101~EB*C*IND*30**OSCARGOLD*29*0*****Y~DTP*292*RD8*20240101-20250101~EB*C*FAM*30**GOLDLITE*23*0*****Y~DTP*292*RD8*20240101-20241231~EB*C*IND*30**GOLDLITE*23*0*****Y~DTP*292*RD8*20240101-20241231~EB*G*IND*30**OSCARGOLD*29*20006*****Y~DTP*292*RD8*20240101-20250101~EB*G*FAM*30**OSCARGOLD*29*5000*****Y~DTP*292*RD8*20240101-20250101~EB*G*FAM*30**GOLDLITE*23*5250*****Y~DTP*292*RD8*20240101-20241231~EB*G*IND*30**GOLDLITE*23*2500*****Y~DTP*292*RD8*20240101-20241231~EB*I**35**GOLDLITE*23******Y~DTP*292*RD8*20240101-20241231~SE*214*0001~GE*1*1~IEA*1*151977736~",
+  "payer": {
+    "name": {
+      "organization": "OSCAR"
+    },
+    "type": "PAYER",
+    "identification": "101355"
+  },
+  "provider": {
+    "name": {
+      "organization": "NEW YORK MEDICAL PROVIDER"
+    },
+    "type": "PROVIDER",
+    "npi": "1999999984"
+  },
+  "subscriber": {
+    "address": {
+      "addressLine1": "101 MAIN ST",
+      "city": "TALLAHASSEE",
+      "state": "FL",
+      "postalCode": "32301"
+    },
+    "dates": {
+      "plan": {
+        "start": "2024-01-01",
+        "end": "2025-01-01"
+      }
+    },
+    "name": {
+      "person": {
+        "firstName": "JOHN",
+        "lastName": "DOE"
+      }
+    },
+    "additionalInformation": {
+      "plan": {
+        "number": "AAABBBCC",
+        "name": "OSCARGOLD"
+      }
+    },
+    "memberId": "OSCAR123456"
+  },
+  "dependent": {
+    "address": {
+      "addressLine1": "101 MAIN ST",
+      "city": "TALLAHASSEE",
+      "state": "FL",
+      "postalCode": "32301"
+    },
+    "dateOfBirth": "2001-01-01",
+    "gender": "FEMALE",
+    "maintenance": {
+      "indicator": "NONE"
+    },
+    "name": {
+      "person": {
+        "firstName": "JANE",
+        "lastName": "DOE"
+      }
+    },
+    "relationToSubscriber": "CHILD",
+    "additionalInformation": {
+      "plan": {
+        "number": "AAABBBCC",
+        "name": "OSCARGOLD"
+      },
+      "planNetwork": {
+        "number": "OSCAR"
+      }
+    }
+  },
+  "plans": [
+    {
+      "benefits": {
+        "statuses": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_AND_OUT_OF_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "planCoverageDescription": "OSCARGOLD",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "1",
+              "definition": "Medical Care",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "6",
+              "definition": "Radiation Therapy",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "78",
+              "definition": "Chemotherapy",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "88",
+              "definition": "Pharmacy",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AF",
+              "definition": "Speech Therapy",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "status": "ACTIVE_COVERAGE"
+          }
+        ],
+        "coInsurance": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AF",
+              "definition": "Speech Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "SPEECH THERAPY OFFICE,SPEECH THERAPY OUTPATIENT"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "INDEPENDENT LAB"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "78",
+              "definition": "Chemotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "CHEMOTHERAPY OUTPATIENT ALL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0.5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "GENERAL INPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "CHIROPRACTIC"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICAL THERAPY OFFICE,PHYSICAL THERAPY OUTPATIENT"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OTHER OUTPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "MENTAL HEALTH OFFICE PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "LAB GENERAL OUTPATIENT PHYSICIAN,INDEPENDENT LAB,LAB OUTPATIENT FACILITY,LAB OUTPATIENT PHYSICIAN,LAB OFFICE PCP,LAB OUTPATIENT PHYSICIAN PREFERRED,LAB OFFICE INDEPENDENT OUTPATIENT FACILITY PREFERRED,LAB INPATIENT PHYSICIAN,LAB OFFICE SPECIALIST",
+              "LAB GENERAL OFF INDEPENDENT OUTPATIENT FACILITY,ALLERGY LAB OFFICE AND OUTPATIENT"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "DIAGNOSTIC OUTPATIENT PHYSICIAN,DIAGNOSTIC OUTPATIENT FACILITY,DIAGNOSTIC OFFICE SPECIALIST,DIAGNOSTIC INPATIENT PHYSICIAN,DIAGNOSTIC OFFICE PCP"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "OCCUPATIONAL THERAPY OFFICE,OCCUPATIONAL THERAPY SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "78",
+              "definition": "Chemotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "CHEMOTHERAPY OFFICE PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "URGENT CARE OUTPATIENT FACILITY,URGENT CARE"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "VISION EXAM"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "messages": [
+              "SURGICAL OUTPATIENT FACILITY,SURGICAL INPATIENT PHYSICIAN,SURGICAL OFFICE PCP,SURGICAL OUTPATIENT PHYSICIAN,SURGICAL OFFICE SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "messages": [
+              "LOW RADIOLOGY OFFICE SPECIALIST,LOW RADIOLOGY INPATIENT PHYSICIAN,LOW RADIOLOGY OFFICE PCP,LOW RADIOLOGY OUTPATIENT FACILITY,LOW RADIOLOGY OUTPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "6",
+              "definition": "Radiation Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OUTPATIENT PHYSICIAN,HIGH RADIOLOGY INPATIENT PHYSICIAN,HIGH RADIOLOGY OUTPATIENT FACILITY,HIGH RADIOLOGY OFFICE ALL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OUTPATIENT PHYSICIAN,HIGH RADIOLOGY INPATIENT PHYSICIAN,HIGH RADIOLOGY OUTPATIENT FACILITY,HIGH RADIOLOGY OFFICE ALL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "VISIT OFFICE PCP,TELEHEALTH PRIMARY CARE,TELADOC,VISIT OFFICE SPECIALIST,TELEHEALTH SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "VISIT OFFICE PCP"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "percent": "0"
+          }
+        ],
+        "coPayment": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELADOC"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "messages": [
+              "SURGICAL OFFICE SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AL",
+              "definition": "Vision (Optometry)",
+              "system": "STC"
+            },
+            "messages": [
+              "VISION EXAM"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "INDEPENDENT LAB"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "LAB OFFICE INDEPENDENT OUTPATIENT FACILITY PREFERRED"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "10"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "TELEHEALTH SPECIALIST,VISIT OFFICE SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "UC",
+              "definition": "Urgent Care",
+              "system": "STC"
+            },
+            "messages": [
+              "URGENT CARE,URGENT CARE OUTPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "MH",
+              "definition": "Mental Health",
+              "system": "STC"
+            },
+            "messages": [
+              "MENTAL HEALTH OFFICE PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "messages": [
+              "SURGICAL OUTPATIENT PHYSICIAN,SURGICAL INPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "50"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "messages": [
+              "SURGICAL OUTPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "LAB OUTPATIENT PHYSICIAN PREFERRED,LAB GENERAL OUTPATIENT PHYSICIAN,LAB OUTPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "86",
+              "definition": "Emergency Services",
+              "system": "STC"
+            },
+            "messages": [
+              "EMERGENCY PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "DIAGNOSTIC INPATIENT PHYSICIAN,DIAGNOSTIC OUTPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "6",
+              "definition": "Radiation Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OFFICE ALL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OFFICE ALL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "78",
+              "definition": "Chemotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "CHEMOTHERAPY OUTPATIENT ALL"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "messages": [
+              "LOW RADIOLOGY INPATIENT PHYSICIAN,LOW RADIOLOGY OUTPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AD",
+              "definition": "Occupational Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "OCCUPATIONAL THERAPY SPECIALIST,OCCUPATIONAL THERAPY OFFICE"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "6",
+              "definition": "Radiation Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OUTPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OUTPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "VISIT OFFICE PCP"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "DIAGNOSTIC OFFICE SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "33",
+              "definition": "Chiropractic",
+              "system": "STC"
+            },
+            "messages": [
+              "CHIROPRACTIC"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "LAB GENERAL OFF INDEPENDENT OUTPATIENT FACILITY,ALLERGY LAB OFFICE AND OUTPATIENT,INDEPENDENT LAB,LAB INPATIENT PHYSICIAN,LAB OUTPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "20"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "messages": [
+              "LOW RADIOLOGY OUTPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "LAB OFFICE SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "6",
+              "definition": "Radiation Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OUTPATIENT FACILITY,HIGH RADIOLOGY INPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "50"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "62",
+              "definition": "MRI/CAT Scan",
+              "system": "STC"
+            },
+            "messages": [
+              "HIGH RADIOLOGY OUTPATIENT FACILITY,HIGH RADIOLOGY INPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "50"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "98",
+              "definition": "Professional (Physician) Visit - Office",
+              "system": "STC"
+            },
+            "messages": [
+              "VISIT OFFICE PCP,TELEHEALTH PRIMARY CARE"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AF",
+              "definition": "Speech Therapy",
+              "system": "STC"
+            },
+            "messages": [
+              "SPEECH THERAPY OUTPATIENT,SPEECH THERAPY OFFICE"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "30"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "48",
+              "definition": "Hospital - Inpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "GENERAL INPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "messages": [
+              "LOW RADIOLOGY OFFICE PCP"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "5",
+              "definition": "Diagnostic Lab",
+              "system": "STC"
+            },
+            "messages": [
+              "LAB OFFICE PCP"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "DIAGNOSTIC OFFICE PCP"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "78",
+              "definition": "Chemotherapy",
+              "system": "STC"
+            },
+            "messages": [
+              "CHEMOTHERAPY OFFICE PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "4",
+              "definition": "Diagnostic X-Ray",
+              "system": "STC"
+            },
+            "messages": [
+              "LOW RADIOLOGY OFFICE SPECIALIST"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "25"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "2",
+              "definition": "Surgical",
+              "system": "STC"
+            },
+            "messages": [
+              "SURGICAL OFFICE PCP"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "5"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "73",
+              "definition": "Diagnostic Medical",
+              "system": "STC"
+            },
+            "messages": [
+              "DIAGNOSTIC OUTPATIENT PHYSICIAN"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "50",
+              "definition": "Hospital - Outpatient",
+              "system": "STC"
+            },
+            "messages": [
+              "OTHER OUTPATIENT FACILITY"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "200"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "AE",
+              "definition": "Physical Medicine",
+              "system": "STC"
+            },
+            "messages": [
+              "PHYSICAL THERAPY OUTPATIENT,PHYSICAL THERAPY OFFICE"
+            ],
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "amount": "30"
+          }
+        ],
+        "deductible": [
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2025-01-01"
+              }
+            },
+            "planCoverageDescription": "OSCARGOLD",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2025-01-01"
+              }
+            },
+            "planCoverageDescription": "OSCARGOLD",
+            "timePeriod": "REMAINING",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "0"
+          }
+        ],
+        "outOfPocket": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2025-01-01"
+              }
+            },
+            "planCoverageDescription": "OSCARGOLD",
+            "timePeriod": "REMAINING",
+            "amount": "20006"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2025-01-01"
+              }
+            },
+            "planCoverageDescription": "OSCARGOLD",
+            "timePeriod": "REMAINING",
+            "amount": "5000"
+          },
+          {
+            "coverageLevel": "FAMILY",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "5250"
+          },
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "30",
+              "definition": "Health Benefit Plan Coverage",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE",
+            "timePeriod": "CALENDAR_YEAR",
+            "amount": "2500"
+          }
+        ],
+        "nonCovered": [
+          {
+            "coverageLevel": "INDIVIDUAL",
+            "network": {
+              "indicator": "IN_NETWORK"
+            },
+            "service": {
+              "value": "35",
+              "definition": "Dental Care",
+              "system": "STC"
+            },
+            "dates": {
+              "benefit": {
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            },
+            "planCoverageDescription": "GOLDLITE"
+          }
+        ]
+      }
+    }
+  ],
+  "id": "ec_01a19f52-1e93-70e9-9a56-70d0bccdd318",
+  "eligibilitySearchId": "01a19f52-1e94-7361-995d-0031b54ab8be"
+}
