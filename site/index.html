@@ -178,6 +178,17 @@ section { padding-block: clamp(72px, 10vw, 128px); }
 .paper .st-staff, .receipt .st-staff { color: var(--blue-p); }
 .paper .st-error, .receipt .st-error { color: var(--violet-p); }
 
+/* The brief, as a work order */
+.order { background: var(--paper); color: var(--ink); border: 3px solid var(--ink); outline: 3px solid var(--paper); border-radius: 12px; box-shadow: 12px 13px 0 var(--red); }
+.order-head { display: flex; justify-content: space-between; gap: 12px; padding: 16px 22px; border-bottom: 3px double var(--ink); color: var(--pdim); }
+.order ol { list-style: none; margin: 0; padding: 0; }
+.order li { display: grid; grid-template-columns: 26px minmax(0, 1fr) minmax(0, 1.25fr) auto; gap: 8px 20px; align-items: start; padding: 16px 22px; border-bottom: 1px solid #CFC5AE; }
+.order li:last-child { border-bottom: 0; }
+.order q { font: 700 17px/1.35 var(--head); letter-spacing: -.01em; quotes: "\201C" "\201D"; }
+.order .how { font-size: 15.5px; color: var(--pdim); }
+.order .proof { font: 600 12px/1.6 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--red-p); white-space: nowrap; text-decoration: none; }
+.order .proof:hover { text-decoration: underline; }
+
 /* Speed + standards */
 .speed-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
 .leds { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: stretch; gap: 14px; margin-top: 8px; }
@@ -291,6 +302,8 @@ footer { padding-block: 72px 56px; border-top: 2px solid var(--rule-d); }
   .lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 860px) {
+  .order li { grid-template-columns: 26px minmax(0, 1fr); }
+  .order .how, .order .proof { grid-column: 2; }
   .hero-grid, .hear-grid, .speed-grid, .props, .no-grid { grid-template-columns: minmax(0, 1fr); }
   .hero-grid { gap: 44px; }
   .chart { max-width: 560px; }
@@ -326,6 +339,7 @@ footer { padding-block: 72px 56px; border-top: 2px solid var(--rule-d); }
       <span class="label">Campus Eye Center · Insurance line</span>
     </a>
     <nav class="nav label" aria-label="Sections">
+      <a href="#brief">The brief</a>
       <a href="#hear">Hear it</a>
       <a href="#try">Try it</a>
       <a href="#speed">On the phone</a>
@@ -375,6 +389,29 @@ footer { padding-block: 72px 56px; border-top: 2px solid var(--rule-d); }
     <span style="--rot:0deg">AETNA</span><span style="--rot:90deg">CIGNA</span><span style="--rot:180deg">UNITEDHEALTHCARE</span><span style="--rot:270deg">MEDICARE</span><span style="--rot:0deg">ANTHEM BLUE CROSS</span><span style="--rot:90deg">BLUE CROSS BLUE SHIELD OF TEXAS</span><span style="--rot:180deg">HUMANA</span><span style="--rot:270deg">OSCAR</span><span style="--rot:0deg">KAISER PERMANENTE</span><span style="--rot:90deg">AMBETTER</span>
   </div>
 </div>
+
+<section id="brief" class="gutter">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label">The brief, line by line</span>
+      <h2>Everything the brief asked for, checked off.</h2>
+      <p class="muted">Each line of the take-home, what was built for it, and where to see the proof.</p>
+    </div>
+    <div class="order reveal">
+      <div class="order-head label"><span>Work order · Clyde Health take-home</span><span>8 of 8 done</span></div>
+      <ol>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>A patient dials it and talks to the agent</q><p class="how">A live number on Vapi. Riley picks up and speaks in about 1.4 seconds.</p><a class="proof" href="tel:+17072155322">Call it →</a></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>Figure out which patient is calling, trusting the name</q><p class="how">Name first, a birthday only when the name is shared, then the card itself. Nicknames and misheard surnames still match.</p><a class="proof" href="https://github.com/chittychitty38/clinic-insurance-agent/blob/main/src/patients.ts" target="_blank" rel="noopener">patients.ts →</a></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>A preset of users in various states</q><p class="how">All 28 Stedi sandbox patients, from active and dependent to Medicare, out of network, inactive, dental cards and five payer errors. 28 of 28 correct, live.</p><a class="proof" href="#answers">Every answer →</a></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>Run their insurance through Stedi’s API, sandbox</q><p class="how">A real-time 270/271 check per call, with a timeout and one retry when the insurer is down.</p><a class="proof" href="https://github.com/chittychitty38/clinic-insurance-agent/blob/main/src/stedi/client.ts" target="_blank" rel="noopener">client.ts →</a></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>Say in plain language if it’s accepted and the copay</q><p class="how">Code reads the 271 and writes the sentence. The model only says it. Golden tests pin every spoken number.</p><a class="proof" href="#design">How →</a></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>A wise way to handle it when it isn’t accepted</q><p class="how">Explains why, offers the self-pay price, a callback or the route to an in-network doctor, and never quotes a price for a plan the clinic doesn’t take.</p><a class="proof" href="#no">The hard calls →</a></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>Node 22, TypeScript, Yarn, Stedi, Render</q><p class="how">All of it. The API runs on Render, keys and services are wired up, and there are no GitHub Actions.</p><a class="proof" href="https://github.com/chittychitty38/clinic-insurance-agent" target="_blank" rel="noopener">Repo →</a></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6"/></svg></span><q>Show how you use AI to get there</q><p class="how">Built with Claude Code inside a verification loop: real payer data, golden tests, and real call transcripts decided what shipped.</p><a class="proof" href="https://github.com/chittychitty38/clinic-insurance-agent#how-it-was-built-ai-inside-a-verification-loop" target="_blank" rel="noopener">The story →</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
 
 <section id="hear" class="paper gutter">
   <div class="wrap hear-grid">
@@ -643,7 +680,7 @@ footer { padding-block: 72px 56px; border-top: 2px solid var(--rule-d); }
     <a class="bigcall" href="tel:+17072155322">(707) 215-5322</a>
     <div class="foot-grid">
       <div><span class="label">Built</span><p>By Bennet Laren for the Clyde Health take-home, November 2026.</p><p>Node 22, TypeScript, Express on Render · Vapi, Deepgram Nova-3, Claude Haiku 5.5 · Stedi sandbox · this page on Netlify.</p></div>
-      <div><span class="label">Data</span><p>Sandbox only. Every patient here is a Stedi test record. No real health information.</p><p>Source: <a href="https://github.com/chittychitty38/clinic-insurance-agent">GitHub</a> (access on request).</p></div>
+      <div><span class="label">Data</span><p>Sandbox only. Every patient here is a Stedi test record. No real health information.</p><p>Source: <a href="https://github.com/chittychitty38/clinic-insurance-agent">github.com/chittychitty38/clinic-insurance-agent</a>, with the README covering architecture, decisions and how it was built.</p></div>
       <div><span class="label">Type</span><p>Atkinson Hyperlegible, made by the Braille Institute for readers with low vision, and Lexend, designed for reading fluency. Fitting, for an eye clinic.</p></div>
     </div>
   </div>

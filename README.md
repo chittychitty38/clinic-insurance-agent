@@ -1,5 +1,7 @@
 # Insurance verification voice agent
 
+[![Riley, the Campus Eye Center insurance line](docs/site.jpg)](https://clinic-insurance-agent.netlify.app)
+
 A phone line for an ophthalmology practice near campus. A patient calls, says who they are,
 reads their insurance card, and hears, in plain English, whether we take their insurance and
 what their copay will be. Every answer comes from a live 270/271 eligibility check through
@@ -13,6 +15,23 @@ payer's response.
 - **Server:** `https://clinic-insurance-agent.onrender.com` (staff dashboard at `/?token=…`)
 
 Sandbox callers to try: *Jordan Doe*, born July 14 2001, Aetna `AETNA9wcSu` · *Jane Doe*, born Feb 2 2002, Kaiser `KAISER123456` · *Jane Doe*, born May 5 1955, Medicare `1AA2CC3DD45` · *Jane Doe*, born Jan 1 2001, UnitedHealthcare `UHCAAA42`.
+
+## The brief, line by line
+
+| The take-home asked for | What was built | Proof |
+|---|---|---|
+| A patient dials it and talks to the agent | A live number on Vapi; Riley speaks about 1.4 s after pickup | Call **(707) 215-5322** |
+| Figure out which patient is calling, trusting the name | Name first, a birthday only when the name is shared, then the card; nicknames and misheard surnames still match | [`src/patients.ts`](src/patients.ts), [`find_patient`](src/vapi/tools.ts) |
+| Use the preset users in their various states | All 28 Stedi sandbox patients: active, dependent, Medicare, out of network, inactive, dental cards, five payer errors | `yarn eval`: 28/28 live · [every answer](https://clinic-insurance-agent.netlify.app/#answers) |
+| Run their insurance through Stedi's API (sandbox) | A real-time 270/271 per call, 12 s timeout, one retry for AAA 42 and 5xx | [`src/stedi/client.ts`](src/stedi/client.ts) |
+| Say in plain language if it's accepted and what the copay is | Deterministic code reads the 271 and writes the sentence; the model only says it | [`interpret.ts`](src/eligibility/interpret.ts), [`script.ts`](src/eligibility/script.ts), [golden tests](test/golden-cases.ts) |
+| Handle "not accepted" wisely | Says why, offers the self-pay price, a callback, or the route to an in-network doctor; never quotes a price for a plan the clinic doesn't take | [`outOfNetworkAnswer`](src/eligibility/script.ts), test in [`golden.test.ts`](test/golden.test.ts) |
+| 100% accuracy | Every spoken fact traces to a field in the payer's response; unclear data goes to a human instead of a guess | 85 tests · [receipts with raw 271s](https://clinic-insurance-agent.netlify.app/#answers) |
+| Node 22, TypeScript, Yarn, Stedi, Render | `engines: >=22`, strict TypeScript, Yarn 1, API on Render ([`render.yaml`](render.yaml)), no GitHub Actions | `yarn typecheck && yarn test` |
+| Sign up, set up keys, connect the services | Stedi (test key), Vapi (assistant + number, synced from code), Render (secrets via CLI), Netlify (site + keep-warm cron) | [`.env.example`](.env.example), [`scripts/vapi-sync.ts`](scripts/vapi-sync.ts) |
+| Show how you use AI to get there | Claude Code built it inside a verification loop | [below](#how-it-was-built-ai-inside-a-verification-loop) |
+
+**Beyond the brief:** the payer is asked while the caller is still talking (1.9 s → 0.12 s); misheard member IDs match the chart card; "mm-hmm" never interrupts; eye emergencies go to 911 before insurance and same-day symptoms jump the callback queue; recorded-line and AI disclosures; every call is graded pass/fail after it ends; a staff dashboard with live calls and a callback queue; a keep-warm cron so no caller hits a cold server.
 
 ## How a call works
 
@@ -96,6 +115,17 @@ The Stedi sandbox only answers for its fixed mock patients, so the clinic chart
 | Speech-to-text says "Arroyo" for "Arrojo" | Fuzzy surname match, then confirms the chart spelling |
 | Eye emergency mentioned | Sends them to 911 / ER instead of checking insurance |
 
+## How it was built: AI inside a verification loop
+
+The brief says AI is your friend. This was built with [Claude Code](https://claude.com/claude-code) as the pair programmer: it wrote most of the code. The rule was that nothing it produced counted until something real agreed with it: the payer's response, a test, or a phone call.
+
+1. **Build the whole path first.** Brief and Stedi docs in, a working pipeline out: name → chart → payer → 270/271 → sentence, with the language model kept away from every fact.
+2. **Let real payer data grade it.** All 28 sandbox patients, live. The first run passed **16 of 28**. Every miss was a real-world 271 quirk, not a typo: copays tagged `FAMILY`, Anthem's two networks, a Medicare patient who legally owes $0, vendor copays filed under place of service 99, a payer outage arriving as HTTP 429. Each became a rule, a captured fixture, and a golden test pinning the exact sentence. **28 of 28.**
+3. **Call it and read the transcript.** The first real call worked end to end, and its transcript and server log still turned up three things to fix: a stray empty tool call, a 40-second member ID read-back the server didn't need, and an unprompted caveat. Each became a fix and a test, the same night.
+4. **Make the next round data-driven.** Every call is now graded automatically after it ends, so fixes come from failing calls, not memory.
+
+The same split runs inside the product: Claude runs the conversation, and deterministic, tested code owns every fact.
+
 ## Run it
 
 ```bash
@@ -140,7 +170,8 @@ src/
   patients.ts              Progressive patient matching
   normalize.ts             Speech → member IDs, dates, names
   dashboard.ts             Staff view: live calls, callback queue, scenario runner
-site/                      Project site (Netlify): index.html + generated data/
+site/                      Project site (Netlify): index.html with generated receipts, media/, data/
+netlify/functions/         keep-warm.mts: pings the Render server every 10 min so callers never hit a cold start
 scripts/                   vapi-sync, eval (Stedi), eval-conversations (Vapi chat), build-site
 test/                      Vitest; golden-cases.ts pins every spoken answer to a captured 271
 ```

@@ -6,6 +6,10 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# keep-warm.mts pings the Render server every 10 minutes so callers never wait on a cold start.
+[functions]
+  directory = "netlify/functions"
+
 [[headers]]
   for = "/*"
   [headers.values]
