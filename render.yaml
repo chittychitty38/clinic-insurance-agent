@@ -1,0 +1,25 @@
+# Render Blueprint: New > Blueprint > pick this repo. Secrets marked sync:false are entered in the dashboard.
+services:
+  - type: web
+    name: clinic-insurance-agent
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: yarn install --frozen-lockfile --production=false && yarn build
+    startCommand: yarn start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: STEDI_API_KEY
+        sync: false
+      - key: VAPI_API_KEY
+        sync: false
+      - key: VAPI_WEBHOOK_SECRET
+        generateValue: true
+      - key: DASHBOARD_TOKEN
+        generateValue: true
+      - key: CLINIC_PHONE_NUMBER
+        sync: false
+      - key: FRONT_DESK_NUMBER
+        sync: false

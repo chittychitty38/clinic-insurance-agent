@@ -1,0 +1,32 @@
+{
+  "name": "insurance-verification-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Voice agent that tells callers whether an ophthalmology clinic accepts their insurance and what their copay will be (Vapi + Stedi).",
+  "type": "module",
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node --env-file-if-exists=.env dist/src/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "vapi:sync": "tsx --env-file-if-exists=.env scripts/vapi-sync.ts",
+    "eval": "tsx --env-file-if-exists=.env scripts/eval.ts",
+    "eval:calls": "tsx --env-file-if-exists=.env scripts/eval-conversations.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
