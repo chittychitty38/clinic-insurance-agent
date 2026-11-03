@@ -1,5 +1,5 @@
 import { PATIENTS, type Patient } from './data/patients.js';
-import { firstNamesMatch, lastNamesClose, memberIdsMatch, normalizeText, splitFullName } from './normalize.js';
+import { firstNamesMatch, lastNamesClose, memberIdsMatch, memberIdsSoundAlike, normalizeText, splitFullName } from './normalize.js';
 
 export type PatientLookup =
   | { status: 'found'; patients: Patient[]; exactName: boolean }
@@ -38,6 +38,14 @@ export function pickByCoverage(patients: Patient[], payerKey: string, spokenMemb
   return patients.find(
     (p) => p.coverage.payerKey === payerKey && memberIdsMatch(spokenMemberId, p.coverage.memberId),
   );
+}
+
+/** Fallback when the ID was misheard: the chart card that differs only in sound-alike characters. */
+export function pickBySoundAlikeCard(patients: Patient[], payerKey: string, spokenMemberId: string): Patient | undefined {
+  const matches = patients.filter(
+    (p) => p.coverage.payerKey === payerKey && memberIdsSoundAlike(spokenMemberId, p.coverage.memberId),
+  );
+  return matches.length === 1 ? matches[0] : undefined;
 }
 
 export function patientById(id: string): Patient | undefined {

@@ -32,7 +32,7 @@ interface VapiMessage {
   recordingUrl?: string;
   durationSeconds?: number;
   cost?: number;
-  analysis?: { summary?: string };
+  analysis?: { summary?: string; structuredData?: Record<string, unknown>; successEvaluation?: string | boolean };
   artifact?: { transcript?: string; recordingUrl?: string; recording?: { mono?: { combinedUrl?: string } } };
 }
 
@@ -77,6 +77,9 @@ vapiWebhook.post('/', async (req, res) => {
       call.recordingUrl = message.artifact?.recordingUrl ?? message.recordingUrl ?? message.artifact?.recording?.mono?.combinedUrl;
       call.durationSeconds = message.durationSeconds;
       call.cost = message.cost;
+      const grade = message.analysis?.successEvaluation;
+      if (grade !== undefined) call.qaPassed = String(grade).trim().toLowerCase() === 'true';
+      call.qa = message.analysis?.structuredData;
       res.json({});
       return;
     }

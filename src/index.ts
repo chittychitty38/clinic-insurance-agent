@@ -15,7 +15,7 @@ app.use(express.json({ limit: '2mb' }));
 // Public and read-only: the project site polls it to show (and wake) the line before a call.
 app.get('/health', (_req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
-  res.json({ ok: true, stedi: env.STEDI_API_KEY ? (isStediSandbox ? 'sandbox' : 'production') : 'missing', webhookSecret: !!env.VAPI_WEBHOOK_SECRET });
+  res.json({ ok: true, stedi: env.STEDI_API_KEY ? (isStediSandbox ? 'sandbox' : 'production') : 'missing', webhookSecret: !!env.VAPI_WEBHOOK_SECRET, commit: process.env.RENDER_GIT_COMMIT?.slice(0, 7) ?? null });
 });
 
 app.use(WEBHOOK_PATH, vapiWebhook);

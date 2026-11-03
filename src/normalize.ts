@@ -137,6 +137,28 @@ export function memberIdsMatch(spoken: string, onFile: string): boolean {
   return memberIdKey(memberIdFromSpeech(spoken)) === memberIdKey(onFile);
 }
 
+// Characters phone audio and speech recognition mix up: the "ee" letters, M/N, F/S/X,
+// "A"/"eight"/J/K, I/Y, Q/U, and "five"/"nine". O and 0 are already folded by memberIdKey.
+const SOUND_ALIKE = ['BCDEGPTVZ', 'MN', 'FSX', 'AJK8', 'IY', 'QU', '59'];
+const soundAlike = (a: string, b: string) => SOUND_ALIKE.some((set) => set.includes(a) && set.includes(b));
+
+/**
+ * The card on file is the one the caller is reading if the two IDs differ only in up to two
+ * sound-alike characters ("AETNA9WCZU" heard for AETNA9WCSU). Only used to pick among the
+ * cards already on this patient's chart, never to invent an ID.
+ */
+export function memberIdsSoundAlike(spoken: string, onFile: string, maxDiffs = 2): boolean {
+  const heard = memberIdKey(memberIdFromSpeech(spoken));
+  const card = memberIdKey(onFile);
+  if (heard.length !== card.length || card.length < 6) return false;
+  let diffs = 0;
+  for (let i = 0; i < card.length; i++) {
+    if (heard[i] === card[i]) continue;
+    if (!soundAlike(heard[i]!, card[i]!) || ++diffs > maxDiffs) return false;
+  }
+  return true;
+}
+
 const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
 
 /** Accepts 2001-07-14, 07/14/2001, 7-14-2001, "July 14th 2001", "14 July 2001". Returns YYYY-MM-DD or null. */

@@ -21,6 +21,8 @@ export interface CallbackRequest {
   callerName: string;
   phone: string | null;
   reason: string;
+  /** Eye symptoms that should be seen today: staff call these back first. */
+  urgent: boolean;
   status: 'open' | 'done';
 }
 
@@ -37,6 +39,9 @@ export interface CallRecord {
   recordingUrl?: string;
   durationSeconds?: number;
   cost?: number;
+  /** Vapi's post-call grade against the rubric in assistant.ts, and the fields it extracted. */
+  qaPassed?: boolean;
+  qa?: Record<string, unknown>;
 }
 
 const MAX_CALLS = 200;
@@ -67,6 +72,8 @@ export function verificationFailures(callId: string): number {
 export function addCallback(req: Omit<CallbackRequest, 'id' | 'at' | 'status'>): CallbackRequest {
   const cb: CallbackRequest = { id: `cb_${Date.now().toString(36)}`, at: new Date().toISOString(), status: 'open', ...req };
   callbacks.unshift(cb);
+  // Urgent requests stay at the top of the queue; the sort is stable, so newest first within each.
+  callbacks.sort((a, b) => Number(b.urgent) - Number(a.urgent));
   return cb;
 }
 

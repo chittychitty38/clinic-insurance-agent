@@ -2,9 +2,9 @@ import { clinic } from '../clinic.js';
 import { env, isStediSandbox } from '../config.js';
 import type { Patient } from '../data/patients.js';
 import { memberIdFromSpeech, parseDateOfBirth, splitFullName } from '../normalize.js';
-import { lookupPatient, pickByCoverage } from '../patients.js';
+import { lookupPatient, pickByCoverage, pickBySoundAlikeCard } from '../patients.js';
 import { payerByKey, resolvePayer, type Payer } from '../payers.js';
-import { checkEligibility } from '../stedi/client.js';
+import { checkEligibility, type StediCallResult } from '../stedi/client.js';
 import type { EligibilityRequest, EligibilityResponse } from '../stedi/types.js';
 import { verificationFailures } from '../store.js';
 import { interpretEligibility, type EligibilityFacts, type VisitType } from './interpret.js';
@@ -37,7 +37,66 @@ export interface VerifyResult {
     facts?: EligibilityFacts;
     transportError?: string;
     rawResponse?: EligibilityResponse;
+    /** The answer came from the check started when the chart was found. */
+    prefetched?: boolean;
+    /** How long the caller actually waited on the payer, in ms. */
+    waitedMs?: number;
+    /** What speech recognition heard when it differed from the card on file by sound-alike characters. */
+    memberIdHeardAs?: string;
   };
+}
+
+type Person = { firstName: string; lastName: string; dateOfBirth?: string };
+
+function eligibilityRequest(payer: Payer, patient: Patient | undefined, patientName: Person, patientDob: string, memberId: string, policyholder?: Person): EligibilityRequest {
+  return {
+    payerId: payer.stediPayerId!,
+    externalPatientId: patient?.id,
+    provider: { name: { organization: clinic.name }, npi: env.STEDI_PROVIDER_NPI },
+    subscriber: policyholder
+      ? {
+          name: { person: { firstName: policyholder.firstName, lastName: policyholder.lastName } },
+          memberId,
+          ...(policyholder.dateOfBirth ? { dateOfBirth: policyholder.dateOfBirth } : {}),
+        }
+      : { name: { person: { firstName: patientName.firstName, lastName: patientName.lastName } }, memberId, dateOfBirth: patientDob },
+    ...(policyholder ? { dependent: { name: { person: { firstName: patientName.firstName, lastName: patientName.lastName } }, dateOfBirth: patientDob } } : {}),
+    // The sandbox only supports STC 30; in production we'd also request 98 (office visit) and AL (vision).
+    encounter: { services: [{ system: 'STC', value: '30' }] },
+  };
+}
+
+/**
+ * Checks started early, keyed by call and the exact request. The payer takes 2 to 10 seconds,
+ * and most callers are reading us the card that's already on their chart, so we ask the payer
+ * while they talk. check_insurance reuses the answer only if it would send the identical request.
+ */
+const PREFETCH_TTL_MS = 5 * 60_000;
+const prefetches = new Map<string, { at: number; result: Promise<StediCallResult> }>();
+const prefetchKey = (callId: string, request: EligibilityRequest) => `${callId}|${JSON.stringify(request)}`;
+
+/** Starts the eligibility check for the coverage on the patient's chart. Returns whether it did. */
+export function prefetchCoverageOnFile(patient: Patient, callId: string): boolean {
+  const payer = payerByKey(patient.coverage.payerKey);
+  if (!payer?.stediPayerId || payer.kind === 'vision' || payer.kind === 'dental') return false;
+  const { relationship, policyholder, memberId } = patient.coverage;
+  const request = eligibilityRequest(payer, patient, patient, patient.dateOfBirth, memberId, relationship === 'self' ? undefined : policyholder);
+  const now = Date.now();
+  for (const [k, v] of prefetches) if (now - v.at > PREFETCH_TTL_MS) prefetches.delete(k);
+  const key = prefetchKey(callId, request);
+  if (!prefetches.has(key)) prefetches.set(key, { at: now, result: checkEligibility(request) });
+  return true;
+}
+
+async function eligibility(callId: string, request: EligibilityRequest): Promise<{ result: StediCallResult; prefetched: boolean }> {
+  const early = prefetches.get(prefetchKey(callId, request));
+  if (early && Date.now() - early.at <= PREFETCH_TTL_MS) {
+    const result = await early.result;
+    // A payer that was down a minute ago deserves a fresh try now.
+    const retryable = result.kind === 'transport_error' || result.body.errors?.some((e) => e.code === '42');
+    if (!retryable) return { result, prefetched: true };
+  }
+  return { result: await checkEligibility(request), prefetched: false };
 }
 
 const ask = (say: string, next_step: string, outcome: ToolOutcome = 'NEED_INFO'): VerifyResult => ({
@@ -103,9 +162,16 @@ export async function verifyInsurance(input: VerifyInput, callId: string): Promi
     return ask(`And what's the member ID on your ${payer.displayName} card?`, 'Read the member ID back to confirm, then call check_insurance again with member_id.');
   }
 
-  // 3. Whose policy is it? Prefer the chart when the card the caller read matches it.
-  const patient = pickByCoverage(onFile, payer.key, spokenMemberId) ?? (onFile.length === 1 ? onFile[0] : undefined);
-  const cardMatchesChart = !!patient && pickByCoverage([patient], payer.key, spokenMemberId) !== undefined;
+  // 3. Whose policy is it? Prefer the chart when the card the caller read matches it,
+  // including when speech recognition swapped a sound-alike character or two.
+  let chartCard = pickByCoverage(onFile, payer.key, spokenMemberId);
+  let memberIdHeardAs: string | undefined;
+  if (!chartCard) {
+    chartCard = pickBySoundAlikeCard(onFile, payer.key, spokenMemberId);
+    if (chartCard) memberIdHeardAs = memberIdFromSpeech(spokenMemberId);
+  }
+  const patient = chartCard ?? (onFile.length === 1 ? onFile[0] : undefined);
+  const cardMatchesChart = !!chartCard;
   const memberId = cardMatchesChart ? patient!.coverage.memberId : memberIdFromSpeech(spokenMemberId);
 
   const spoken = splitFullName(input.full_name);
@@ -128,24 +194,12 @@ export async function verifyInsurance(input: VerifyInput, callId: string): Promi
     policyholder = patient!.coverage.policyholder;
   }
 
-  const request: EligibilityRequest = {
-    payerId: payer.stediPayerId,
-    externalPatientId: patient?.id,
-    provider: { name: { organization: clinic.name }, npi: env.STEDI_PROVIDER_NPI },
-    subscriber: policyholder
-      ? {
-          name: { person: { firstName: policyholder.firstName, lastName: policyholder.lastName } },
-          memberId,
-          ...(policyholder.dateOfBirth ? { dateOfBirth: policyholder.dateOfBirth } : {}),
-        }
-      : { name: { person: patientName }, memberId, dateOfBirth: patientDob },
-    ...(policyholder ? { dependent: { name: { person: patientName }, dateOfBirth: patientDob } } : {}),
-    // The sandbox only supports STC 30; in production we'd also request 98 (office visit) and AL (vision).
-    encounter: { services: [{ system: 'STC', value: '30' }] },
-  };
+  const request = eligibilityRequest(payer, patient, patientName, patientDob, memberId, policyholder);
 
-  // 4. Ask the payer.
-  const result = await checkEligibility(request);
+  // 4. Ask the payer, or pick up the answer we asked for while the caller was talking.
+  const waitStarted = Date.now();
+  const { result, prefetched } = await eligibility(callId, request);
+  const waitedMs = Date.now() - waitStarted;
   const ctx = ctxFor(payer, input, patient, callId, patientName.firstName);
 
   if (result.kind === 'transport_error') {
@@ -154,7 +208,7 @@ export async function verifyInsurance(input: VerifyInput, callId: string): Promi
       { kind: 'payer_error', code: String(result.httpStatus ?? 'network'), description: result.error, category: setup ? 'clinic_setup' : 'payer_unavailable' },
       ctx,
     );
-    return { answer, audit: { patientId: patient?.id, payerKey: payer.key, request, httpStatus: result.httpStatus, transportError: result.error, attempts: result.attempts, ms: result.ms } };
+    return { answer, audit: { patientId: patient?.id, payerKey: payer.key, request, httpStatus: result.httpStatus, transportError: result.error, attempts: result.attempts, ms: result.ms, prefetched, waitedMs, memberIdHeardAs } };
   }
 
   const facts = interpretEligibility(result.body, {
@@ -175,6 +229,9 @@ export async function verifyInsurance(input: VerifyInput, callId: string): Promi
       ms: result.ms,
       facts,
       rawResponse: result.body,
+      prefetched,
+      waitedMs,
+      memberIdHeardAs,
     },
   };
 }

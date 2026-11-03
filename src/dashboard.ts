@@ -53,9 +53,9 @@ section { display: none; } section.on { display: block; }
 .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .spacer { flex: 1; }
 .chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--neutral-soft); color: var(--muted); white-space: nowrap; }
-.chip.ACCEPTED { background: var(--ok-soft); color: var(--ok); }
+.chip.ACCEPTED, .chip.QA_PASS { background: var(--ok-soft); color: var(--ok); }
 .chip.ACCEPTED_COPAY_UNCONFIRMED, .chip.NOT_IN_NETWORK, .chip.DENTAL_PLAN, .chip.WHICH_INSURANCE, .chip.UNKNOWN_INSURANCE { background: var(--warn-soft); color: var(--warn); }
-.chip.COVERAGE_INACTIVE, .chip.TOOL_ERROR, .chip.CLINIC_SETUP_ISSUE { background: var(--bad-soft); color: var(--bad); }
+.chip.COVERAGE_INACTIVE, .chip.TOOL_ERROR, .chip.CLINIC_SETUP_ISSUE, .chip.URGENT, .chip.QA_FAIL { background: var(--bad-soft); color: var(--bad); }
 .chip.PLEASE_VERIFY_DETAILS, .chip.PAYER_UNAVAILABLE, .chip.NEED_INFO, .chip.CALLBACK_CREATED { background: var(--info-soft); color: var(--info); }
 .say { margin: 10px 0 0; padding: 10px 14px; border-left: 3px solid var(--accent); background: var(--neutral-soft); border-radius: 0 10px 10px 0; }
 .muted { color: var(--muted); } .small { font-size: 13px; } .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; }
@@ -137,23 +137,34 @@ function renderCalls(calls) {
     return '<div class="card">' +
       '<div class="row"><b>' + esc(c.source === 'phone' ? (c.callerNumber || 'Phone call') : c.source + ' call') + '</b>' +
       '<span class="muted small">' + time(c.startedAt) + (c.durationSeconds ? ' · ' + Math.round(c.durationSeconds) + 's' : '') + (c.endedAt ? '' : ' · <b style="color:var(--ok)">live</b>') + '</span>' +
-      '<span class="spacer"></span>' + (last ? '<span class="chip ' + esc(last.outcome) + '">' + esc(label(last.outcome)) + '</span>' : '') + '</div>' +
+      '<span class="spacer"></span>' + (c.qaPassed === undefined ? '' : '<span class="chip ' + (c.qaPassed ? 'QA_PASS">QA pass' : 'QA_FAIL">QA fail') + '</span>') +
+      (last ? '<span class="chip ' + esc(last.outcome) + '">' + esc(label(last.outcome)) + '</span>' : '') + '</div>' +
       (last && last.say ? '<div class="say">' + esc(last.say) + '</div>' : '') +
       (c.summary ? '<p class="small"><b>Summary:</b> ' + esc(c.summary) + '</p>' : '') +
       '<ul class="timeline">' + c.events.map((e) =>
-        '<li class="small"><span class="muted">' + time(e.at) + '</span> · <b>' + esc(e.tool) + '</b> <span class="chip ' + esc(e.outcome) + '">' + esc(label(e.outcome)) + '</span> <span class="muted">' + e.ms + ' ms</span>' +
+        '<li class="small"><span class="muted">' + time(e.at) + '</span> · <b>' + esc(e.tool) + '</b> <span class="chip ' + esc(e.outcome) + '">' + esc(label(e.outcome)) + '</span> <span class="muted">' + e.ms + ' ms</span>' + eventNote(e) +
         '<details><summary>details</summary><pre>' + esc(JSON.stringify({ args: e.args, detail: e.detail }, null, 2)) + '</pre></details></li>').join('') + '</ul>' +
+      (c.qa ? '<details><summary>QA fields</summary><pre>' + esc(JSON.stringify(c.qa, null, 2)) + '</pre></details>' : '') +
       (c.transcript ? '<details><summary>Transcript</summary><pre>' + esc(c.transcript) + '</pre></details>' : '') +
       (c.recordingUrl ? '<p class="small"><a href="' + esc(c.recordingUrl) + '" target="_blank" rel="noopener">Recording</a></p>' : '') +
     '</div>';
   }).join('');
 }
 
+// What made this step fast or forgiving: the payer answer was already in hand, or a misheard ID was matched to the chart.
+function eventNote(e) {
+  const d = e.detail || {};
+  let note = '';
+  if (d.prefetched) note += ' <span class="chip ACCEPTED">pre-checked · caller waited ' + d.waitedMs + ' ms</span>';
+  if (d.memberIdHeardAs) note += ' <span class="chip NEED_INFO">heard ' + esc(d.memberIdHeardAs) + ', matched card on file</span>';
+  return note;
+}
+
 function renderCallbacks(cbs) {
   const open = cbs.filter((c) => c.status === 'open');
   document.getElementById('n-cb').textContent = open.length;
   document.getElementById('cb-list').innerHTML = cbs.length ? cbs.map((c) =>
-    '<div class="card"><div class="row"><b>' + esc(c.callerName) + '</b><span class="mono">' + esc(c.phone || 'no number') + '</span>' +
+    '<div class="card"><div class="row">' + (c.urgent ? '<span class="chip URGENT">Urgent: call today</span>' : '') + '<b>' + esc(c.callerName) + '</b><span class="mono">' + esc(c.phone || 'no number') + '</span>' +
     '<span class="muted small">' + time(c.at) + '</span><span class="spacer"></span>' +
     (c.status === 'open' ? '<button class="btn" onclick="done(\\'' + c.id + '\\')">Mark done</button>' : '<span class="chip ACCEPTED">Done</span>') +
     '</div><div class="say">' + esc(c.reason) + '</div></div>').join('') : '<div class="empty">No callback requests.</div>';

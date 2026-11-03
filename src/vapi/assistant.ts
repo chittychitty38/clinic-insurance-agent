@@ -21,11 +21,15 @@ export function systemPrompt(opts: { canTransfer: boolean }): string {
 - Warm, calm and efficient, like the best front-desk person they've ever talked to. Short sentences. One question at a time.
 - This is a voice call. Never use lists, symbols, abbreviations or markdown. Say dates like "July fourteenth, two thousand one".
 - Don't repeat the caller's whole sentence back to them, and don't over-apologize.
+- Parents and spouses often call for someone else. Talk to the caller; never call them by the patient's name.
+- If they need a moment to find their card, say "Of course, take your time" and wait quietly.
+- If asked whether you're a real person, say you're the clinic's virtual assistant, and offer a callback from a person.
+- This line is in English. If the caller is struggling in another language, offer a callback and include the language in the reason.
 
 # The call
 1. Who's the patient? Get the patient's first and last name. Parents often call for a child or a college student; then the patient is the child, so ask for the child's name. Call find_patient, then follow its next_step exactly. If it asks for a date of birth, get it and call find_patient again with date_of_birth as YYYY-MM-DD.
 2. Insurance. Ask which insurance company their plan is with and for the member ID on their card.
-   - Read the member ID back one character at a time ("U, H, C, one, two, three. Is that right?") and fix it if they correct you. Pass it exactly as confirmed.
+   - Read the member ID back in small groups ("U, H, C... one, two, three. Is that right?") and fix it if they correct you. Letters that sound alike get a word: "B as in boy", "D as in David", "E as in Edward", "P as in Peter", "T as in Tom", "V as in Victor", "M as in Mary", "N as in Nancy", "F as in Frank", "S as in Sam". Pass the ID exactly as confirmed.
    - If they don't have the card and find_patient said insurance is on file, offer to check the plan on file (use_insurance_on_file = true).
    - Ask, briefly, whether the visit is a routine eye exam for glasses or contacts, or for a medical concern like an infection, dry eye, glaucoma, cataracts or a follow-up. Pass visit_type "routine" or "medical". If they're not sure, use "medical".
 3. Call check_insurance with everything you have. The caller already hears "one moment" while it runs, so don't add filler.
@@ -44,8 +48,9 @@ export function systemPrompt(opts: { canTransfer: boolean }): string {
 
 # Outside your job
 - For scheduling, prescriptions, test results, billing disputes or medical questions, say that this line handles insurance questions, and ${handoff}.
-- Eye emergencies: if the caller mentions sudden vision loss, a curtain or shadow over their vision, a sudden burst of new floaters or flashes of light, a chemical splash, an eye injury, or severe eye pain, tell them to call nine one one or go to the nearest emergency room right away. Don't continue the insurance check.
-- Never give medical advice.
+- Eye emergencies come first, before any insurance question. If the caller mentions sudden vision loss, a curtain or shadow over their vision, a sudden burst of new floaters or flashes of light, sudden double vision, severe eye pain with headache, nausea or halos around lights, an injury or something stuck in the eye, or a chemical in the eye: tell them to call nine one one or go to the nearest emergency room right now, and don't continue the insurance check. For a chemical, also tell them to rinse the eye with lots of clean water right away while someone calls. For an injury, tell them not to rub or press on the eye.
+- Same-day problems: a painful red eye (especially in someone who wears contact lenses), new light sensitivity, or an eye infection that's getting worse should be seen today. Say so, offer a callback, and call request_callback with urgent = true. Then you can still help with their insurance question.
+- Never give medical advice beyond the safety steps above.
 
 # Privacy
 - Only discuss the patient the caller named. Never read out a member ID or birth date the caller didn't give you, and never reveal anything about other patients.
@@ -117,6 +122,7 @@ export function buildAssistant(serverUrl: string) {
             caller_name: { type: 'string', description: 'Name of the person to call back.' },
             phone_number: { type: 'string', description: 'Best number to reach them, if different from the number they are calling from.' },
             reason: { type: 'string', description: 'One sentence for staff: what they need and anything we already learned.' },
+            urgent: { type: 'boolean', description: 'True only for eye symptoms that should be seen today. Staff call these back first.' },
           },
           required: ['caller_name', 'reason'],
         },
@@ -136,8 +142,11 @@ export function buildAssistant(serverUrl: string) {
 
   return {
     name: `${clinic.name} insurance line`,
-    firstMessage: `Thanks for calling ${clinic.name}, this is ${clinic.agentName}, the virtual assistant. I can check whether we take your insurance and what your copay would be. Who's the appointment for?`,
+    // California is an all-party-consent state: say up front that the line is recorded.
+    firstMessage: `Thanks for calling ${clinic.name}. This is ${clinic.agentName}, the clinic's virtual assistant, on a recorded line. I can check whether we take your insurance and what your copay would be. Who's the appointment for?`,
     firstMessageMode: 'assistant-speaks-first',
+    // A caller who starts talking over the greeting ("Hi, I'm calling for my son...") should win.
+    firstMessageInterruptionsEnabled: true,
     model: {
       provider: env.VAPI_MODEL_PROVIDER,
       model: env.VAPI_MODEL,
@@ -153,24 +162,68 @@ export function buildAssistant(serverUrl: string) {
       // Default is 0.4s after a number, which cuts people off mid-member-ID ("U H C ... 1 2 ...").
       transcriptionEndpointingPlan: { onPunctuationSeconds: 0.3, onNoPunctuationSeconds: 1.5, onNumberSeconds: 1.8 },
     },
+    // "Mm-hmm" while Riley reads a copay shouldn't cut it off; "wait" or "no" should, instantly.
+    stopSpeakingPlan: {
+      numWords: 2,
+      voiceSeconds: 0.2,
+      backoffSeconds: 1,
+      acknowledgementPhrases: ['okay', 'ok', 'uh-huh', 'uh huh', 'mm-hmm', 'mhm', 'yeah', 'yes', 'yep', 'right', 'got it', 'sure', 'i see', 'great', 'thanks', 'thank you'],
+      interruptionPhrases: ['wait', 'hold on', 'hang on', 'stop', 'no', 'sorry', 'actually', 'excuse me', 'one second'],
+    },
+    // Callers go looking for their card. Silence gets a gentle check-in, not a hang-up.
+    hooks: [
+      {
+        on: 'customer.speech.timeout',
+        options: { timeoutSeconds: 12, triggerMaxCount: 3, triggerResetMode: 'onUserSpeech' },
+        do: [{ type: 'say', exact: ["Take your time. I'm still here.", "No rush. I'm here whenever you're ready."] }],
+      },
+    ],
     transcriber: {
       provider: 'deepgram',
       model: 'nova-3',
       language: 'en',
       // Bias recognition toward payer names and the mock patients' unusual surnames.
-      keyterm: ['Aetna', 'Cigna', 'UnitedHealthcare', 'Humana', 'Medicare', 'Kaiser', 'Ambetter', 'Oscar', 'Anthem', 'Arrojo', 'Garces', 'Fossum', 'Castillo'],
+      keyterm: ['Aetna', 'Cigna', 'UnitedHealthcare', 'Humana', 'Medicare', 'Medi-Cal', 'Kaiser', 'Ambetter', 'Oscar', 'Anthem', 'Blue Cross', 'Blue Shield', 'EyeMed', 'VSP', 'Davis Vision', 'copay', 'member ID', 'Arrojo', 'Garces', 'Fossum', 'Castillo'],
     },
     server,
     serverMessages: ['tool-calls', 'end-of-call-report', 'status-update'],
     endCallMessage: `Thanks for calling ${clinic.name}. Take care!`,
-    silenceTimeoutSeconds: 30,
+    silenceTimeoutSeconds: 60,
     maxDurationSeconds: 600,
-    backgroundDenoisingEnabled: true,
+    // Campus callers ring from dorms, buses and dining halls: Krisp noise suppression on the caller's audio.
+    backgroundSpeechDenoisingPlan: { smartDenoisingPlan: { enabled: true } },
     analysisPlan: {
       summaryPlan: {
         messages: [
           { role: 'system', content: 'Summarize this insurance-verification call for clinic staff in 2 sentences: who called, which insurance, the outcome, and any follow-up needed.' },
           { role: 'user', content: 'Here is the transcript:\n\n{{transcript}}\n\n' },
+        ],
+      },
+      // Every call graded after it ends, so staff review the ones that went wrong, not all of them.
+      structuredDataPlan: {
+        enabled: true,
+        schema: {
+          type: 'object',
+          properties: {
+            caller_was_patient: { type: 'boolean', description: 'False if a parent, spouse or someone else called for the patient.' },
+            insurance_company: { type: 'string' },
+            result: { type: 'string', enum: ['accepted', 'not_accepted', 'needs_staff', 'emergency_redirected', 'hung_up_early', 'other'] },
+            copay_quoted_dollars: { type: 'number', description: 'The office-visit copay the assistant told the caller, if any.' },
+            callback_requested: { type: 'boolean' },
+            urgent_eye_symptoms: { type: 'boolean' },
+            caller_frustrated: { type: 'boolean', description: 'The caller repeated themselves, complained, or asked for a human.' },
+          },
+        },
+      },
+      successEvaluationPlan: {
+        enabled: true,
+        rubric: 'PassFail',
+        messages: [
+          {
+            role: 'system',
+            content: 'You grade calls to an eye clinic insurance line. Pass only if: every coverage fact and dollar amount the assistant said came from a tool result; it never addressed a parent or spouse by the patient\'s name; it sent eye emergencies to 911 or the ER before anything else; and the caller left with an answer, a callback, or a clear next step. Otherwise fail.\n\nSystem prompt the assistant followed:\n\n{{systemPrompt}}',
+          },
+          { role: 'user', content: 'Transcript:\n\n{{transcript}}\n\nReply with true or false only.' },
         ],
       },
     },

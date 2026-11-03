@@ -136,10 +136,11 @@ function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string
 }
 
 function outOfNetworkAnswer(f: CoverageFacts, payer: Payer, why: 'clinic' | 'plan'): AgentAnswer {
+  // Spoken answers lead with the verdict and stay short; the member-services route is offered next, if they want it.
   const parts = [
     why === 'clinic'
-      ? `I checked, and your ${payer.displayName} coverage is active, but unfortunately we're not in network with ${payer.displayName}.`
-      : `I checked, and your ${payer.displayName} coverage is active, but ${payer.displayName} says your specific plan lists our office as out of network.`,
+      ? `Your ${payer.displayName} coverage is active, but unfortunately we're not in network with ${payer.displayName}.`
+      : `Your ${payer.displayName} coverage is active, but ${payer.displayName} says your specific plan lists our office as out of network.`,
   ];
   if (why === 'clinic' && payer.outOfNetworkNote) parts.push(payer.outOfNetworkNote);
   else if (f.outOfNetwork.coinsurance !== undefined && f.outOfNetwork.coinsurance > 0) {
@@ -147,13 +148,11 @@ function outOfNetworkAnswer(f: CoverageFacts, payer: Payer, why: 'clinic' | 'pla
       `Your plan does show some out-of-network benefits. You'd typically pay ${spokenPercent(f.outOfNetwork.coinsurance)} of the cost${f.outOfNetwork.deductible ? ` after a ${spokenDollars(f.outOfNetwork.deductible)} out-of-network deductible` : ''}.`,
     );
   }
-  parts.push(
-    `You're still welcome to see us as a self-pay patient. A comprehensive eye exam is ${spokenDollars(clinic.selfPay.comprehensiveExam)}. Or you can call the member services number on your card to find an in-network eye doctor.`,
-  );
+  parts.push(`You're welcome to see us as a self-pay patient: a full eye exam is ${spokenDollars(clinic.selfPay.comprehensiveExam)}.`);
   return {
     outcome: 'NOT_IN_NETWORK',
     say: parts.join(' '),
-    next_step: `Ask whether they'd like to book as self-pay or have the front desk call them back to talk through options${why === 'plan' ? ' and double-check the plan\'s network' : ''}. ${OFFER_CALLBACK}`,
+    next_step: `Ask whether they'd like to book as self-pay or have the front desk call them back to talk through options${why === 'plan' ? ' and double-check the plan\'s network' : ''}. If they'd rather stay in network, suggest the member services number on their card to find an in-network eye doctor. ${OFFER_CALLBACK}`,
     facts: coverageFacts(f, payer),
   };
 }

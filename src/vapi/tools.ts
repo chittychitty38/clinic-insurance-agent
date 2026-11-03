@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { clinic } from '../clinic.js';
-import { verifyInsurance } from '../eligibility/service.js';
+import { prefetchCoverageOnFile, verifyInsurance } from '../eligibility/service.js';
 import { parseDateOfBirth } from '../normalize.js';
 import { lookupPatient } from '../patients.js';
 import { payerByKey } from '../payers.js';
@@ -31,6 +31,7 @@ const CallbackArgs = z.object({
   caller_name: z.string().min(1),
   phone_number: z.string().optional(),
   reason: z.string().min(1),
+  urgent: z.boolean().optional().catch(undefined),
 });
 
 export interface ToolContext {
@@ -56,6 +57,8 @@ export const toolHandlers: Record<string, Handler> = {
       const p = lookup.patients[0]!;
       const sameCard = lookup.patients.every((x) => x.coverage.payerKey === p.coverage.payerKey && x.coverage.memberId === p.coverage.memberId);
       const payerOnFile = sameCard ? payerByKey(p.coverage.payerKey)?.displayName : undefined;
+      // Ask the payer about the card on file now, so the answer is ready when the caller reads it.
+      const prefetching = sameCard && prefetchCoverageOnFile(p, ctx.callId);
       out = {
         status: 'found',
         first_name: p.firstName,
@@ -63,10 +66,12 @@ export const toolHandlers: Record<string, Handler> = {
         insurance_on_file: payerOnFile ?? null,
         next_step: [
           lookup.exactName ? '' : `The chart spells the name ${p.firstName} ${p.lastName}; briefly confirm that's them.`,
-          `Greet ${p.firstName} by name, then ask which insurance company their plan is with and for the member ID on their card.`,
+          `Say you found the chart. If the caller is ${p.firstName}, use their name; if they're calling for ${p.firstName}, don't call them by ${p.firstName}'s name.`,
+          `Then ask which insurance company the plan is with and for the member ID on the card.`,
           payerOnFile ? `If they don't have the card handy, offer to check the ${payerOnFile} plan on file.` : '',
         ].filter(Boolean).join(' '),
       };
+      if (prefetching) recordEvent(ctx.callId, { tool: 'prefetch', args: { patientId: p.id }, outcome: 'STARTED', ms: 0 });
     } else if (lookup.status === 'dob_mismatch') {
       out = {
         status: 'no_chart_with_that_birthday',
@@ -95,11 +100,13 @@ export const toolHandlers: Record<string, Handler> = {
     const started = Date.now();
     const args = CallbackArgs.parse(raw);
     const phone = args.phone_number?.trim() || ctx.callerNumber || null;
-    const cb = addCallback({ callId: ctx.callId, callerName: args.caller_name, phone, reason: args.reason });
+    const cb = addCallback({ callId: ctx.callId, callerName: args.caller_name, phone, reason: args.reason, urgent: args.urgent ?? false });
     recordEvent(ctx.callId, { tool: 'request_callback', args, outcome: 'CALLBACK_CREATED', ms: Date.now() - started, detail: cb });
     return JSON.stringify({
       status: 'created',
-      say: `All set. Someone from our front desk will call you back ${clinic.callbackPromise}${phone ? '' : ' (ask for the best number if they haven\'t given one)'}.`,
+      say: args.urgent
+        ? `All set. I've marked this urgent, so our team will call you back today.`
+        : `All set. Someone from our front desk will call you back ${clinic.callbackPromise}.`,
       next_step: phone ? 'Ask if there is anything else you can help with.' : 'Ask for the best phone number, then call request_callback again with phone_number.',
     });
   },
