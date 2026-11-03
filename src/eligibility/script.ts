@@ -58,13 +58,14 @@ const COPAY_SENTENCE: Record<CopayBasis, (amount: string) => string> = {
 };
 
 function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string; visitType: VisitType }): AgentAnswer {
-  const { payer, firstName, visitType } = ctx;
+  // No name in the greeting: the caller is often a parent or spouse, not the patient.
+  const { payer, visitType } = ctx;
   const parts: string[] = [];
   let outcome: Outcome = 'ACCEPTED';
   let next = 'Ask if there is anything else you can help with.';
 
   if (f.isMedicare) {
-    parts.push(`Good news, ${firstName}. We accept Medicare, and your Part B coverage for office visits is active.`);
+    parts.push(`Good news: we accept Medicare, and the Part B coverage for office visits is active.`);
     if (f.isQmb) {
       parts.push(
         `Your record also shows you're in the Qualified Medicare Beneficiary program, so Medicaid covers your Medicare cost-sharing. You shouldn't owe a copay or coinsurance for a covered visit.`,
@@ -83,7 +84,7 @@ function acceptedAnswer(f: CoverageFacts, ctx: { payer: Payer; firstName: string
       parts.push(`If you have a Medicare supplement plan, it may cover some or all of that.`);
     }
   } else {
-    parts.push(`Good news, ${firstName}. We're in network with ${payer.displayName}, and your coverage is active.`);
+    parts.push(`Good news: we're in network with ${payer.displayName}, and the coverage is active.`);
     const copay = f.visitCopay;
     if (copay.status === 'single') {
       parts.push(copay.amount === 0

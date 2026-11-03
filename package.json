@@ -16,7 +16,8 @@
     "test": "vitest run",
     "vapi:sync": "tsx --env-file-if-exists=.env scripts/vapi-sync.ts",
     "eval": "tsx --env-file-if-exists=.env scripts/eval.ts",
-    "eval:calls": "tsx --env-file-if-exists=.env scripts/eval-conversations.ts"
+    "eval:calls": "tsx --env-file-if-exists=.env scripts/eval-conversations.ts",
+    "site:build": "tsx scripts/build-site.ts"
   },
   "dependencies": {
     "express": "^5.1.0",

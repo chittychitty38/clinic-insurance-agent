@@ -1,5 +1,5 @@
 import express from 'express';
-import { env, publicBaseUrl } from './config.js';
+import { env, isStediSandbox, publicBaseUrl } from './config.js';
 import { renderDashboard } from './dashboard.js';
 import { PATIENTS } from './data/patients.js';
 import { verifyInsurance } from './eligibility/service.js';
@@ -12,8 +12,10 @@ const app = express();
 app.disable('x-powered-by');
 app.use(express.json({ limit: '2mb' }));
 
+// Public and read-only: the project site polls it to show (and wake) the line before a call.
 app.get('/health', (_req, res) => {
-  res.json({ ok: true, stedi: !!env.STEDI_API_KEY, vapi: !!env.VAPI_API_KEY, publicUrl: publicBaseUrl() ?? null });
+  res.set('Access-Control-Allow-Origin', '*');
+  res.json({ ok: true, stedi: env.STEDI_API_KEY ? (isStediSandbox ? 'sandbox' : 'production') : 'missing', webhookSecret: !!env.VAPI_WEBHOOK_SECRET });
 });
 
 app.use(WEBHOOK_PATH, vapiWebhook);

@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riley · Insurance verification by phone</title>
+<meta name="description" content="A voice agent for an eye clinic: patients call, Riley checks their insurance with the payer in real time and tells them in plain English whether it's accepted and what they'll pay.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0b7356">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --bg: #f6f5f1;
+  --surface: #ffffff;
+  --sunk: #efede7;
+  --ink: #111a2b;
+  --muted: #586274;
+  --line: #e2dfd7;
+  --accent: #0b7356;
+  --accent-ink: #ffffff;
+  --accent-soft: #e2f2eb;
+  --amber: #8f5300;
+  --amber-soft: #fbefdc;
+  --red: #a3312b;
+  --red-soft: #fbe8e6;
+  --blue: #2a4fb0;
+  --blue-soft: #e8eefc;
+  --shadow: 0 1px 2px rgba(17, 26, 43, .06), 0 8px 24px rgba(17, 26, 43, .06);
+  --display: "Fraunces", Georgia, serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0f17; --surface: #111825; --sunk: #0d131e; --ink: #e7ebf2; --muted: #9aa4b6; --line: #232d3e;
+    --accent: #5fd6a5; --accent-ink: #062018; --accent-soft: #10302a; --amber: #f0b45c; --amber-soft: #33260f;
+    --red: #f2897e; --red-soft: #3a1b18; --blue: #93b1ff; --blue-soft: #18223a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0a0f17; --surface: #111825; --sunk: #0d131e; --ink: #e7ebf2; --muted: #9aa4b6; --line: #232d3e;
+  --accent: #5fd6a5; --accent-ink: #062018; --accent-soft: #10302a; --amber: #f0b45c; --amber-soft: #33260f;
+  --red: #f2897e; --red-soft: #3a1b18; --blue: #93b1ff; --blue-soft: #18223a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 var(--body); font-feature-settings: "cv11", "ss01";
+}
+a { color: inherit; }
+.gutter { padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right)); }
+.wrap { max-width: 1120px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; letter-spacing: -0.01em; line-height: 1.15; margin: 0; }
+h2 { font-size: clamp(28px, 4vw, 40px); }
+h3 { font-size: 20px; }
+p { margin: 0; }
+code, .mono { font-family: var(--mono); font-size: .88em; }
+.eyebrow { font: 500 13px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.muted { color: var(--muted); }
+
+/* Top bar */
+.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; white-space: nowrap; }
+.brand svg { flex: none; }
+.brand small { font-weight: 400; color: var(--muted); }
+.nav { display: flex; gap: 24px; font-size: 14px; }
+.nav a { text-decoration: none; color: var(--muted); }
+.nav a:hover { color: var(--ink); }
+.top .call-mini { font: 600 14px/1 var(--body); text-decoration: none; color: var(--accent); white-space: nowrap; }
+
+/* Hero */
+.hero { padding-block: 64px 56px; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(36px, 5.4vw, 60px); margin-top: 18px; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.lead { font-size: 18px; color: var(--muted); margin-top: 20px; max-width: 34em; }
+.lead strong { color: var(--ink); font-weight: 600; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px; border-radius: 999px; font: 600 16px/1 var(--body); text-decoration: none; border: 1px solid var(--line); background: var(--surface); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.btn.primary:hover { filter: brightness(1.06); }
+.btn:hover { border-color: var(--muted); }
+.status { display: flex; align-items: center; gap: 10px; margin-top: 20px; font-size: 14px; color: var(--muted); min-height: 22px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); flex: none; }
+.status[data-state="up"] .dot { background: #1fa36f; box-shadow: 0 0 0 4px color-mix(in srgb, #1fa36f 22%, transparent); }
+.status[data-state="waking"] .dot { background: var(--amber); animation: pulse 1.2s ease-in-out infinite; }
+.status[data-state="down"] .dot { background: var(--red); }
+@keyframes pulse { 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .status[data-state="waking"] .dot { animation: none; } html { scroll-behavior: auto; } }
+.sandbox-note { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+/* Call transcript card */
+.callcard { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); overflow: hidden; }
+.callcard header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); font-size: 13px; }
+.callcard header b { font-weight: 600; }
+.timer { font-family: var(--mono); color: var(--muted); }
+.lines { padding: 18px; display: grid; gap: 10px; }
+.line { max-width: 88%; padding: 10px 14px; border-radius: 14px; font-size: 14.5px; line-height: 1.5; }
+.line.riley { background: var(--sunk); border-top-left-radius: 4px; }
+.line.caller { justify-self: end; background: var(--blue-soft); border-top-right-radius: 4px; }
+.line.verbatim { background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); max-width: 100%; }
+.who { display: block; font: 500 11px/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.verbatim .who { color: var(--accent); }
+.tool { justify-self: center; display: inline-flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font: 12px/1.4 var(--mono); color: var(--muted); padding: 8px 12px; border: 1px dashed var(--line); border-radius: 10px; max-width: 100%; }
+.tool b { color: var(--ink); font-weight: 500; }
+.callcard footer { padding: 12px 18px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--muted); background: var(--sunk); }
+
+/* Stats */
+.stats { border-block: 1px solid var(--line); background: var(--surface); }
+.stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat { padding: 24px 20px; border-left: 1px solid var(--line); }
+.stat:first-child { border-left: 0; padding-left: 0; }
+.stat b { display: block; font: 600 34px/1.1 var(--display); }
+.stat span { font-size: 14px; color: var(--muted); }
+
+/* Sections */
+section { padding-block: 88px 0; scroll-margin-top: 60px; }
+.sec-head { display: grid; gap: 14px; max-width: 46em; margin-bottom: 36px; }
+.sec-head p { font-size: 17px; color: var(--muted); }
+
+/* Try it */
+.callers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.caller { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 14px; align-content: start; }
+.caller h3 { font-size: 19px; }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 14px; margin: 0; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+.say-this { font-size: 14px; padding: 10px 12px; background: var(--blue-soft); border-radius: 10px; }
+.expect { font-size: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
+.expect b { display: block; font: 500 11px/1.6 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+/* Badges */
+.badge { display: inline-flex; align-items: center; gap: 6px; font: 500 12px/1 var(--body); padding: 6px 10px; border-radius: 999px; white-space: nowrap; }
+.badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.b-accepted { color: var(--accent); background: var(--accent-soft); }
+.b-staff { color: var(--blue); background: var(--blue-soft); }
+.b-declined { color: var(--amber); background: var(--amber-soft); }
+.b-error { color: var(--red); background: var(--red-soft); }
+
+/* Pipeline */
+.pipeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; align-items: stretch; }
+.node { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 16px; display: grid; gap: 6px; align-content: start; margin-right: 28px; }
+.node:last-child { margin-right: 0; }
+.node:not(:last-child)::after { content: ""; position: absolute; right: -22px; top: 50%; width: 16px; height: 2px; background: var(--muted); }
+.node:not(:last-child)::before { content: ""; position: absolute; right: -23px; top: calc(50% - 4px); border: 5px solid transparent; border-left-color: var(--muted); border-right: 0; }
+.node.ours { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.node .k { font: 500 11px/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.node h3 { font-size: 17px; }
+.node p { font-size: 13.5px; color: var(--muted); }
+.node ul { margin: 4px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; }
+.node li { font: 12.5px/1.4 var(--mono); }
+.steps { margin: 36px 0 0; padding: 0; list-style: none; counter-reset: s; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px 28px; }
+.steps li { counter-increment: s; position: relative; padding-left: 40px; font-size: 15px; color: var(--muted); }
+.steps li strong { color: var(--ink); font-weight: 600; display: block; }
+.steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font: 600 13px/1 var(--mono); background: var(--sunk); border: 1px solid var(--line); color: var(--ink); }
+
+/* Layers */
+.layers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.layer { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 10px; align-content: start; }
+.layer .file { font: 500 12.5px/1.4 var(--mono); color: var(--accent); overflow-wrap: anywhere; }
+.layer p { font-size: 14.5px; color: var(--muted); }
+.layer .risk { font-size: 13.5px; padding-top: 10px; border-top: 1px solid var(--line); color: var(--ink); }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 14px; align-content: start; }
+.panel p { color: var(--muted); font-size: 15px; }
+.formula { font: 500 15px/1.5 var(--mono); padding: 14px 16px; background: var(--sunk); border-radius: 10px; overflow-wrap: anywhere; }
+.ladder { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.ladder li { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: start; font-size: 14.5px; }
+.ladder .n { font: 600 12px/28px var(--mono); text-align: center; height: 28px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); }
+.ladder li.stop .n { background: var(--blue-soft); color: var(--blue); }
+.ladder small { display: block; color: var(--muted); font-size: 13px; }
+
+/* Answers */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.chip { font: 500 14px/1 var(--body); padding: 10px 14px; min-height: 40px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip .c { opacity: .6; margin-left: 4px; font-family: var(--mono); font-size: 12px; }
+.answers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.answer { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 12px; align-content: start; }
+.answer[hidden] { display: none; }
+.answer .head { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.answer h3 { font: 600 16px/1.3 var(--body); }
+.answer .meta { font-size: 13px; color: var(--muted); margin-top: 2px; overflow-wrap: anywhere; }
+.answer blockquote { margin: 0; padding: 0 0 0 14px; border-left: 3px solid var(--line); font-size: 15px; }
+.answer .then { font-size: 13.5px; color: var(--muted); }
+.answer .src { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; font: 12.5px/1.5 var(--mono); padding: 10px 12px; background: var(--sunk); border-radius: 10px; }
+.answer .src span { overflow-wrap: anywhere; min-width: 0; flex: 1 1 260px; }
+.answer .src a { color: var(--accent); white-space: nowrap; }
+.empty { color: var(--muted); }
+
+/* Lessons */
+.lessons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.lesson { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 8px; align-content: start; }
+.lesson .tag { font: 500 12px/1.4 var(--mono); color: var(--amber); overflow-wrap: anywhere; }
+.lesson h3 { font: 600 16px/1.35 var(--body); }
+.lesson p { font-size: 14px; color: var(--muted); }
+
+/* No */
+.nolist { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.nolist li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; font-size: 15px; }
+.nolist li::before { content: "→"; color: var(--accent); font-weight: 600; }
+.nolist code { font-size: 13px; }
+
+/* Roadmap */
+.roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.road { border-top: 2px solid var(--ink); padding-top: 14px; display: grid; gap: 8px; align-content: start; }
+.road h3 { font: 600 16px/1.35 var(--body); }
+.road p { font-size: 14.5px; color: var(--muted); }
+
+footer.site { margin-top: 96px; padding-block: 40px 56px; border-top: 1px solid var(--line); background: var(--surface); }
+footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; font-size: 14px; color: var(--muted); }
+footer.site p + p { margin-top: 6px; }
+
+@media (max-width: 1000px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
+  .callers, .layers, .lessons { grid-template-columns: repeat(2, 1fr); }
+  .pipeline { grid-template-columns: 1fr; gap: 28px; }
+  .node { margin-right: 0; }
+  .node:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -22px; width: 2px; height: 16px; }
+  .node:not(:last-child)::before { right: auto; left: calc(50% - 4px); top: auto; bottom: -24px; border: 5px solid transparent; border-top-color: var(--muted); border-bottom: 0; }
+  .steps { grid-template-columns: 1fr 1fr; }
+  .nav { display: none; }
+}
+@media (max-width: 720px) {
+  .hero { padding-block: 40px 40px; }
+  .stats .wrap { grid-template-columns: 1fr 1fr; }
+  .stat { padding: 18px 0 18px 16px; }
+  .stat:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
+  .stat:nth-child(4) { border-top: 1px solid var(--line); }
+  .stat b { font-size: 28px; }
+  .callers, .layers, .lessons, .answers, .split, .roadmap, .steps { grid-template-columns: 1fr; }
+  section { padding-block: 64px 0; }
+  .brand small { display: none; }
+  .line { max-width: 94%; }
+}
+</style>
+</head>
+<body>
+
+<div class="top gutter">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#0b7356"/><path d="M8 7h12v3H11.5v2.5H19v3h-7.5V18H20v3H8z" fill="#fff"/></svg>
+      Riley <small>· Campus Eye Center insurance line</small>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#try">Try it</a>
+      <a href="#how">How it works</a>
+      <a href="#design">Design</a>
+      <a href="#answers">Every answer</a>
+      <a href="#next">Roadmap</a>
+    </nav>
+    <a class="call-mini" href="tel:+17072155322">(707) 215-5322</a>
+  </div>
+</div>
+
+<header class="hero gutter">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Voice agent · ophthalmology front desk</span>
+      <h1>Patients call. Riley checks their insurance <em>with the payer</em> and tells them what they'll pay.</h1>
+      <p class="lead">Riley answers the phone for an eye clinic near campus. It finds the caller's chart, runs a real-time eligibility check through Stedi, and says in plain English whether the clinic takes the plan and what the visit costs. <strong>Every number Riley speaks is read from the payer's response by tested code. The language model never works one out.</strong></p>
+      <div class="ctas">
+        <a class="btn primary" href="tel:+17072155322">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call (707) 215-5322
+        </a>
+        <a class="btn" href="#answers">See all <span data-count="scenarios">27</span> answers</a>
+      </div>
+      <p class="status" id="status" data-state="checking" aria-live="polite"><span class="dot"></span><span id="status-text">Checking the agent server…</span></p>
+      <p class="sandbox-note">Sandbox: the payer side is Stedi's test environment, which only answers for its mock patients. Call as one of the patients in <a href="#try">Try it</a>.</p>
+    </div>
+
+    <figure class="callcard" aria-label="Sample call">
+      <header><b>Sample call · Campus Eye Center</b><span class="timer">sandbox patient</span></header>
+      <div class="lines">
+        <p class="line riley"><span class="who">Riley</span>Thanks for calling Campus Eye Center, this is Riley, the virtual assistant. I can check whether we take your insurance and what your copay would be. Who's the appointment for?</p>
+        <p class="line caller"><span class="who">Caller</span>My son, Jordan Doe. Born July 14th, 2001.</p>
+        <p class="line riley"><span class="who">Riley</span>Thanks. Which insurance is on the card, and what's the member ID?</p>
+        <p class="line caller"><span class="who">Caller</span>Aetna. A-E-T-N-A-9-W-C-S-U.</p>
+        <p class="line riley"><span class="who">Riley</span>That's A, E, T, N, A, 9, W, C, S, U. And is this for a medical problem, or a routine exam for glasses?</p>
+        <p class="line caller"><span class="who">Caller</span>Medical. His eye's been red all week.</p>
+        <p class="tool"><b>check_insurance</b> → Stedi 270/271 · Aetna · dependent of John Doe · <b>active</b></p>
+        <p class="line riley verbatim"><span class="who">Riley · word for word from the server</span><span id="hero-say">Good news: we're in network with Aetna, and the coverage is active. For a specialist visit with our eye doctor, your copay should be 15 dollars.</span></p>
+      </div>
+      <footer>Riley's last line is the exact text the server generated from Aetna's response: specialist office visit (service type 98), in network, $15.</footer>
+    </figure>
+  </div>
+</header>
+
+<div class="stats gutter">
+  <div class="wrap">
+    <div class="stat"><b data-count="scenarios">27</b><span>real payer responses, each answer checked by hand</span></div>
+    <div class="stat"><b data-count="payers">10</b><span>insurers, from Aetna to Medicare</span></div>
+    <div class="stat"><b>76</b><span>automated tests, including every spoken dollar figure</span></div>
+    <div class="stat"><b>0</b><span>numbers the language model is allowed to compute</span></div>
+  </div>
+</div>
+
+<main>
+<section id="try" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Try it</span>
+      <h2>Call (707) 215-5322 as one of these patients</h2>
+      <p>Riley asks one thing at a time, so just answer as it goes. Spell the member ID letter by letter. Each of these is a different situation a real front desk handles every day.</p>
+    </div>
+    <div class="callers">
+      <article class="caller">
+        <span class="badge b-accepted">Accepted</span>
+        <h3>Jordan Doe</h3>
+        <dl class="kv"><dt>Born</dt><dd>July 14, 2001</dd><dt>Insurance</dt><dd>Aetna</dd><dt>Member ID</dt><dd class="mono">AETNA9WCSU</dd></dl>
+        <p class="say-this">"I'm calling for my son, Jordan Doe." Medical visit.</p>
+        <p class="expect"><b>You'll hear</b>In network, active, and a $15 specialist copay. He's on his dad's plan; Riley files him as a dependent automatically.</p>
+      </article>
+      <article class="caller">
+        <span class="badge b-declined">Not accepted</span>
+        <h3>Jane Doe</h3>
+        <dl class="kv"><dt>Born</dt><dd>February 2, 2002</dd><dt>Insurance</dt><dd>Kaiser</dd><dt>Member ID</dt><dd class="mono">KAISER123456</dd></dl>
+        <p class="say-this">"Hi, I'm Jane Doe. I want to check my insurance."</p>
+        <p class="expect"><b>You'll hear</b>Coverage is active, but the clinic isn't in network with Kaiser. Riley explains why, gives the $175 self-pay price, and offers a callback.</p>
+      </article>
+      <article class="caller">
+        <span class="badge b-accepted">Accepted</span>
+        <h3>Jane Doe</h3>
+        <dl class="kv"><dt>Born</dt><dd>May 5, 1955</dd><dt>Insurance</dt><dd>Medicare</dd><dt>Member ID</dt><dd class="mono">1AA2CC3DD45</dd></dl>
+        <p class="say-this">"This is Jane Doe. Do you take Medicare?"</p>
+        <p class="expect"><b>You'll hear</b>Part B is active, and she's a Qualified Medicare Beneficiary: Medicaid covers her cost-sharing, so she owes nothing for a covered visit.</p>
+      </article>
+      <article class="caller">
+        <span class="badge b-error">Payer down</span>
+        <h3>Jane Doe</h3>
+        <dl class="kv"><dt>Born</dt><dd>January 1, 2001</dd><dt>Insurance</dt><dd>UnitedHealthcare</dd><dt>Member ID</dt><dd class="mono">UHCAAA42</dd></dl>
+        <p class="say-this">"I'm Jane Doe, I have United."</p>
+        <p class="expect"><b>You'll hear</b>UnitedHealthcare's system isn't responding. Riley retries once, won't guess, and books a front-desk callback instead.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How a call works</span>
+      <h2>Voice in the cloud, decisions in code</h2>
+      <p>Vapi handles the phone line, speech recognition and the voice. Claude runs the conversation. Anything that has to be right goes through the agent server, which talks to the payer.</p>
+    </div>
+    <div class="pipeline">
+      <div class="node"><span class="k">Caller</span><h3>Phone</h3><p>Any phone, no app. The patient, or a parent calling for a student.</p></div>
+      <div class="node"><span class="k">Vapi</span><h3>Voice and conversation</h3><ul><li>Deepgram Nova-3 (speech)</li><li>Claude Haiku 5.5</li><li>Vapi voice</li></ul></div>
+      <div class="node ours"><span class="k">Agent server · Render</span><h3>Node 22, TypeScript</h3><ul><li>find_patient</li><li>check_insurance</li><li>request_callback</li></ul></div>
+      <div class="node"><span class="k">Stedi</span><h3>Eligibility API</h3><p>Sends the X12 270 request, returns the payer's 271 as JSON in a few seconds.</p></div>
+      <div class="node"><span class="k">Payer</span><h3>The insurer</h3><p>Aetna, Cigna, UnitedHealthcare, Medicare and others report coverage and cost-sharing.</p></div>
+    </div>
+    <ol class="steps">
+      <li><strong>Find the chart</strong>Name first, then date of birth if several patients share it, then the card itself. Two Jane Does share a birthday.</li>
+      <li><strong>Understand the insurer</strong>Spoken names map to payer IDs: "Signa" is Cigna, "United" is UnitedHealthcare. If it's ambiguous, Riley asks.</li>
+      <li><strong>Get the subscriber right</strong>A student on a parent's plan is sent as a dependent under the policyholder, using the ID on file.</li>
+      <li><strong>Ask the payer</strong>A real-time 270 through Stedi, with one retry if the payer is down and a 12-second timeout.</li>
+      <li><strong>Read the 271 in code</strong>Active or not, HMO, Medicare, dental-only, the right copay, coinsurance and deductible.</li>
+      <li><strong>Hand back the words</strong>The server returns the exact sentence to say and the next step. Claude says it and keeps the conversation going.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="design" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The design decision that matters</span>
+      <h2>The language model never decides a fact</h2>
+      <p>A payer's response can list 40 different benefit lines. Asking a model to pick the right copay from that, live on a call, is how you quote a patient the wrong number. So the work is split, and each layer can only fail in its own way.</p>
+    </div>
+    <div class="layers">
+      <div class="layer"><span class="file">Claude, in Vapi</span><h3>The conversation</h3><p>One question at a time, reading member IDs back, tone, off-topic questions, eye emergencies (sends them to 911).</p><p class="risk">Can only be wrong in phrasing. Told to say the server's sentence and never state a number that isn't in a tool result.</p></div>
+      <div class="layer"><span class="file">eligibility/interpret.ts</span><h3>Reading the 271</h3><p>Active or inactive, plan dates, HMO and referrals, Medicare, dental-only, the visit copay, coinsurance, deductible.</p><p class="risk">Deterministic, unit-tested, and it refuses to guess.</p></div>
+      <div class="layer"><span class="file">eligibility/script.ts</span><h3>The words</h3><p>The exact sentence for each outcome and what Riley does next, like a callback, self-pay price or asking for the card again.</p><p class="risk">Reviewed copy, versioned in git like any other UI text.</p></div>
+      <div class="layer"><span class="file">payers.ts</span><h3>Our contracts</h3><p>Which insurers the clinic is in network with, and for which networks. The 271 can't tell you that.</p><p class="risk">Clinic configuration the practice manager owns.</p></div>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>What "accepted" means</h3>
+        <p class="formula">accepted = clinic contract with the payer × coverage active today</p>
+        <p>Eligibility isn't acceptance. A Kaiser member with active coverage still isn't covered here, and a UnitedHealthcare member can be on a plan whose network leaves the clinic out. Riley only says yes when both sides agree, and says why when they don't.</p>
+      </div>
+      <div class="panel">
+        <h3>Which copay? Eye doctors bill as specialists</h3>
+        <ol class="ladder">
+          <li><span class="n">1</span><div>Specialist office visit<small>Service type 98 or BY, labeled specialist, in network, at the office</small></div></li>
+          <li><span class="n">2</span><div>Any office visit<small>Same, without a specialist label. Never a primary-care-only copay</small></div></li>
+          <li><span class="n">3</span><div>Plan-level copay<small>Service type 30, when nothing more specific exists</small></div></li>
+          <li class="stop"><span class="n">?</span><div>Two different amounts left<small>Riley names both and has the front desk confirm. It doesn't pick one</small></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="answers" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Every answer, traced to the source</span>
+      <h2>What Riley says to all <span data-count="scenarios">27</span> sandbox patients</h2>
+      <p>Each card was generated by the production code from a real payer response captured from Stedi. The grey line is the benefit it was read from, checked by hand. Open the raw 271 to check it yourself. The same table runs as golden tests, so a change that alters a spoken number fails before it ships.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filter answers">
+      <button class="chip" data-filter="all" aria-pressed="true">All<span class="c" data-n="all"></span></button>
+      <button class="chip" data-filter="accepted" aria-pressed="false">Accepted<span class="c" data-n="accepted"></span></button>
+      <button class="chip" data-filter="staff" aria-pressed="false">Front desk confirms<span class="c" data-n="staff"></span></button>
+      <button class="chip" data-filter="declined" aria-pressed="false">Not accepted<span class="c" data-n="declined"></span></button>
+      <button class="chip" data-filter="error" aria-pressed="false">Payer errors<span class="c" data-n="error"></span></button>
+    </div>
+    <div class="answers" id="answer-list"><p class="empty">Loading answers…</p></div>
+  </div>
+</section>
+
+<section id="lessons" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What real payer data taught us</span>
+      <h2>The first run passed 16 of 28. Every miss was a rule.</h2>
+      <p>Documentation describes the 271. Real responses are messier. These are the cases that would have put a wrong number in a patient's ear.</p>
+    </div>
+    <div class="lessons">
+      <div class="lesson"><span class="tag">"PROVIDER IS OUT NETWORK FOR MEMBER"</span><h3>We take UnitedHealthcare. Her plan doesn't take us.</h3><p>The payer says this member's plan lists the office as out of network. A naive agent says "you're covered." Riley says the plan lists us as out of network.</p></div>
+      <div class="lesson"><span class="tag">QUALIFIED_MEDICARE_BENEFICIARY</span><h3>The Medicare patient who owes $0</h3><p>0% coinsurance looked like a bug until the insurance type explained it: Medicaid pays her Medicare cost-sharing, and she can't be billed for it.</p></div>
+      <div class="lesson"><span class="tag">SPECIALIST, PAR NETWORK</span><h3>Anthem lists two specialist copays</h3><p>$30 on the EPO network, $45 on PAR. The 271 can't say which network the clinic is in, so that's clinic config, and Riley quotes $45.</p></div>
+      <div class="lesson"><span class="tag">coverageLevel: FAMILY</span><h3>Aetna's copay hid behind a label</h3><p>The $15 specialist copay is tagged FAMILY. That describes the plan, not the amount. Filtering it out silently lost the copay.</p></div>
+      <div class="lesson"><span class="tag">place of service 99</span><h3>Cigna's $10 trap</h3><p>The $10 copays were telehealth-vendor and "client specific network" lines. The real specialist copay is $20, filed under place of service "other."</p></div>
+      <div class="lesson"><span class="tag">payer ID 62308</span><h3>A dental card with a medical payer ID</h3><p>Cigna dental uses the same payer ID as Cigna medical, so dental-only plans are detected from the plan itself, and Riley asks for the medical card.</p></div>
+      <div class="lesson"><span class="tag">planDateInformation</span><h3>Active, with 2024 plan dates</h3><p>Sandbox mocks are frozen in time. In production, "active" with an expired plan date is a contradiction, and Riley escalates to a human instead of answering.</p></div>
+      <div class="lesson"><span class="tag">HTTP 429 + AAA 42</span><h3>Errors don't always look like errors</h3><p>A payer outage can arrive as a rate-limit status. The client keys off the 271's error codes, not the HTTP status, and retries once.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="no" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">When the answer isn't yes</span>
+      <h2>"No" and "I'm not sure" are part of the product</h2>
+      <p>Most calls that matter are the hard ones. Riley never leaves a caller with a dead end, and never guesses to avoid one.</p>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>Not accepted</h3>
+        <ul class="nolist">
+          <li><span>Confirms the coverage is real and active, so the caller knows their insurance works, just not here.</span></li>
+          <li><span>Explains why in one sentence (Kaiser plans only cover Kaiser doctors).</span></li>
+          <li><span>Offers the self-pay price and the member-services route to an in-network doctor.</span></li>
+          <li><span>Books a front-desk callback into the staff queue.</span></li>
+          <li><span>Never quotes a payer dollar amount on a plan we don't take. That's a test.</span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Payer errors</h3>
+        <ul class="nolist">
+          <li><span><code>AAA 42</code> payer down: one automatic retry, then a callback.</span></li>
+          <li><span><code>AAA 72 / 73 / 75</code> ID, name or member not found: asks once to re-read the card or for the policyholder, then a callback.</span></li>
+          <li><span><code>AAA 43 / 79</code> our own setup rejected: tells the caller it isn't their fault and flags it for staff.</span></li>
+          <li><span>Inactive coverage: asks for a newer card before anything else.</span></li>
+          <li><span>Eye emergency mentioned: stops and sends them to 911 or the ER.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="next" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Roadmap</span>
+      <h2>What it needs before real patients</h2>
+      <p>This build proves the hard part: turning a payer response into a correct sentence. Production is mostly integration and compliance.</p>
+    </div>
+    <div class="roadmap">
+      <div class="road"><h3>Verify identity</h3><p>Name, date of birth and caller ID before discussing anything protected. The brief waived it for this version.</p></div>
+      <div class="road"><h3>HIPAA end to end</h3><p>BAAs with Vapi (HIPAA mode, no stored recordings), Stedi, the model provider and hosting. Call log moves to an encrypted database.</p></div>
+      <div class="road"><h3>The real chart</h3><p>Read patients and insurance on file from the practice-management system, like ModMed or Nextech, instead of a demo list.</p></div>
+      <div class="road"><h3>Richer checks</h3><p>Request office-visit (98) and vision (AL) service types alongside 30, add VSP and EyeMed for routine exams, and Medicare ID lookup for patients without their card.</p></div>
+      <div class="road"><h3>Network per plan</h3><p>Contract status per product, not per payer, since one insurer can sell plans on several networks.</p></div>
+      <div class="road"><h3>Front-desk loop</h3><p>Live transfer during hours, callbacks as tasks in the EHR, and alerts when our own setup is the problem.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site gutter">
+  <div class="wrap">
+    <div>
+      <p><strong style="color:var(--ink)">Riley</strong> · built by Bennet Laren for the Clyde Health take-home, November 2026.</p>
+      <p>Node 22 · TypeScript · Express · Vapi · Claude Haiku 5.5 · Stedi · Render · Netlify</p>
+    </div>
+    <div>
+      <p>Sandbox only. Every patient here is a Stedi test record. No real health information.</p>
+      <p>Source: <a href="https://github.com/chittychitty38/clinic-insurance-agent">GitHub</a> (private, access on request)</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const SERVER = 'https://clinic-insurance-agent.onrender.com';
+  const LABEL = {
+    ACCEPTED: 'Accepted',
+    ACCEPTED_COPAY_UNCONFIRMED: 'Accepted · front desk confirms copay',
+    COVERAGE_UNCONFIRMED: 'Front desk confirms',
+    NOT_IN_NETWORK: 'Not in network',
+    COVERAGE_INACTIVE: 'Coverage inactive',
+    DENTAL_PLAN: 'Dental card',
+    VISION_PLAN: 'Vision plan',
+    PLEASE_VERIFY_DETAILS: 'Re-check details',
+    PAYER_UNAVAILABLE: 'Payer down',
+    CLINIC_SETUP_ISSUE: 'Our setup issue',
+  };
+
+  // Agent server status. Render's free tier sleeps when idle, and this request also wakes it.
+  const status = document.getElementById('status');
+  const statusText = document.getElementById('status-text');
+  const setStatus = (state, text) => { status.dataset.state = state; statusText.textContent = text; };
+  async function checkServer() {
+    const started = performance.now();
+    const slow = setTimeout(() => setStatus('waking', 'Waking the agent server. The free tier sleeps when idle; this takes up to a minute.'), 2500);
+    try {
+      const res = await fetch(`${SERVER}/health`, { cache: 'no-store', signal: AbortSignal.timeout(75000) });
+      const body = await res.json();
+      clearTimeout(slow);
+      const ms = Math.round(performance.now() - started);
+      if (!res.ok || !body.ok) throw new Error('unhealthy');
+      setStatus('up', `Agent server online · ${ms < 1000 ? ms + ' ms' : (ms / 1000).toFixed(1) + ' s'} · Stedi ${body.stedi}`);
+    } catch {
+      clearTimeout(slow);
+      setStatus('down', "Can't reach the agent server right now.");
+    }
+  }
+  checkServer();
+
+  // Answers, generated from real 271s by scripts/build-site.ts.
+  const list = document.getElementById('answer-list');
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const fmtDob = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+  fetch('data/scenarios.json').then((r) => r.json()).then(({ scenarios }) => {
+    const counts = { all: scenarios.length };
+    for (const s of scenarios) counts[s.group] = (counts[s.group] || 0) + 1;
+    document.querySelectorAll('[data-n]').forEach((n) => { n.textContent = counts[n.dataset.n] || 0; });
+    document.querySelectorAll('[data-count="scenarios"]').forEach((n) => { n.textContent = scenarios.length; });
+    document.querySelectorAll('[data-count="payers"]').forEach((n) => { n.textContent = new Set(scenarios.map((s) => s.payer)).size; });
+    const jordan = scenarios.find((s) => s.id === 'pt-jordan-doe-2001');
+    if (jordan) document.getElementById('hero-say').textContent = jordan.say;
+
+    list.textContent = '';
+    for (const s of scenarios) {
+      const card = el('article', 'answer');
+      card.dataset.group = s.group;
+      const head = el('div', 'head');
+      const who = el('div');
+      who.append(el('h3', null, `${s.name} · ${s.payer}`));
+      who.append(el('p', 'meta', [`Born ${fmtDob(s.dateOfBirth)}`, `ID ${s.memberId}`, s.onPlanOf].filter(Boolean).join(' · ')));
+      head.append(who, el('span', `badge b-${s.group}`, LABEL[s.outcome] || s.outcome));
+      card.append(head, el('blockquote', null, s.say));
+      if (s.group !== 'accepted') card.append(el('p', 'then', `Riley's next step: ${s.nextStep}`));
+      const src = el('p', 'src');
+      src.append(el('span', null, s.source));
+      const a = el('a', null, 'Raw 271 ↗');
+      a.href = s.raw; a.target = '_blank'; a.rel = 'noopener';
+      src.append(a);
+      card.append(src);
+      list.append(card);
+    }
+  }).catch(() => { list.innerHTML = '<p class="empty">Couldn\'t load the answers.</p>'; });
+
+  document.querySelectorAll('.chip').forEach((chip) => chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+    const f = chip.dataset.filter;
+    list.querySelectorAll('.answer').forEach((card) => { card.hidden = f !== 'all' && card.dataset.group !== f; });
+  }));
+})();
+</script>
+</body>
+</html>
