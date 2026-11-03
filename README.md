@@ -8,8 +8,11 @@ payer's response.
 
 **Stack:** Node 22 · TypeScript · Yarn · Express · [Vapi](https://vapi.ai) (telephony, speech, Claude Haiku 5.5) · Stedi (sandbox) · Render (agent server) · Netlify (project site)
 
-**Try it:** call **(707) 215-5322**. Project site: **https://clinic-insurance-agent.netlify.app** (every sandbox patient's answer, traced to the payer's response). Server: `https://clinic-insurance-agent.onrender.com` (staff dashboard at `/?token=…`).
-Sandbox callers to try: *Jordan Doe*, born July 14 2001, Aetna `AETNA9wcSu` · *Jane Doe*, born Feb 2 2002, Kaiser `KAISER123456` · *Jane Doe*, born Jan 1 2001, UnitedHealthcare `UHCAAA42`.
+**Try it:** call **(707) 215-5322**.
+**Project site:** https://clinic-insurance-agent.netlify.app has a real call recording, the test patients as insurance cards, and all 27 sandbox answers with the insurer data behind each.
+**Server:** `https://clinic-insurance-agent.onrender.com` (staff dashboard at `/?token=…`).
+
+Sandbox callers to try: *Jordan Doe*, born July 14 2001, Aetna `AETNA9wcSu` · *Jane Doe*, born Feb 2 2002, Kaiser `KAISER123456` · *Jane Doe*, born May 5 1955, Medicare `1AA2CC3DD45` · *Jane Doe*, born Jan 1 2001, UnitedHealthcare `UHCAAA42`.
 
 ## How a call works
 
