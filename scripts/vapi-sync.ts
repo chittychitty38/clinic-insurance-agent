@@ -48,13 +48,23 @@ async function main() {
     phone = await vapi<PhoneNumber>('PATCH', `/phone-number/${phone.id}`, { assistantId: assistant.id });
   }
   if (!phone) {
-    phone = await vapi<PhoneNumber>('POST', '/phone-number', {
-      provider: 'vapi',
-      name: 'Insurance line',
-      assistantId: assistant.id,
-      ...(arg('area-code') ? { numberDesiredAreaCode: arg('area-code') } : {}),
-    });
-    console.log('Created a free Vapi number. Activation can take a few minutes.');
+    // Free numbers need an area code, and not every area code has inventory.
+    const areaCodes = arg('area-code') ? [arg('area-code')!] : ['707', '415', '510', '650', '408', '916', '212', '312', '617', '206', '512', '303'];
+    for (const areaCode of areaCodes) {
+      try {
+        phone = await vapi<PhoneNumber>('POST', '/phone-number', {
+          provider: 'vapi',
+          name: 'Insurance line',
+          assistantId: assistant.id,
+          numberDesiredAreaCode: areaCode,
+        });
+        console.log(`Created a free Vapi number in area code ${areaCode}. Activation can take a few minutes.`);
+        break;
+      } catch (err) {
+        console.log(`Area code ${areaCode} unavailable: ${err instanceof Error ? err.message.slice(0, 160) : err}`);
+      }
+    }
+    if (!phone) throw new Error('No free number available in the tried area codes. Pass --area-code to try another.');
   }
   console.log(`Phone number: ${phone.number ?? '(provisioning…)'}  status=${phone.status ?? 'unknown'}`);
   console.log(`\nVAPI_ASSISTANT_ID=${assistant.id}`);

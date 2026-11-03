@@ -338,6 +338,7 @@ function pickAccumulator(entries: BenefitEntry[], side: 'in' | 'out'): { total?:
   // Prefer the strictly in-network figure over a combined in-and-out one.
   const ordered = side === 'in' ? [...usable.filter((b) => network(b) === 'in'), ...usable.filter((b) => network(b) !== 'in')] : usable;
   const remaining = ordered.find((b) => b.timePeriod === 'REMAINING');
-  const total = ordered.find((b) => b.timePeriod && /YEAR$|CONTRACT|PLAN|SERVICE_YEAR|LIFETIME/.test(b.timePeriod) && b.timePeriod !== 'YEAR_TO_DATE');
+  // Totals come as CALENDAR_YEAR, SERVICE_YEAR, CONTRACT... or with no period at all (Aetna's OOP max).
+  const total = ordered.find((b) => !b.timePeriod || (/YEAR$|CONTRACT|PLAN|LIFETIME/.test(b.timePeriod) && b.timePeriod !== 'YEAR_TO_DATE'));
   return { total: money(total?.amount), remaining: money(remaining?.amount) };
 }
