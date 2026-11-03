@@ -8,7 +8,7 @@ import { checkEligibility } from '../stedi/client.js';
 import type { EligibilityRequest, EligibilityResponse } from '../stedi/types.js';
 import { verificationFailures } from '../store.js';
 import { interpretEligibility, type EligibilityFacts, type VisitType } from './interpret.js';
-import { buildAnswer, dentalAnswer, type AgentAnswer } from './script.js';
+import { buildAnswer, dentalAnswer, visionPlanAnswer, type AgentAnswer } from './script.js';
 
 export interface VerifyInput {
   full_name: string;
@@ -92,6 +92,9 @@ export async function verifyInsurance(input: VerifyInput, callId: string): Promi
   }
   if (!payer) return ask(`Which insurance company is your plan with?`, 'Call check_insurance again with insurance_company.');
 
+  if (payer.kind === 'vision') {
+    return { answer: visionPlanAnswer(payer, input.visit_type ?? 'medical'), audit: { payerKey: payer.key } };
+  }
   // Patients regularly read us their dental card. No need to bother a payer to know that.
   if (payer.kind === 'dental' || !payer.stediPayerId) {
     return { answer: dentalAnswer(payer), audit: { payerKey: payer.key } };

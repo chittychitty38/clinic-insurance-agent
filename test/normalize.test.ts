@@ -103,3 +103,12 @@ describe('speech formatting', () => {
     expect(spokenDollars(12.5)).toBe('12 dollars and 50 cents');
   });
 });
+
+describe('vision plans', () => {
+  it('recognizes VSP and EyeMed as vision carriers', () => {
+    for (const said of ['VSP', 'I have Vision Service Plan', 'eye med']) {
+      const r = resolvePayer(said);
+      expect(r.status === 'resolved' && r.payer.kind).toBe('vision');
+    }
+  });
+});

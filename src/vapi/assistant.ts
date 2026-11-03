@@ -146,7 +146,13 @@ export function buildAssistant(serverUrl: string) {
       messages: [{ role: 'system', content: systemPrompt({ canTransfer }) }],
       tools,
     },
-    voice: { provider: env.VAPI_VOICE_PROVIDER, voiceId: env.VAPI_VOICE_ID },
+    // Many eye patients are older: a slightly slower voice, and patience while they read a card.
+    voice: { provider: env.VAPI_VOICE_PROVIDER, voiceId: env.VAPI_VOICE_ID, speed: 0.95 },
+    startSpeakingPlan: {
+      waitSeconds: 0.5,
+      // Default is 0.4s after a number, which cuts people off mid-member-ID ("U H C ... 1 2 ...").
+      transcriptionEndpointingPlan: { onPunctuationSeconds: 0.3, onNoPunctuationSeconds: 1.5, onNumberSeconds: 1.8 },
+    },
     transcriber: {
       provider: 'deepgram',
       model: 'nova-3',

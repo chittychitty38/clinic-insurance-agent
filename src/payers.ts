@@ -5,7 +5,7 @@ import { normalizeText } from './normalize.js';
  * Stedi: a 271 response tells you whether the patient's coverage is active, but it
  * can't reliably tell you whether *this* practice is in the payer's network.
  */
-export type PayerKind = 'medical' | 'medicare' | 'dental';
+export type PayerKind = 'medical' | 'medicare' | 'dental' | 'vision';
 
 export interface Payer {
   key: string;
@@ -108,6 +108,11 @@ export const PAYERS: Payer[] = [
     kind: 'medical',
     inNetwork: false,
   },
+  // Vision plans cover routine exams (glasses/contacts), not medical eye care. They aren't on
+  // the clearinghouse network, so the front desk verifies them in the carrier's own portal.
+  { key: 'vsp', stediPayerId: null, displayName: 'VSP', aliases: ['vsp', 'v s p', 'vision service plan'], kind: 'vision', inNetwork: true },
+  { key: 'eyemed', stediPayerId: null, displayName: 'EyeMed', aliases: ['eyemed', 'eye med'], kind: 'vision', inNetwork: true },
+  { key: 'davis', stediPayerId: null, displayName: 'Davis Vision', aliases: ['davis vision', 'davis'], kind: 'vision', inNetwork: false },
   // Dental-only carriers: patients sometimes read us the wrong card.
   { key: 'ameritas', stediPayerId: 'AMTAS00425', displayName: 'Ameritas', aliases: ['ameritas'], kind: 'dental', inNetwork: false },
   { key: 'metlife', stediPayerId: '10134', displayName: 'MetLife Dental', aliases: ['metlife', 'met life', 'metlife dental'], kind: 'dental', inNetwork: false },

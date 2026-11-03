@@ -16,6 +16,7 @@ export type Outcome =
   | 'COVERAGE_INACTIVE'
   | 'COVERAGE_UNCONFIRMED'
   | 'DENTAL_PLAN'
+  | 'VISION_PLAN'
   | 'PLEASE_VERIFY_DETAILS'
   | 'PAYER_UNAVAILABLE'
   | 'CLINIC_SETUP_ISSUE';
@@ -163,6 +164,36 @@ function inactiveAnswer(f: CoverageFacts, payer: Payer): AgentAnswer {
     say: `I checked with ${payer.displayName}, and unfortunately the plan under that member ID shows as inactive${when}. That sometimes happens when coverage recently changed. Do you have a newer insurance card I could check?`,
     next_step: `If they have a different card, collect the insurance company and member ID and call check_insurance again. If not, mention the self-pay rate of ${spokenDollars(clinic.selfPay.comprehensiveExam)} for a comprehensive exam and suggest calling the number on their card. ${OFFER_CALLBACK}`,
     facts: coverageFacts(f, payer),
+  };
+}
+
+/**
+ * Eye care runs on two kinds of insurance. A vision plan (VSP, EyeMed) covers the routine exam
+ * for glasses or contacts; anything medical (infection, glaucoma, cataracts) goes to medical insurance.
+ */
+export function visionPlanAnswer(payer: Payer, visitType: VisitType): AgentAnswer {
+  const facts = { payer: payer.displayName, plan_type: 'vision', clinic_in_network: payer.inNetwork };
+  if (visitType === 'medical') {
+    return {
+      outcome: 'VISION_PLAN',
+      say: `${payer.displayName} is a vision plan, which covers routine exams for glasses and contacts. For a medical eye concern like yours, we bill your medical insurance instead. Do you have your medical insurance card handy?`,
+      next_step: 'If they have a medical card, collect the insurance company and member ID and call check_insurance again with visit_type "medical".',
+      facts,
+    };
+  }
+  if (!payer.inNetwork) {
+    return {
+      outcome: 'NOT_IN_NETWORK',
+      say: `We're not in network with ${payer.displayName} for routine exams, unfortunately. You're welcome to see us as a self-pay patient: a comprehensive eye exam is ${spokenDollars(clinic.selfPay.comprehensiveExam)}, and many vision plans will reimburse part of it if you send them the receipt.`,
+      next_step: `Ask whether they'd like to book as self-pay. ${OFFER_CALLBACK}`,
+      facts,
+    };
+  }
+  return {
+    outcome: 'ACCEPTED_COPAY_UNCONFIRMED',
+    say: `Good news: we're in network with ${payer.displayName} for routine eye exams. ${payer.displayName} benefits aren't available through the system I use, so I can't read you your exact exam copay, and I don't want to guess. Our front desk can look it up in ${payer.displayName}'s portal and call you back with it.`,
+    next_step: OFFER_CALLBACK,
+    facts,
   };
 }
 

@@ -104,3 +104,16 @@ describe('coverage status', () => {
     expect(a.say).toMatch(/refraction/);
   });
 });
+
+describe('vision plans (eye care has two kinds of insurance)', () => {
+  it('routine exam with VSP: in network, copay confirmed by staff instead of guessed', async () => {
+    const { visionPlanAnswer } = await import('../src/eligibility/script.js');
+    const a = visionPlanAnswer(payerByKey('vsp')!, 'routine');
+    expect(a.outcome).toBe('ACCEPTED_COPAY_UNCONFIRMED');
+    expect(a.say).not.toMatch(/\d+ dollars/);
+  });
+  it('medical visit with a VSP card: asks for the medical card', async () => {
+    const { visionPlanAnswer } = await import('../src/eligibility/script.js');
+    expect(visionPlanAnswer(payerByKey('eyemed')!, 'medical').outcome).toBe('VISION_PLAN');
+  });
+});
