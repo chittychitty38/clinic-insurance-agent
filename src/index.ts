@@ -1,6 +1,7 @@
 import express from 'express';
 import { env, isStediSandbox, publicBaseUrl } from './config.js';
 import { renderDashboard } from './dashboard.js';
+import { demoRouter } from './demo.js';
 import { PATIENTS } from './data/patients.js';
 import { verifyInsurance } from './eligibility/service.js';
 import { payerByKey } from './payers.js';
@@ -19,6 +20,9 @@ app.get('/health', (_req, res) => {
 });
 
 app.use(WEBHOOK_PATH, vapiWebhook);
+
+// Public, sandbox-only "run it live" for the project site (see demo.ts). Mounted before the token-protected staff routes.
+app.use('/api/demo', demoRouter);
 
 // Dashboard + demo API (staff-facing; token-protected when DASHBOARD_TOKEN is set)
 const staff = express.Router();

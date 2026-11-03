@@ -49,6 +49,7 @@ export const toolHandlers: Record<string, Handler> = {
     const lookup = lookupPatient(args.full_name ?? '', dob);
 
     let out: Record<string, unknown>;
+    let startedPrefetch: string | undefined;
     if (!args.full_name?.trim()) {
       // Seen on a real call: the model fired a second, empty find_patient alongside the real one.
       out = { status: 'need_name', next_step: 'Ignore this result if you already called find_patient with a name. Otherwise ask for the patient\'s first and last name.' };
@@ -74,7 +75,7 @@ export const toolHandlers: Record<string, Handler> = {
           payerOnFile ? `If they don't have the card handy, offer to check the ${payerOnFile} plan on file.` : '',
         ].filter(Boolean).join(' '),
       };
-      if (prefetching) recordEvent(ctx.callId, { tool: 'prefetch', args: { patientId: p.id }, outcome: 'STARTED', ms: 0 });
+      startedPrefetch = prefetching ? p.id : undefined;
     } else if (lookup.status === 'dob_mismatch') {
       out = {
         status: 'no_chart_with_that_birthday',
@@ -87,6 +88,7 @@ export const toolHandlers: Record<string, Handler> = {
       };
     }
     recordEvent(ctx.callId, { tool: 'find_patient', args, outcome: String(out.status), ms: Date.now() - started });
+    if (startedPrefetch) recordEvent(ctx.callId, { tool: 'prefetch', args: { patientId: startedPrefetch }, outcome: 'STARTED', ms: 0 });
     return JSON.stringify(out);
   },
 
