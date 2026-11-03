@@ -80,7 +80,7 @@ const curly = (t: string) => t.replace(/'/g, '\u2019');
 const born = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).toUpperCase();
 
 const receipts = scenarios.map((s) => [
-  `<article class="receipt" data-group="${s.group}">`,
+  `<article class="receipt" data-group="${s.group}" data-id="${s.id}" data-say="${esc(s.say)}">`,
   `<header><span>${esc(s.name)} · ${esc(s.payer)}</span><span class="stamp st-${s.group}">${STAMP[s.outcome]}</span></header>`,
   `<p class="meta">BORN ${born(s.dateOfBirth)} · ID ${esc(s.memberId)}${s.onPlanOf ? ` · ${esc(s.onPlanOf.toUpperCase())}` : ''}</p>`,
   `<p class="lbl">Riley says</p>`,
@@ -89,6 +89,7 @@ const receipts = scenarios.map((s) => [
   `<p class="lbl">Read from the insurer\u2019s response</p>`,
   `<p class="src">${esc(s.source)}</p>`,
   `<a class="raw" href="${s.raw}" target="_blank" rel="noopener">Raw 271 \u2197</a>`,
+  `<div class="live-run"><button class="run" type="button">Run it live</button><span class="live-out" aria-live="polite"></span></div>`,
   `</article>`,
 ].filter(Boolean).join('')).join('\n');
 const count = (g: string) => (g === 'all' ? scenarios.length : scenarios.filter((s) => s.group === g).length);

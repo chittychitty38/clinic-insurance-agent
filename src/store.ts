@@ -60,6 +60,11 @@ export function getCall(id: string, init?: Partial<CallRecord>): CallRecord {
   return call;
 }
 
+/** Drop a call record entirely (the project site's live checks shouldn't crowd out real calls). */
+export function forgetCall(id: string): void {
+  calls.delete(id);
+}
+
 export function recordEvent(callId: string, event: Omit<ToolEvent, 'at'>): void {
   getCall(callId).events.push({ at: new Date().toISOString(), ...event });
 }

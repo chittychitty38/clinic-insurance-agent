@@ -11,7 +11,7 @@ payer's response.
 **Stack:** Node 22 · TypeScript · Yarn · Express · [Vapi](https://vapi.ai) (telephony, speech, Claude Haiku 5.5) · Stedi (sandbox) · Render (agent server) · Netlify (project site)
 
 - **Call it:** **(707) 215-5322**
-- **Project site:** https://clinic-insurance-agent.netlify.app, with a real call recording, the test patients as insurance cards, and all 27 sandbox answers with the insurer data behind each
+- **Project site:** https://clinic-insurance-agent.netlify.app, with a real call recording, the test patients as insurance cards, and all 27 sandbox answers with the insurer data behind each. Press **Run all 27 live** there to re-ask the Stedi sandbox right now and compare every answer to its receipt
 - **Server:** `https://clinic-insurance-agent.onrender.com` (staff dashboard at `/?token=…`)
 
 Sandbox callers to try: *Jordan Doe*, born July 14 2001, Aetna `AETNA9wcSu` · *Jane Doe*, born Feb 2 2002, Kaiser `KAISER123456` · *Jane Doe*, born May 5 1955, Medicare `1AA2CC3DD45` · *Jane Doe*, born Jan 1 2001, UnitedHealthcare `UHCAAA42`.
@@ -26,12 +26,12 @@ Sandbox callers to try: *Jordan Doe*, born July 14 2001, Aetna `AETNA9wcSu` · *
 | Run their insurance through Stedi's API (sandbox) | A real-time 270/271 per call, 12 s timeout, one retry for AAA 42 and 5xx | [`src/stedi/client.ts`](src/stedi/client.ts) |
 | Say in plain language if it's accepted and what the copay is | Deterministic code reads the 271 and writes the sentence; the model only says it | [`interpret.ts`](src/eligibility/interpret.ts), [`script.ts`](src/eligibility/script.ts), [golden tests](test/golden-cases.ts) |
 | Handle "not accepted" wisely | Says why, offers the self-pay price, a callback, or the route to an in-network doctor; never quotes a price for a plan the clinic doesn't take | [`outOfNetworkAnswer`](src/eligibility/script.ts), test in [`golden.test.ts`](test/golden.test.ts) |
-| 100% accuracy | Every spoken fact traces to a field in the payer's response; unclear data goes to a human instead of a guess | 85 tests · [receipts with raw 271s](https://clinic-insurance-agent.netlify.app/#answers) |
+| 100% accuracy | Every spoken fact traces to a field in the payer's response; unclear data goes to a human instead of a guess | 87 tests · [receipts with raw 271s](https://clinic-insurance-agent.netlify.app/#answers), each re-runnable live from the page |
 | Node 22, TypeScript, Yarn, Stedi, Render | `engines: >=22`, strict TypeScript, Yarn 1, API on Render ([`render.yaml`](render.yaml)), no GitHub Actions | `yarn typecheck && yarn test` |
 | Sign up, set up keys, connect the services | Stedi (test key), Vapi (assistant + number, synced from code), Render (secrets via CLI), Netlify (site + keep-warm cron) | [`.env.example`](.env.example), [`scripts/vapi-sync.ts`](scripts/vapi-sync.ts) |
 | Show how you use AI to get there | Claude Code built it inside a verification loop | [below](#how-it-was-built-ai-inside-a-verification-loop) |
 
-**Beyond the brief:** the payer is asked while the caller is still talking (1.9 s → 0.12 s); misheard member IDs match the chart card; "mm-hmm" never interrupts; eye emergencies go to 911 before insurance and same-day symptoms jump the callback queue; recorded-line and AI disclosures; every call is graded pass/fail after it ends; a staff dashboard with live calls and a callback queue; a keep-warm cron so no caller hits a cold server.
+**Beyond the brief:** the payer is asked while the caller is still talking (1.9 s → 0.12 s); misheard member IDs match the chart card; "mm-hmm" never interrupts; eye emergencies go to 911 before insurance and same-day symptoms jump the callback queue; recorded-line and AI disclosures; every call is graded pass/fail after it ends; a staff dashboard with live calls, an urgent-first callback queue and a one-click re-check of every patient; a public, sandbox-only, rate-limited endpoint so anyone can re-run the published answers live ([`src/demo.ts`](src/demo.ts)); a keep-warm cron so no caller hits a cold server.
 
 ## How a call works
 
@@ -170,6 +170,7 @@ src/
   patients.ts              Progressive patient matching
   normalize.ts             Speech → member IDs, dates, names
   dashboard.ts             Staff view: live calls, callback queue, scenario runner
+  demo.ts                  Public, sandbox-only "run it live" for the project site (origin-locked, rate-limited)
 site/                      Project site (Netlify): index.html with generated receipts, media/, data/
 netlify/functions/         keep-warm.mts: pings the Render server every 10 min so callers never hit a cold start
 scripts/                   vapi-sync, eval (Stedi), eval-conversations (Vapi chat), build-site

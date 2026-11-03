@@ -3,7 +3,7 @@ import { isStediSandbox } from './config.js';
 import { PATIENTS } from './data/patients.js';
 import { verifyInsurance } from './eligibility/service.js';
 import { payerByKey } from './payers.js';
-import { getCall } from './store.js';
+import { forgetCall, getCall } from './store.js';
 
 /**
  * Public "run it live" button on the project site: one preset sandbox patient through the exact
@@ -62,7 +62,7 @@ demoRouter.post('/check/:patientId', async (req, res) => {
     return;
   }
 
-  // Hidden from the staff dashboard's call list, like its own scenario runner.
+  // A throwaway call record: verifyInsurance needs one, the staff dashboard doesn't.
   const callId = `site-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
   getCall(callId, { source: 'dashboard' });
   const started = Date.now();
@@ -75,7 +75,7 @@ demoRouter.post('/check/:patientId', async (req, res) => {
       visit_type: 'medical',
     },
     callId,
-  );
+  ).finally(() => forgetCall(callId));
   res.json({
     outcome: answer.outcome,
     say: answer.say,
