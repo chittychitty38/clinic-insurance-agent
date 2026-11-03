@@ -6,9 +6,9 @@ what their copay will be. Every answer comes from a live 270/271 eligibility che
 [Stedi](https://www.stedi.com/), and every spoken number can be traced back to a field in the
 payer's response.
 
-**Stack:** Node 22 · TypeScript · Yarn · Express · [Vapi](https://vapi.ai) (telephony, speech, Claude Haiku 5.5) · Stedi (sandbox) · Render
+**Stack:** Node 22 · TypeScript · Yarn · Express · [Vapi](https://vapi.ai) (telephony, speech, Claude Haiku 5.5) · Stedi (sandbox) · Render (agent server) · Netlify (project site)
 
-**Try it:** call **(707) 215-5322**. Server: `https://clinic-insurance-agent.onrender.com` (staff dashboard at `/?token=…`).
+**Try it:** call **(707) 215-5322**. Project site: **https://clinic-insurance-agent.netlify.app** (every sandbox patient's answer, traced to the payer's response). Server: `https://clinic-insurance-agent.onrender.com` (staff dashboard at `/?token=…`).
 Sandbox callers to try: *Jordan Doe*, born July 14 2001, Aetna `AETNA9wcSu` · *Jane Doe*, born Feb 2 2002, Kaiser `KAISER123456` · *Jane Doe*, born Jan 1 2001, UnitedHealthcare `UHCAAA42`.
 
 ## How a call works
@@ -102,6 +102,13 @@ yarn eval:calls               # scripted end-to-end conversations through Vapi's
 `vapi:sync` creates or updates the assistant from `src/vapi/assistant.ts` (prompt, tools, voice,
 transcriber) and attaches a free Vapi phone number, so the agent is versioned in git.
 
+The Vapi number only connects calls once the Vapi org has a card on file (pay-as-you-go). Without
+one, calls are refused before they reach the assistant and no call is logged.
+
+Project site: `yarn site:build` runs the production interpreter over `test/fixtures/` (the same
+golden table the tests use) and writes `site/data/`. `netlify.toml` builds and publishes `site/`
+with security headers; deploy with `netlify deploy --prod --dir site` or link the repo in Netlify.
+
 ## Repo map
 
 ```
@@ -118,8 +125,9 @@ src/
   patients.ts              Progressive patient matching
   normalize.ts             Speech → member IDs, dates, names
   dashboard.ts             Staff view: live calls, callback queue, scenario runner
-scripts/                   vapi-sync, eval (Stedi), eval-conversations (Vapi chat)
-test/                      Vitest
+site/                      Project site (Netlify): index.html + generated data/
+scripts/                   vapi-sync, eval (Stedi), eval-conversations (Vapi chat), build-site
+test/                      Vitest; golden-cases.ts pins every spoken answer to a captured 271
 ```
 
 ## What production needs next
