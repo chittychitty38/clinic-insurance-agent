@@ -61,6 +61,18 @@ unlabeled office visit → plan-level (STC 30)**. It never uses a primary-care-o
 winning tier holds two different amounts, it **reports both and offers a callback** instead of
 picking one. A wrong copay costs the clinic more than "let me confirm that for you."
 
+## Built for a phone call
+
+| | |
+|---|---|
+| **No dead air** | `find_patient` starts the eligibility check for the card on file. `check_insurance` reuses it only if it would send the identical request (and retries if the payer was down). Live: 1.9 s cold vs 0.12 s pre-checked. |
+| **Misheard member IDs** | An ID that differs from the chart card by up to two sound-alike characters (B/D/E/P/T/V, M/N, 5/9…) matches it; what was heard is logged. |
+| **Turn-taking** | "Okay" and "mm-hmm" never interrupt; "wait", "hold on" and "no" always do. Longer endpointing after numbers. |
+| **Patience** | 12 s of silence gets "Take your time, I'm still here"; the call isn't dropped for 60 s. Krisp noise suppression on caller audio. |
+| **Eye safety** | Emergencies go to 911/ER before any insurance talk, with first aid for chemicals; same-day symptoms create urgent callbacks that top the staff queue. |
+| **Call QA** | Every call graded pass/fail after it ends, plus structured fields, shown on the dashboard. |
+| **Disclosures** | Recorded-line notice in the greeting (California is all-party consent); honest about being a virtual assistant. |
+
 ## Every preset patient, every state
 
 The Stedi sandbox only answers for its fixed mock patients, so the clinic chart
@@ -102,8 +114,8 @@ yarn eval:calls               # scripted end-to-end conversations through Vapi's
 `vapi:sync` creates or updates the assistant from `src/vapi/assistant.ts` (prompt, tools, voice,
 transcriber) and attaches a free Vapi phone number, so the agent is versioned in git.
 
-The Vapi number only connects calls once the Vapi org has a card on file (pay-as-you-go). Without
-one, calls are refused before they reach the assistant and no call is logged.
+A new free Vapi number can take a few minutes to activate with the carrier; calls placed before
+then never reach the assistant. Vapi's chat API (used by `yarn eval:calls`) needs a card on file.
 
 Project site: `yarn site:build` runs the production interpreter over `test/fixtures/` (the same
 golden table the tests use) and writes `site/data/`. `netlify.toml` builds and publishes `site/`

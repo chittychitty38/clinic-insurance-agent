@@ -198,6 +198,14 @@ section { padding-block: 88px 0; scroll-margin-top: 60px; }
 .answer .src a { color: var(--accent); white-space: nowrap; }
 .empty { color: var(--muted); }
 
+/* Phone features */
+.feats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.feat { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; display: grid; gap: 10px; align-content: start; }
+.feat .metric { font: 600 22px/1.2 var(--display); color: var(--accent); overflow-wrap: anywhere; }
+.feat h3 { font: 600 16px/1.35 var(--body); }
+.feat p { font-size: 14.5px; color: var(--muted); }
+.fineprint { margin-top: 20px; font-size: 14px; color: var(--muted); max-width: 52em; }
+
 /* Lessons */
 .lessons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .lesson { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; display: grid; gap: 8px; align-content: start; }
@@ -223,7 +231,7 @@ footer.site p + p { margin-top: 6px; }
 
 @media (max-width: 1000px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
-  .callers, .layers, .lessons { grid-template-columns: repeat(2, 1fr); }
+  .callers, .layers, .lessons, .feats { grid-template-columns: repeat(2, 1fr); }
   .pipeline { grid-template-columns: 1fr; gap: 28px; }
   .node { margin-right: 0; }
   .node:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -22px; width: 2px; height: 16px; }
@@ -239,7 +247,7 @@ footer.site p + p { margin-top: 6px; }
   .stat:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
   .stat:nth-child(4) { border-top: 1px solid var(--line); }
   .stat b { font-size: 28px; }
-  .callers, .layers, .lessons, .answers, .split, .roadmap, .steps { grid-template-columns: 1fr; }
+  .callers, .layers, .lessons, .feats, .answers, .split, .roadmap, .steps { grid-template-columns: 1fr; }
   section { padding-block: 64px 0; }
   .brand small { display: none; }
   .line { max-width: 94%; }
@@ -257,6 +265,7 @@ footer.site p + p { margin-top: 6px; }
     <nav class="nav" aria-label="Sections">
       <a href="#try">Try it</a>
       <a href="#how">How it works</a>
+      <a href="#phone">On the phone</a>
       <a href="#design">Design</a>
       <a href="#answers">Every answer</a>
       <a href="#next">Roadmap</a>
@@ -285,13 +294,14 @@ footer.site p + p { margin-top: 6px; }
     <figure class="callcard" aria-label="Sample call">
       <header><b>Sample call · Campus Eye Center</b><span class="timer">sandbox patient</span></header>
       <div class="lines">
-        <p class="line riley"><span class="who">Riley</span>Thanks for calling Campus Eye Center, this is Riley, the virtual assistant. I can check whether we take your insurance and what your copay would be. Who's the appointment for?</p>
+        <p class="line riley"><span class="who">Riley</span>Thanks for calling Campus Eye Center. This is Riley, the clinic's virtual assistant, on a recorded line. I can check whether we take your insurance and what your copay would be. Who's the appointment for?</p>
         <p class="line caller"><span class="who">Caller</span>My son, Jordan Doe. Born July 14th, 2001.</p>
-        <p class="line riley"><span class="who">Riley</span>Thanks. Which insurance is on the card, and what's the member ID?</p>
+        <p class="tool"><b>find_patient</b> → chart found · <b>payer check started</b> while the caller talks</p>
+        <p class="line riley"><span class="who">Riley</span>Found him. Which insurance is on the card, and what's the member ID?</p>
         <p class="line caller"><span class="who">Caller</span>Aetna. A-E-T-N-A-9-W-C-S-U.</p>
         <p class="line riley"><span class="who">Riley</span>That's A, E, T, N, A, 9, W, C, S, U. And is this for a medical problem, or a routine exam for glasses?</p>
         <p class="line caller"><span class="who">Caller</span>Medical. His eye's been red all week.</p>
-        <p class="tool"><b>check_insurance</b> → Stedi 270/271 · Aetna · dependent of John Doe · <b>active</b></p>
+        <p class="tool"><b>check_insurance</b> → answer already in hand · <b>123 ms</b> · Aetna · dependent of John Doe · active</p>
         <p class="line riley verbatim"><span class="who">Riley · word for word from the server</span><span id="hero-say">Good news: we're in network with Aetna, and the coverage is active. For a specialist visit with our eye doctor, your copay should be 15 dollars.</span></p>
       </div>
       <footer>Riley's last line is the exact text the server generated from Aetna's response: specialist office visit (service type 98), in network, $15.</footer>
@@ -303,8 +313,8 @@ footer.site p + p { margin-top: 6px; }
   <div class="wrap">
     <div class="stat"><b data-count="scenarios">27</b><span>real payer responses, each answer checked by hand</span></div>
     <div class="stat"><b data-count="payers">10</b><span>insurers, from Aetna to Medicare</span></div>
-    <div class="stat"><b>76</b><span>automated tests, including every spoken dollar figure</span></div>
-    <div class="stat"><b>0</b><span>numbers the language model is allowed to compute</span></div>
+    <div class="stat"><b>0.1 s</b><span>to answer once the card is confirmed: the payer was asked while the caller talked</span></div>
+    <div class="stat"><b>84</b><span>automated tests, including every spoken dollar figure</span></div>
   </div>
 </div>
 
@@ -329,7 +339,7 @@ footer.site p + p { margin-top: 6px; }
         <h3>Jane Doe</h3>
         <dl class="kv"><dt>Born</dt><dd>February 2, 2002</dd><dt>Insurance</dt><dd>Kaiser</dd><dt>Member ID</dt><dd class="mono">KAISER123456</dd></dl>
         <p class="say-this">"Hi, I'm Jane Doe. I want to check my insurance."</p>
-        <p class="expect"><b>You'll hear</b>Coverage is active, but the clinic isn't in network with Kaiser. Riley explains why, gives the $175 self-pay price, and offers a callback.</p>
+        <p class="expect"><b>You'll hear</b>Coverage is active, but the clinic isn't in network with Kaiser. Riley explains why, gives the $175 self-pay price, and offers a callback or the route to an in-network doctor.</p>
       </article>
       <article class="caller">
         <span class="badge b-accepted">Accepted</span>
@@ -367,10 +377,29 @@ footer.site p + p { margin-top: 6px; }
       <li><strong>Find the chart</strong>Name first, then date of birth if several patients share it, then the card itself. Two Jane Does share a birthday.</li>
       <li><strong>Understand the insurer</strong>Spoken names map to payer IDs: "Signa" is Cigna, "United" is UnitedHealthcare. If it's ambiguous, Riley asks.</li>
       <li><strong>Get the subscriber right</strong>A student on a parent's plan is sent as a dependent under the policyholder, using the ID on file.</li>
-      <li><strong>Ask the payer</strong>A real-time 270 through Stedi, with one retry if the payer is down and a 12-second timeout.</li>
+      <li><strong>Ask the payer early</strong>The moment the chart is found, the 270 goes out for the card on file. When the caller reads that card, the answer is already there.</li>
       <li><strong>Read the 271 in code</strong>Active or not, HMO, Medicare, dental-only, the right copay, coinsurance and deductible.</li>
       <li><strong>Hand back the words</strong>The server returns the exact sentence to say and the next step. Claude says it and keeps the conversation going.</li>
     </ol>
+  </div>
+</section>
+
+<section id="phone" class="gutter">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Built for a phone call, not a chat window</span>
+      <h2>The details that make a voice agent feel like the best person at the front desk</h2>
+      <p>Getting the copay right is half the job. The other half is a call that never stalls, never talks over you, and never makes you repeat your member ID four times.</p>
+    </div>
+    <div class="feats">
+      <div class="feat"><span class="metric">1.9 s → 0.12 s</span><h3>No dead air while the payer thinks</h3><p>As soon as Riley finds the chart, it asks the payer about the card on file. By the time the caller has read it out, the answer is waiting. It's only used if the request would be identical, and a payer that was down gets asked again.</p></div>
+      <div class="feat"><span class="metric">B·D·E·P·T·V · M·N · 5·9</span><h3>Member IDs survive bad phone audio</h3><p>Speech recognition mixes up letters that sound alike. If what it heard differs from the card on the chart by one or two sound-alike characters, Riley checks the chart card, and logs what it heard for staff.</p></div>
+      <div class="feat"><span class="metric">"mm-hmm" ≠ "wait"</span><h3>Doesn't stop for "mm-hmm", stops instantly for "wait"</h3><p>Acknowledgements like "okay" and "uh-huh" don't cut Riley off mid-copay. "Wait", "hold on" or "no" stop it immediately. Riley also waits longer after numbers, so callers can finish a member ID.</p></div>
+      <div class="feat"><span class="metric">12 s · 60 s</span><h3>Patient while you find your card</h3><p>A quiet line gets "Take your time, I'm still here," not a hang-up. Krisp noise suppression cleans up calls from dorms, buses and dining halls.</p></div>
+      <div class="feat"><span class="metric">911 · same day</span><h3>Eye emergencies before insurance</h3><p>Vision loss, a curtain over the vision, new flashes and floaters, chemicals or injuries go straight to 911 or the ER, with the first-aid step for chemicals. A painful red eye in a contact lens wearer gets an urgent callback that jumps the staff queue.</p></div>
+      <div class="feat"><span class="metric">pass / fail</span><h3>Every call graded after it hangs up</h3><p>Each call is scored against the rules that matter: no number that didn't come from a tool, emergencies first, nobody left without a next step. Staff review the failures, not every call.</p></div>
+    </div>
+    <p class="fineprint">Also: recorded-line disclosure in the greeting (California requires all-party consent), honest answers to "am I talking to a robot?", and callers can talk over the greeting.</p>
   </div>
 </section>
 
