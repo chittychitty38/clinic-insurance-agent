@@ -12,7 +12,7 @@ import { addCallback, getCall, recordEvent } from '../store.js';
  */
 
 const FindPatientArgs = z.object({
-  full_name: z.string().min(1),
+  full_name: z.string().optional(),
   date_of_birth: z.string().optional(),
 });
 
@@ -44,12 +44,15 @@ type Handler = (args: unknown, ctx: ToolContext) => Promise<string>;
 export const toolHandlers: Record<string, Handler> = {
   async find_patient(raw, ctx) {
     const started = Date.now();
-    const args = FindPatientArgs.parse(raw);
+    const args = FindPatientArgs.parse(raw ?? {});
     const dob = args.date_of_birth ? parseDateOfBirth(args.date_of_birth) : null;
-    const lookup = lookupPatient(args.full_name, dob);
+    const lookup = lookupPatient(args.full_name ?? '', dob);
 
     let out: Record<string, unknown>;
-    if (args.date_of_birth && !dob) {
+    if (!args.full_name?.trim()) {
+      // Seen on a real call: the model fired a second, empty find_patient alongside the real one.
+      out = { status: 'need_name', next_step: 'Ignore this result if you already called find_patient with a name. Otherwise ask for the patient\'s first and last name.' };
+    } else if (args.date_of_birth && !dob) {
       out = { status: 'unclear_date_of_birth', next_step: 'Ask for the date of birth again: month, day and year.' };
     } else if (lookup.status === 'need_date_of_birth') {
       out = { status: 'need_date_of_birth', next_step: 'Several patients share that name. Ask for the patient\'s date of birth, then call find_patient again with date_of_birth.' };

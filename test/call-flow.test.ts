@@ -36,6 +36,11 @@ describe('asking the payer while the caller talks', () => {
     expect(event.detail).toMatchObject({ prefetched: true });
   });
 
+  it('answers a stray empty lookup calmly instead of erroring (seen on a real call)', async () => {
+    const out = JSON.parse(await toolHandlers.find_patient!({}, newCall()));
+    expect(out.status).toBe('need_name');
+  });
+
   it('does not guess between two cards: same name and birthday with different insurers means no early check', async () => {
     const ctx = newCall();
     await toolHandlers.find_patient!({ full_name: 'Jane Doe', date_of_birth: '2001-01-01' }, ctx);

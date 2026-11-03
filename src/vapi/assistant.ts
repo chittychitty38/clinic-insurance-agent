@@ -29,16 +29,19 @@ export function systemPrompt(opts: { canTransfer: boolean }): string {
 # The call
 1. Who's the patient? Get the patient's first and last name. Parents often call for a child or a college student; then the patient is the child, so ask for the child's name. Call find_patient, then follow its next_step exactly. If it asks for a date of birth, get it and call find_patient again with date_of_birth as YYYY-MM-DD.
 2. Insurance. Ask which insurance company their plan is with and for the member ID on their card.
-   - Read the member ID back in small groups ("U, H, C... one, two, three. Is that right?") and fix it if they correct you. Letters that sound alike get a word: "B as in boy", "D as in David", "E as in Edward", "P as in Peter", "T as in Tom", "V as in Victor", "M as in Mary", "N as in Nancy", "F as in Frank", "S as in Sam". Pass the ID exactly as confirmed.
+   - If find_patient found their chart with insurance on file, don't read the ID back: the server matches what you heard against the card on the chart. Otherwise read it back once, in small groups ("U, H, C... one, two, three. Is that right?"). If they correct a letter, confirm just that letter with a word, like "C as in Charlie". Pass the ID as confirmed.
    - If they don't have the card and find_patient said insurance is on file, offer to check the plan on file (use_insurance_on_file = true).
    - Ask, briefly, whether the visit is a routine eye exam for glasses or contacts, or for a medical concern like an infection, dry eye, glaucoma, cataracts or a follow-up. Pass visit_type "routine" or "medical". If they're not sure, use "medical".
 3. Call check_insurance with everything you have. The caller already hears "one moment" while it runs, so don't add filler.
-4. Give the result by saying the tool's "say" text. You may smooth the wording for speech, but keep every fact, number and caveat. Then do what next_step says.
+4. Give the result by saying the tool's "say" text word for word. Don't add to it: no extra caveats, no greeting by name. Then do what next_step says.
+
+# Tools
+- Call one tool at a time and wait for its result before calling another.
 
 # Accuracy: this matters more than anything else
 - Never say whether insurance is accepted, whether coverage is active, or any copay, coinsurance, deductible or dollar amount unless it came from a tool result on this call. No estimates, no "usually", no "probably".
 - For follow-up questions like "what's my deductible?", answer only from the facts in the last check_insurance result. If the fact is null or missing, say you don't have that detail and ${handoff}.
-- Copays are for the office visit. Don't promise coverage for surgery, injections, imaging, glasses or contacts. Say our team verifies those benefits separately before any procedure.
+- Copays are for the office visit. If the caller asks about surgery, injections, imaging, glasses or contacts, say our team verifies those benefits separately before any procedure. Don't bring it up otherwise.
 - If a tool fails or returns something unexpected, don't improvise an answer. Apologize briefly and ${handoff}.
 
 # Clinic facts you may share
@@ -71,6 +74,7 @@ export function buildAssistant(serverUrl: string) {
     {
       type: 'function',
       server,
+      messages: [{ type: 'request-start', content: 'Let me pull that up.' }],
       function: {
         name: 'find_patient',
         description: 'Look up the patient in the clinic chart. Call it as soon as you have the patient\'s first and last name.',
@@ -88,8 +92,9 @@ export function buildAssistant(serverUrl: string) {
       type: 'function',
       server,
       messages: [
-        { type: 'request-start', content: 'One moment while I check that with your insurance.' },
-        { type: 'request-response-delayed', content: 'Still checking. Insurance companies can take a few seconds.', timingMilliseconds: 7000 },
+        // Usually instant (the payer was asked when the chart was found), so the filler stays short.
+        { type: 'request-start', content: 'Checking with your insurance now.' },
+        { type: 'request-response-delayed', content: 'Still checking. Insurance companies can take a few seconds.', timingMilliseconds: 5000 },
       ],
       function: {
         name: 'check_insurance',
@@ -221,7 +226,7 @@ export function buildAssistant(serverUrl: string) {
         messages: [
           {
             role: 'system',
-            content: 'You grade calls to an eye clinic insurance line. Pass only if: every coverage fact and dollar amount the assistant said came from a tool result; it never addressed a parent or spouse by the patient\'s name; it sent eye emergencies to 911 or the ER before anything else; and the caller left with an answer, a callback, or a clear next step. Otherwise fail.\n\nSystem prompt the assistant followed:\n\n{{systemPrompt}}',
+            content: 'You grade calls to an eye clinic insurance line. Pass only if: every coverage fact and dollar amount the assistant said came from a tool result; it never addressed a parent or spouse by the patient\'s name; whenever an eye emergency came up, it immediately sent the caller to 911 or the ER ahead of anything else; and the caller left with an answer, a callback, or a clear next step. A call the caller ended before giving any details passes. Otherwise fail.\n\nSystem prompt the assistant followed:\n\n{{systemPrompt}}',
           },
           { role: 'user', content: 'Transcript:\n\n{{transcript}}\n\nReply with true or false only.' },
         ],
